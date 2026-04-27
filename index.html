@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Sandbox — Technology Club</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/sandbox_website.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="nav-logo">
+        <img src="assets/logo.png" alt="The Sandbox logo" />
+        <div>
+          <div class="nav-logo-text">The Sandbox</div>
+          <div class="nav-logo-sub">Technology Club</div>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="spark_gallery.html">Project Spark</a>
+        <a href="showcase.html">Showcase</a>
+        <a href="#join" class="nav-cta">Join the club</a>
+      </div>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-left">
+        <h1>What will you<br /><em>build?</em></h1>
+        <p class="hero-sub">
+          An after-school club where you choose your own project, work at your
+          own pace, and leave with something real.
+        </p>
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          After-school &middot; KS3 to A Level
+        </div>
+        <div class="hero-actions">
+          <a href="#join" target="_blank" class="btn-primary"
+            >Join the club</a
+          >
+          <a href="#build" class="btn-ghost">Project Spark</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-val">44+</div>
+            <div class="hero-stat-label">Project ideas</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-val">6</div>
+            <div class="hero-stat-label">Topics</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-val">4</div>
+            <div class="hero-stat-label">Skill levels</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-val">3</div>
+            <div class="hero-stat-label">Languages</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-val">2h</div>
+            <div class="hero-stat-label">Per session</div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="hero-right">
+        <div class="hero-logo-wrap">
+          <img src="assets/logo.png" alt="The Sandbox" />
+        </div>
+      </div> -->
+    </section>
+
+    <!-- S2: ABOUT -->
+    <section id="about" class="bg-white">
+      <div class="container">
+        <span class="eyebrow reveal">What is The Sandbox?</span>
+        <h2 class="section-heading reveal">
+          A place where things<br />get <em>made.</em>
+        </h2>
+        <p class="section-sub reveal">
+          No fixed curriculum. No pressure. No experience needed. You come in,
+          pick a project that excites you, and build it &mdash; with a guide
+          nearby when you get stuck.
+        </p>
+        <div class="pillars reveal">
+          <div class="pillar">
+            <span class="pillar-icon">🎯</span>
+            <div class="pillar-title">Your project, your choice</div>
+            <p class="pillar-desc">
+              No one tells you what to build. You pick something that genuinely
+              interests you &mdash; games, AI, hardware, the web.
+            </p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">⚡</span>
+            <div class="pillar-title">Your pace, your level</div>
+            <p class="pillar-desc">
+              Complete beginner or experienced coder &mdash; everyone works at
+              their own level. No one waits for anyone else.
+            </p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">🏆</span>
+            <div class="pillar-title">Real outcomes</div>
+            <p class="pillar-desc">
+              A portfolio project. Something you can show, explain, and talk
+              about in a university interview.
+            </p>
+          </div>
+          <div class="pillar academic">
+            <span class="pillar-badge">Academic track</span>
+            <span class="pillar-icon">🎓</span>
+            <div class="pillar-title">Certifications &amp; Olympiad</div>
+            <p class="pillar-desc">
+              Sit the Python or JS Institute certification. Compete in the
+              Luxembourg Informatics Olympiad. Real credentials.
+            </p>
+          </div>
+        </div>
+        <div class="quote-block reveal">
+          <div class="quote-mark">&ldquo;</div>
+          <div>
+            <p class="quote-text">
+              Students come in, work on their own projects, and leave having
+              built something real. No fixed curriculum. No pressure. Just a
+              space, a guide, and the freedom to create.
+            </p>
+            <div class="quote-attr">
+              &#8212; The Sandbox, Academic Year 2025/26
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S3: CATEGORIES -->
+    <section id="build" class="bg-grey">
+      <div class="container">
+        <span class="eyebrow reveal">What can you build?</span>
+        <h2 class="section-heading reveal">
+          Pick something that makes<br />you <em>curious.</em>
+        </h2>
+        <p class="section-sub reveal">
+          <b>Project Spark</b> has 44+ real project ideas across 6 categories.
+          Every level welcome &mdash; from a first Python program to a
+          line-following robot.
+        </p>
+        <div class="cat-grid reveal">
+          <div class="cat-card cat-games">
+            <div class="cat-card-strip">
+              <span class="cat-card-icon">🎮</span
+              ><span class="cat-card-tag">Games</span>
+            </div>
+            <div class="cat-card-content">
+              <div class="cat-card-name">Games</div>
+              <div class="cat-card-examples">
+                Snake, Tetris, Pong, Space Invaders, Maze Solver, Sudoku Solver,
+                Hoops, PhotoBomb
+              </div>
+              <div class="cat-card-pills">
+                <span class="lang-pill">Python</span
+                ><span class="lang-pill">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="cat-card cat-web">
+            <div class="cat-card-strip">
+              <span class="cat-card-icon">🌐</span
+              ><span class="cat-card-tag">Web</span>
+            </div>
+            <div class="cat-card-content">
+              <div class="cat-card-name">Web</div>
+              <div class="cat-card-examples">
+                Portfolio site, Weather dashboard, Music visualiser, News
+                aggregator, Real-time tools
+              </div>
+              <div class="cat-card-pills">
+                <span class="lang-pill">HTML</span
+                ><span class="lang-pill">CSS</span
+                ><span class="lang-pill">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="cat-card cat-ai">
+            <div class="cat-card-strip">
+              <span class="cat-card-icon">🤖</span
+              ><span class="cat-card-tag">AI</span>
+            </div>
+            <div class="cat-card-content">
+              <div class="cat-card-name">AI</div>
+              <div class="cat-card-examples">
+                AI study buddy, Image classifier, Voice assistant, AI-powered
+                chatbot
+              </div>
+              <div class="cat-card-pills">
+                <span class="lang-pill">Python</span
+                ><span class="lang-pill">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="cat-card cat-data">
+            <div class="cat-card-strip">
+              <span class="cat-card-icon">📊</span
+              ><span class="cat-card-tag">Data</span>
+            </div>
+            <div class="cat-card-content">
+              <div class="cat-card-name">Data</div>
+              <div class="cat-card-examples">
+                Spotify stats, Fitness tracker, Live data pipeline, Timetable
+                analyser
+              </div>
+              <div class="cat-card-pills">
+                <span class="lang-pill">Python</span
+                ><span class="lang-pill">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="cat-card cat-hardware">
+            <div class="cat-card-strip">
+              <span class="cat-card-icon">⚙️</span
+              ><span class="cat-card-tag">Hardware</span>
+            </div>
+            <div class="cat-card-content">
+              <div class="cat-card-name">Hardware</div>
+              <div class="cat-card-examples">
+                Smart traffic light, Room environment monitor, Line-following
+                robot
+              </div>
+              <div class="cat-card-pills">
+                <span class="lang-pill">Python</span>
+              </div>
+            </div>
+          </div>
+          <div class="cat-card cat-tools">
+            <div class="cat-card-strip">
+              <span class="cat-card-icon">🛠️</span
+              ><span class="cat-card-tag">Tools</span>
+            </div>
+            <div class="cat-card-content">
+              <div class="cat-card-name">Tools</div>
+              <div class="cat-card-examples">
+                Password manager, Markdown editor, Personal API, Productivity
+                app
+              </div>
+              <div class="cat-card-pills">
+                <span class="lang-pill">Python</span
+                ><span class="lang-pill">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-cta reveal">
+          <div>
+            <div class="gallery-cta-text">
+              Browse all projects in the Spark Gallery
+            </div>
+            <div class="gallery-cta-sub">
+              <p>Filter by topic, level, and language.</p>
+              <p>
+                Don&rsquo;t look for the right one &mdash; look for the one you
+                can&rsquo;t stop thinking about.
+              </p>
+            </div>
+          </div>
+          <a href="spark_gallery.html" target="_blank" class="btn-primary"
+            >Open the gallery &rarr;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- S4: HOW IT WORKS -->
+    <section id="how" class="bg-white">
+      <div class="container">
+        <span class="eyebrow reveal">How it works</span>
+        <h2 class="section-heading reveal">
+          Every session follows<br />the same <em>rhythm.</em>
+        </h2>
+        <p class="section-sub reveal">
+          Two hours. Five moments. No lectures, no homework, no grades &mdash;
+          just structured time to build.
+        </p>
+        <div class="timeline reveal">
+          <div class="timeline-step step-1">
+            <div class="step-dot">1</div>
+            <div class="step-time">0&ndash;10 min</div>
+            <div class="step-title">Stand-up circle</div>
+            <div class="step-desc">
+              What I&rsquo;m building, what I did, what I&rsquo;ll do today.
+              Thirty seconds each.
+            </div>
+          </div>
+          <div class="timeline-step step-2">
+            <div class="step-dot">2</div>
+            <div class="step-time">10&ndash;80 min</div>
+            <div class="step-title">Build time</div>
+            <div class="step-desc">
+              Work independently. Guide circulates. Rule: never touch their
+              keyboard.
+            </div>
+          </div>
+          <div class="timeline-step step-3">
+            <div class="step-dot">3</div>
+            <div class="step-time">80&ndash;95 min</div>
+            <div class="step-title">Spark session</div>
+            <div class="step-desc">
+              Lost? Open the gallery together. One question: what made you want
+              to click?
+            </div>
+          </div>
+          <div class="timeline-step step-4">
+            <div class="step-dot">4</div>
+            <div class="step-time">95&ndash;105 min</div>
+            <div class="step-title">Commit check</div>
+            <div class="step-desc">
+              &ldquo;By next session I will have ___.&rdquo; One sentence. One
+              demonstrable thing.
+            </div>
+          </div>
+          <div class="timeline-step step-5">
+            <div class="step-dot">5</div>
+            <div class="step-time">105&ndash;120 min</div>
+            <div class="step-title">Show and tell</div>
+            <div class="step-desc">
+              One student shares their screen &mdash; working or broken.
+              Questions from the group only.
+            </div>
+          </div>
+        </div>
+        <div class="info-strip reveal">
+          <div class="info-card">
+            <div class="info-label">When &amp; where</div>
+            <div class="info-val">Weekly &middot; 2 hours</div>
+            <div class="info-sub">
+              Same room, same time each week. School computers provided.
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-label">Who can join</div>
+            <div class="info-val">KS3 to A Level</div>
+            <div class="info-sub">
+              No experience needed. Newcomers as welcome as advanced students.
+            </div>
+          </div>
+          <div class="info-card dark">
+            <div class="info-label">The AI rule</div>
+            <div class="info-val">
+              Use it &mdash; if you can explain every line.
+            </div>
+            <div class="info-sub">
+              AI is a professional tool here. Not a shortcut.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S5: GALLERY -->
+    <!-- <section id="gallery" class="bg-grey">
+      <div class="container">
+        <span class="eyebrow reveal">Project Spark</span>
+        <h2 class="section-heading reveal">
+          44+ projects waiting<br />to be <em>built.</em>
+        </h2>
+        <p class="section-sub reveal" style="margin-bottom: 40px">
+          Browse by topic, level, and language. Don&rsquo;t look for the right
+          one &mdash; look for the one you can&rsquo;t stop thinking about.
+        </p>
+        <div class="gallery-link-block reveal">
+          <span class="gallery-link-icon">✦</span>
+          <div class="gallery-link-title">The Spark Gallery</div>
+          <p class="gallery-link-desc">
+            44 real project ideas. Filter by topic, level, and language. Click
+            any card to see what you&rsquo;ll learn, what you&rsquo;ll build,
+            and the questions we&rsquo;ll ask you to get started.
+          </p>
+          <div class="gallery-tags">
+            <span class="gallery-tag">Games</span>
+            <span class="gallery-tag">Web</span>
+            <span class="gallery-tag">AI</span>
+            <span class="gallery-tag">Data</span>
+            <span class="gallery-tag">Hardware</span>
+            <span class="gallery-tag">Tools</span>
+            <span class="gallery-tag">Academic</span>
+          </div>
+          <a
+            href="spark_gallery.html"
+            target="_blank"
+            class="btn-primary"
+            style="display: inline-flex"
+            >Open the gallery &rarr;</a
+          >
+        </div>
+      </div>
+    </section> -->
+
+    <!-- S6: PORTFOLIO -->
+    <section id="students" class="bg-grey">
+      <div class="container">
+        <span class="eyebrow reveal">Built by students</span>
+        <h2 class="section-heading reveal">
+          Real projects.<br /><em>Real students.</em>
+        </h2>
+        <p class="section-sub reveal" style="margin-bottom: 40px">
+          Everything here was built during a Sandbox session. No templates. No
+          shortcuts.
+        </p>
+        <div class="portfolio-empty reveal">
+          <span class="portfolio-empty-icon">🚀</span>
+          <div class="portfolio-empty-title">First projects coming soon</div>
+          <p class="portfolio-empty-desc">
+            The Sandbox launches next academic year 2026/2027. Watch this space
+            — projects will go live the moment students start building.
+          </p>
+          <span class="coming-soon-badge">&middot; Showcase &middot;</span>
+        </div>
+        <div class="showcase-banner reveal">
+          <div>
+            <div class="showcase-badge">Annual event</div>
+            <div class="showcase-title">End-of-year Showcase</div>
+            <div class="showcase-sub">
+              Every student presents what they built. Open to the whole school
+              community.
+            </div>
+          </div>
+          <a href="#students" target="_blank" class="btn-primary-disabled"
+            >Register interest &rarr;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- S7: PRACTICAL + JOIN -->
+    <section id="join" class="bg-white">
+      <div class="container">
+        <span class="eyebrow reveal">Practical info</span>
+        <h2 class="section-heading reveal">
+          Everything you need to know<br />before you <em>show up.</em>
+        </h2>
+        <div class="practical-grid reveal">
+          <div class="practical-card">
+            <div class="practical-icon">📅</div>
+            <div>
+              <div class="practical-label">When</div>
+              <div class="practical-val">
+                Schedule to be announced
+                <!-- Every Tuesday &middot; 3:30&ndash;5:30 pm -->
+              </div>
+              <div class="practical-sub">
+                Weekly sessions starting in October. Dates and times coming
+                soon.
+                <!-- Replace with your actual day and time -->
+              </div>
+            </div>
+          </div>
+          <div class="practical-card">
+            <div class="practical-icon">📍</div>
+            <div>
+              <div class="practical-label">Where</div>
+              <div class="practical-val">Location to be announced</div>
+              <div class="practical-sub">
+                Room assignment pending — Check back soon!
+              </div>
+            </div>
+          </div>
+          <div class="practical-card">
+            <div class="practical-icon">👥</div>
+            <div>
+              <div class="practical-label">Who</div>
+              <div class="practical-val">KS3 to A Level</div>
+              <div class="practical-sub">
+                All experience levels. No selection process.
+              </div>
+            </div>
+          </div>
+          <div class="practical-card">
+            <div class="practical-icon">💻</div>
+            <div>
+              <div class="practical-label">What to bring</div>
+              <div class="practical-val">Nothing</div>
+              <div class="practical-sub">
+                School computers provided. Bring your own device if you prefer.
+              </div>
+            </div>
+          </div>
+          
+          <!-- <div class="practical-card full">
+            <div class="practical-icon">✉️</div>
+            <div>
+              <div class="practical-label">How to join</div>
+              <div class="practical-val">
+                Fill in the form &mdash; or just show up
+              </div>
+              <div class="practical-sub">
+                <a
+                  class="link-subtle"
+                  href="mailto:ricardo.duarteproenca@education.lu"
+                  >Contact us</a
+                >
+              </div>
+            </div>
+          </div> -->
+        </div>
+         <div class="gallery-cta reveal">
+          <div>
+            <div class="gallery-cta-text">
+              Fill out the form to secure your spot
+            </div>
+            <div class="gallery-cta-sub">
+              <p>Or feel free to just show up and join us on the day.</p>
+            </div>
+          </div>
+          <a href="https://forms.cloud.microsoft/e/20XRHrbVef" target="_blank" class="btn-primary"
+            >Register Now &rarr;</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section
+      class="bg-grey"
+      id="disclaimer"
+      style="padding-top: 48px; padding-bottom: 48px"
+    >
+      <div class="container">
+        <div class="disclaimer-box reveal">
+          <div class="disclaimer-icon">📋</div>
+          <div class="disclaimer-content">
+            <div class="disclaimer-title">
+              A note for students &amp; parents
+            </div>
+            <div class="disclaimer-body">
+              <p>
+                The Sandbox is a voluntary, co-curricular activity.
+                Participation is entirely optional and carries no academic grade
+                or formal assessment. Students are free to join, take a break,
+                or leave at any time.
+              </p>
+              <p>
+                All software used in the club is free, browser-based, or
+                school-licensed. Students are never required to purchase tools,
+                subscriptions, or hardware. Where personal devices (Arduino,
+                Raspberry Pi, etc.) are brought in voluntarily, the school
+                accepts no liability for loss or damage.
+              </p>
+              <p>
+                AI tools (Claude, ChatGPT, GitHub Copilot) are used as
+                professional learning aids under the club's explicit policy:
+                <strong
+                  >you may use AI on any project — if you can explain every line
+                  of the output.</strong
+                >
+                Students are taught to verify, question, and understand
+                AI-generated code rather than treat it as an answer.
+              </p>
+              <p>
+                The end-of-year showcase is open to all students and families.
+                Work displayed is shared with the student's explicit consent. No
+                personal data from student projects is stored, shared, or
+                published by the school without parental consent where required.
+              </p>
+              <p>
+                Questions? </br>
+                <a
+                  class="link-subtle"
+                  href="mailto:ricardo.duarteproenca@education.lu"
+                  >Contact us</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-section">
+      <div class="cta-inner">
+        <div class="eyebrow" style="color: var(--teal)">
+          Ready to build something?
+        </div>
+        <h2 class="cta-heading">What will you<br /><em>build?</em></h2>
+        <p class="cta-sub">
+          No experience needed. No homework. No pressure. Just show up with an
+          idea &mdash; or let us help you find one.
+        </p>
+        <div class="cta-actions">
+          <a href="#join" target="_blank" class="btn-primary"
+            >Join the club &rarr;</a
+          >
+          <a href="#build" target="_blank" class="btn-ghost"
+            >Project  projects first</a
+          >
+        </div>
+        <div class="objections">
+          <span class="objection"
+            ><span class="objection-dot"></span>No experience needed</span
+          >
+          <span class="objection"
+            ><span class="objection-dot"></span>No homework</span
+          >
+          <span class="objection"
+            ><span class="objection-dot"></span>KS3 to A Level</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-main">
+        <a href="#" class="footer-logo">
+          <img src="assets/logo.png" alt="The Sandbox" />
+          <div>
+            <div class="footer-logo-name">The Sandbox</div>
+            <div class="footer-logo-school">
+              Lycée | International School Michel Lucius · Luxembourg
+            </div>
+          </div>
+        </a>
+        <!-- <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#build">Projects</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#students">Built by students</a>
+          <a href="#join">Join</a>
+        </div> -->
+        <div class="footer-year">Academic Year 2025/26</div>
+      </div>
+      <div class="footer-disclaimer">
+        <div class="footer-disclaimer-icon">🤖</div>
+        <div class="footer-disclaimer-text">
+          <strong>Built with AI, supervised by a human.</strong> This website
+          was designed and developed using AI tools under the supervision of a
+          CS teacher &mdash; a real example of how The Sandbox approaches
+          technology: use it well, understand what it produces, and take
+          responsibility for the result.
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/sandbox_website.js"></script>
+  </body>
+</html>

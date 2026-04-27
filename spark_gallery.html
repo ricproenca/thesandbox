@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Spark Gallery — The Sandbox</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/spark_gallery.css" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="The Sandbox logo" />
+        <div>
+          <div class="nav-logo-text">The Sandbox</div>
+          <div class="nav-logo-sub">Project Spark</div>
+        </div>
+      </a>
+      <a href="index.html" class="nav-back">← Back to website</a>
+    </nav>
+    <header>
+      <div class="header-text">
+        <div class="hub-label">· Project Spark Gallery ·</div>
+        <h1>What do you want to <em>build?</em></h1>
+        <p class="header-sub">
+          Browse real projects. Click anything that makes you curious. Don't
+          look for the "right" one — look for the one you can't stop thinking
+          about.
+        </p>
+      </div>
+    </header>
+
+    <div class="filter-panel">
+      <div class="filter-row">
+        <span class="filter-label">Topic</span>
+        <button class="filter-btn active" data-cat="all">All</button>
+        <button class="filter-btn" data-cat="web">Web</button>
+        <button class="filter-btn" data-cat="data">Data</button>
+        <button class="filter-btn" data-cat="games">Games</button>
+        <button class="filter-btn" data-cat="ai">AI</button>
+        <button class="filter-btn" data-cat="hardware">Hardware</button>
+        <button class="filter-btn" data-cat="tools">Tools</button>
+        <button class="filter-btn" data-cat="academic">Academic</button>
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">Level</span>
+        <button class="level-btn active" data-level="all">All</button>
+        <button class="level-btn" data-level="newcomer">Newcomer</button>
+        <button class="level-btn" data-level="beginner">Beginner</button>
+        <button class="level-btn" data-level="intermediate">
+          Intermediate
+        </button>
+        <button class="level-btn" data-level="advanced">Advanced</button>
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">Language</span>
+        <button class="lang-btn active" data-lang="all">All</button>
+        <button class="lang-btn" data-lang="python">Python</button>
+        <button class="lang-btn" data-lang="javascript">JavaScript</button>
+        <button class="lang-btn" data-lang="html">HTML / CSS</button>
+        <button class="lang-btn" data-lang="no-code">No code needed</button>
+      </div>
+    </div>
+
+    <main id="grid"></main>
+
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal" id="modal">
+        <div class="modal-visual" id="modal-visual">
+          <button class="modal-close" id="modal-close">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-section-label" id="modal-cat-label"></div>
+          <h2 class="modal-title" id="modal-title"></h2>
+          <p class="modal-desc" id="modal-desc"></p>
+          <div class="modal-section-label">Spark questions</div>
+          <ul class="spark-questions" id="modal-questions"></ul>
+          <div class="modal-section-label">Built with</div>
+          <div class="modal-stack" id="modal-stack"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      style="
+        background: #071e2a;
+        padding: 20px 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+      "
+    >
+      <a
+        href="index.html"
+        style="
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+        "
+      >
+        <div
+          style="
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.5);
+          "
+        >
+          ← Back to The Sandbox website
+        </div>
+      </a>
+      <div
+        style="
+          font-size: 11px;
+          color: rgba(255, 255, 255, 0.2);
+          font-family: &quot;DM Mono&quot;, monospace;
+          letter-spacing: 0.04em;
+        "
+      >
+        Academic Year 2025/26
+      </div>
+    </footer>
+    <script src="assets/spark_gallery.js"></script>
+  </body>
+</html>

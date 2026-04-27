@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Built by Students — The Sandbox</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/showcase.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="The Sandbox" />
+        <div>
+          <div class="nav-logo-text">The Sandbox</div>
+          <div class="nav-logo-sub">Showcase</div>
+        </div>
+      </a>
+      <a href="index.html" class="nav-back">← Back to website</a>
+    </nav>
+
+    <div class="page-hero">
+      <span class="eyebrow">Built by students</span>
+      <h1>Real projects.<br /><em>Real students.</em></h1>
+      <p class="hero-sub">
+        Everything here was built during a Sandbox session. No templates. No
+        shortcuts. Each project is a student's own idea, built from scratch.
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-val" id="stat-projects">0</div>
+          <div class="hero-stat-label">Projects built</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-val" id="stat-students">0</div>
+          <div class="hero-stat-label">Students</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-val" id="stat-categories">0</div>
+          <div class="hero-stat-label">Categories</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-bar" id="filter-bar">
+      <span class="filter-label-text">Filter</span>
+      <button class="f-btn active" data-filter="all">All</button>
+      <div class="filter-sep"></div>
+      <button class="f-btn" data-filter="cat-games">Games</button>
+      <button class="f-btn" data-filter="cat-web">Web</button>
+      <button class="f-btn" data-filter="cat-ai">AI</button>
+      <button class="f-btn" data-filter="cat-data">Data</button>
+      <button class="f-btn" data-filter="cat-hardware">Hardware</button>
+      <button class="f-btn" data-filter="cat-tools">Tools</button>
+      <div class="filter-sep"></div>
+      <button class="f-btn" data-filter="level-newcomer">Newcomer</button>
+      <button class="f-btn" data-filter="level-beginner">Beginner</button>
+      <button class="f-btn" data-filter="level-intermediate">
+        Intermediate
+      </button>
+      <button class="f-btn" data-filter="level-advanced">Advanced</button>
+    </div>
+
+    <main id="main">
+      <div>
+        <span class="demo-badge">
+          <p><b>DEMO SHOWCASE</b></p><br> 
+            The projects below are placeholders for demonstration purposes.<br />
+            Real student work will appear here soon.
+          </p></span
+        >
+      </div>
+      <div id="projects-container"></div>
+
+      <div class="submit-cta" id="submit-cta">
+        <div>
+          <div class="submit-cta-title">Got a project to show?</div>
+          <div class="submit-cta-sub">
+            Built something during a Sandbox session? Tell your teacher — it
+            might appear here.
+          </div>
+        </div>
+        <a href="https://forms.cloud.microsoft/e/20XRHrbVef" class="btn-primary"
+          >Get involved →</a
+        >
+      </div>
+    </main>
+
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal" id="modal">
+        <div class="modal-thumb" id="modal-thumb">
+          <button class="modal-close" id="modal-close">✕</button>
+          <div class="modal-thumb-emoji" id="modal-emoji"></div>
+        </div>
+        <div class="modal-body">
+          <div class="modal-eyebrow" id="modal-eyebrow"></div>
+          <div class="modal-title" id="modal-title"></div>
+          <div class="modal-student" id="modal-student"></div>
+          <p class="modal-desc" id="modal-desc"></p>
+          <div class="modal-section-label">What makes it theirs</div>
+          <ul class="modal-highlights" id="modal-highlights"></ul>
+          <div class="modal-section-label">Built with</div>
+          <div class="modal-stack" id="modal-stack"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="index.html" class="footer-logo">
+        <img
+          src="assets/logo.png"
+          alt="The Sandbox"
+        />
+        <div>
+          <div class="footer-logo-name">The Sandbox</div>
+          <div class="footer-logo-school">
+            Lycée | International School Michel Lucius · Luxembourg
+          </div>
+        </div>
+      </a>
+      <!-- <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="spark_gallery.html">Gallery</a>
+        <a href="index.html#join">Join</a>
+      </div> -->
+      <div class="footer-year">Academic Year 2025/26</div>
+    </footer>
+
+    <script src="assets/showcase.js"></script>
+  </body>
+</html>

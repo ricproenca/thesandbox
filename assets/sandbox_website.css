@@ -23,6 +23,15 @@
   --gutter-right: #f77924;
 }
 
+[data-theme="dark"] {
+  --bg: #0d1a22;
+  --white: #132330;
+  --text: #e8eef4;
+  --muted: #8ba3b3;
+  --border: #1e3644;
+  --border-strong: #2a4a5c;
+}
+
 /* ── GUTTERS ── */
 body::before,
 body::after {
@@ -53,6 +62,7 @@ body {
   background: var(--bg);
   color: var(--text);
   overflow-x: hidden;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* ── TYPOGRAPHY ── */
@@ -163,6 +173,28 @@ nav {
   background: rgba(255, 255, 255, 0.7);
   border-radius: 2px;
   transition: all 0.2s;
+}
+
+.theme-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.theme-toggle:focus {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
 }
 
 /* ── HERO ── */
@@ -284,7 +316,7 @@ h1 em {
     transform 0.15s,
     opacity 0.15s;
   border: none;
-  cursor: pointe
+  cursor: pointer;
   cursor: not-allowed; /* Shows a "stop" sign on hover */
   opacity: 0.6; /* Further fades the button */
   transform: none; /* Prevents the hover lift effect */
@@ -361,9 +393,11 @@ section {
 }
 section.bg-white {
   background: var(--white);
+  transition: background-color 0.3s;
 }
 section.bg-grey {
   background: var(--bg);
+  transition: background-color 0.3s;
 }
 section.bg-navy {
   background: var(--navy);
@@ -1191,11 +1225,31 @@ footer {
 .link-subtle {
   color: inherit;       /* Takes the color of the surrounding text */
   /* text-decoration: none; */
-  border-bottom: 1px solid transparent; 
+  border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
 }
 
 .link-subtle:hover {
   /* border-bottom: 1px solid var(--orange); Elegant thin line on hover */
   color: var(--orange);
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--orange);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 0 0 4px 0;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
 }

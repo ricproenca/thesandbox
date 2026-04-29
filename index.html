@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Sandbox — Technology Club</title>
+    <meta name="description" content="An after-school technology club where students build their own projects at their own pace. No curriculum, no homework, no grades. Just a space where things get made. For KS3 to A Level." />
+    <meta name="author" content="The Sandbox" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://thesandboxclub.netlify.app/" />
+    <meta property="og:title" content="The Sandbox — Technology Club" />
+    <meta property="og:description" content="An after-school club where students choose their own project, work at their own pace, and leave with something real." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thesandboxclub.netlify.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Sandbox — Technology Club" />
+    <meta name="twitter:description" content="An after-school club where students choose their own project, work at their own pace, and leave with something real." />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/sandbox_website.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- NAV -->
     <nav>
       <a href="#" class="nav-logo">
@@ -25,6 +38,9 @@
         <a href="spark_gallery.html">Project Spark</a>
         <a href="showcase.html">Showcase</a>
         <a href="#join" class="nav-cta">Join the club</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-icon">🌙</span>
+        </button>
       </div>
       <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -32,6 +48,7 @@
     </nav>
 
     <!-- HERO -->
+    <main id="main-content">
     <section id="hero">
       <div class="hero-left">
         <h1>What will you<br /><em>build?</em></h1>
@@ -615,6 +632,7 @@
         </div>
       </div>
     </div>
+    </main>
 
     <!-- FOOTER -->
     <footer>

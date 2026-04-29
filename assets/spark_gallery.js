@@ -1064,6 +1064,21 @@ const LANG_MAP = {
 let activeCat = "all";
 let activeLevel = "all";
 let activeLang = "all";
+let activeSearch = "";
+
+function projectMatchesSearch(p, search) {
+  if (!search) return true;
+  const s = search.toLowerCase();
+  return (
+    p.title.toLowerCase().includes(s) ||
+    p.short.toLowerCase().includes(s) ||
+    p.desc.toLowerCase().includes(s) ||
+    p.cat.toLowerCase().includes(s) ||
+    p.level.toLowerCase().includes(s) ||
+    p.hooks.some(h => h.toLowerCase().includes(s)) ||
+    p.tech.primary.some(t => t.toLowerCase().includes(s))
+  );
+}
 
 function projectMatchesLang(p, lang) {
   if (lang === "all") return true;
@@ -1144,7 +1159,8 @@ function renderCards() {
     (p) =>
       (activeCat === "all" || p.cat === activeCat) &&
       (activeLevel === "all" || p.level === activeLevel) &&
-      projectMatchesLang(p, activeLang),
+      projectMatchesLang(p, activeLang) &&
+      projectMatchesSearch(p, activeSearch),
   );
   if (filtered.length === 0) {
     grid.innerHTML = `<div class="empty">No projects match that filter.<br>Try a different combination.</div>`;
@@ -1258,5 +1274,17 @@ document.querySelectorAll(".lang-btn").forEach((btn) => {
     renderCards();
   });
 });
+
+const searchInput = document.getElementById("search-input");
+if (searchInput) {
+  let searchTimeout;
+  searchInput.addEventListener("input", (e) => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      activeSearch = e.target.value;
+      renderCards();
+    }, 200);
+  });
+}
 
 renderCards();

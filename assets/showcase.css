@@ -18,10 +18,27 @@
   --text: #0d2d3e;
   --muted: #4a7080;
   --border: #e2edf2;
-  --gutter-w: 18px;
-  --gutter-left: #1cc5ca;
-  --gutter-right: #f77924;
 }
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--orange);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 0 0 4px 0;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -202,13 +219,19 @@ h1 em {
   background: transparent;
   border: 1.5px solid var(--border);
   color: var(--muted);
-  font-family: "Outfit", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 0.28rem 0.75rem;
-  border-radius: 999px;
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: all 0.18s;
+  transition: all 0.15s;
+}
+
+.f-btn:focus {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
 }
 .f-btn:hover {
   border-color: var(--teal-dark);

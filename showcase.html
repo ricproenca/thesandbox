@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Built by Students — The Sandbox</title>
+    <meta name="description" content="Real projects, built by real students. Browse the showcase of student work from The Sandbox technology club." />
+    <meta name="author" content="The Sandbox" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://thesandboxclub.netlify.app/showcase.html" />
+    <meta property="og:title" content="Built by Students — The Sandbox" />
+    <meta property="og:description" content="Real projects, built by real students during Sandbox sessions. No templates, no shortcuts." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thesandboxclub.netlify.app/showcase.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Built by Students — The Sandbox" />
+    <meta name="twitter:description" content="Real projects, built by real students during Sandbox sessions." />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/showcase.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>" />
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
     <nav>
       <a href="index.html" class="nav-logo">
         <img src="assets/logo.png" alt="The Sandbox" />
@@ -45,23 +58,23 @@
       </div>
     </div>
 
-    <div class="filter-bar" id="filter-bar">
+    <div class="filter-bar" id="filter-bar" role="group" aria-label="Filter projects">
       <span class="filter-label-text">Filter</span>
-      <button class="f-btn active" data-filter="all">All</button>
+      <button class="f-btn active" data-filter="all" aria-pressed="true">All</button>
       <div class="filter-sep"></div>
-      <button class="f-btn" data-filter="cat-games">Games</button>
-      <button class="f-btn" data-filter="cat-web">Web</button>
-      <button class="f-btn" data-filter="cat-ai">AI</button>
-      <button class="f-btn" data-filter="cat-data">Data</button>
-      <button class="f-btn" data-filter="cat-hardware">Hardware</button>
-      <button class="f-btn" data-filter="cat-tools">Tools</button>
+      <button class="f-btn" data-filter="cat-games" aria-pressed="false">Games</button>
+      <button class="f-btn" data-filter="cat-web" aria-pressed="false">Web</button>
+      <button class="f-btn" data-filter="cat-ai" aria-pressed="false">AI</button>
+      <button class="f-btn" data-filter="cat-data" aria-pressed="false">Data</button>
+      <button class="f-btn" data-filter="cat-hardware" aria-pressed="false">Hardware</button>
+      <button class="f-btn" data-filter="cat-tools" aria-pressed="false">Tools</button>
       <div class="filter-sep"></div>
-      <button class="f-btn" data-filter="level-newcomer">Newcomer</button>
-      <button class="f-btn" data-filter="level-beginner">Beginner</button>
-      <button class="f-btn" data-filter="level-intermediate">
+      <button class="f-btn" data-filter="level-newcomer" aria-pressed="false">Newcomer</button>
+      <button class="f-btn" data-filter="level-beginner" aria-pressed="false">Beginner</button>
+      <button class="f-btn" data-filter="level-intermediate" aria-pressed="false">
         Intermediate
       </button>
-      <button class="f-btn" data-filter="level-advanced">Advanced</button>
+      <button class="f-btn" data-filter="level-advanced" aria-pressed="false">Advanced</button>
     </div>
 
     <main id="main">

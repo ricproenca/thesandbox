@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto px-8 lg:px-12 py-6 flex items-center justify-between gap-4 flex-wrap border-t border-white/[0.06]">
         <Link href="/" className="flex items-center gap-2.5 no-underline">
           <Image
-            src="/assets/logo.png"
+            src="/assets/logo/sandbox_logo.png"
             alt="The Sandbox"
             width={28}
             height={28}

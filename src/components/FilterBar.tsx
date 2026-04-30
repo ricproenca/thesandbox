@@ -28,7 +28,7 @@ export default function FilterBar({
 }: FilterBarProps) {
   return (
     <div
-      className="bg-white border-b-2 border-teal px-8 lg:px-12 py-3 flex items-center gap-2 flex-wrap sticky top-16 z-[90] shadow-[0_2px_8px_rgba(13,45,62,0.06)]"
+      className="bg-white border-b-2 border-teal px-8 lg:px-12 py-3 flex items-center gap-2 flex-wrap sm:flex-nowrap overflow-x-auto sticky top-16 z-[90] shadow-[0_2px_8px_rgba(13,45,62,0.06)]"
       role="group"
       aria-label="Filter projects"
     >

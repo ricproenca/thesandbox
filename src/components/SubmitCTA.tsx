@@ -1,6 +1,6 @@
 export default function SubmitCTA() {
   return (
-    <div className="bg-navy rounded-[12px] px-10 py-9 flex items-center justify-between gap-6 mt-5">
+    <div className="bg-navy rounded-[12px] px-6 sm:px-10 py-8 flex flex-col sm:flex-row items-center gap-6 mt-5 text-center sm:text-left">
       <div>
         <div className="font-serif text-[22px] font-normal text-white mb-1">
           Got a project to show?

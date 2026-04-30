@@ -110,7 +110,7 @@ export default function HomePage() {
                 Project Spark
               </Link>
             </div>
-            <div className="flex flex-wrap gap-0">
+            <div className="flex flex-wrap gap-x-7 gap-y-3 mb-10">
               {[
                 { val: "44+", label: "Project ideas" },
                 { val: "6", label: "Topics" },
@@ -120,7 +120,7 @@ export default function HomePage() {
               ].map((stat, i) => (
                 <div
                   key={stat.label}
-                  className={`pr-7 mr-7 border-r border-white/10 ${i === 4 ? "border-0 pr-0 mr-0" : ""}`}
+                  className={`pr-7 border-r border-white/10 ${i === 4 ? "border-0 pr-0" : ""}`}
                 >
                   <div className="font-serif text-[28px] text-teal leading-none">
                     {stat.val}
@@ -133,7 +133,7 @@ export default function HomePage() {
             </div>
           </div>
           <Image
-            src="/assets/logo/sandbox_logo.png"
+            src="/assets/logo/sandbox_logo_transparent.png"
             alt="The Sandbox"
             width={240}
             height={240}
@@ -248,7 +248,7 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-          <div className="bg-navy rounded-[12px] px-10 py-9 flex items-center justify-between gap-6 flex-wrap">
+          <div className="bg-navy rounded-[12px] px-6 sm:px-10 py-8 flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
             <div>
               <div className="font-serif text-[22px] font-normal text-white mb-1">
                 Browse all projects in the Spark Gallery
@@ -375,7 +375,7 @@ export default function HomePage() {
               &middot; Showcase &middot;
             </Link>
           </div>
-          <div className="bg-navy rounded-[12px] px-10 py-9 flex items-center justify-between gap-6 flex-wrap">
+          <div className="bg-navy rounded-[12px] px-6 sm:px-10 py-8 flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
             <div>
               <span className="font-mono text-[10px] font-semibold tracking-[0.08em] uppercase bg-orange/12 border border-orange/30 text-orange px-[10px] py-[3px] rounded-full mb-2 inline-block">
                 Annual event
@@ -430,7 +430,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <div className="bg-navy rounded-[12px] px-10 py-9 flex items-center justify-between gap-6 flex-wrap">
+          <div className="bg-navy rounded-[12px] px-6 sm:px-10 py-8 flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
             <div>
               <div className="font-serif text-[22px] text-white mb-1">
                 Fill out the form to secure your spot

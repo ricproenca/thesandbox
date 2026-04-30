@@ -58,7 +58,7 @@ export default function SparkFilters({
           placeholder="Search projects..."
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
-          className="max-w-[300px] px-4 py-2 text-[0.85rem] border-[1.5px] border-border rounded-[8px] bg-white text-navy transition-[border-color,box-shadow] focus:outline-none focus:border-teal focus:shadow-[0_0_0_3px_rgba(28,197,202,0.1)] placeholder:text-muted font-body"
+          className="w-full sm:max-w-[300px] px-4 py-2 text-[0.85rem] border-[1.5px] border-border rounded-[8px] bg-white text-navy transition-[border-color,box-shadow] focus:outline-none focus:border-teal focus:shadow-[0_0_0_3px_rgba(28,197,202,0.1)] placeholder:text-muted font-body"
           aria-label="Search projects"
         />
         <FilterRow label="Topic">

@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="bg-navy sticky top-0 z-50 px-8 lg:px-12 h-16 flex items-center justify-between border-b border-white/[0.07]">
       <Link href="/" className="flex items-center gap-2.5 no-underline">
         <Image
-          src="/assets/logo/sandbox_logo.png"
+          src="/assets/logo/sandbox_logo_transparent.png"
           alt="The Sandbox"
           width={36}
           height={36}

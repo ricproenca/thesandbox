@@ -47,7 +47,7 @@ export default function Hero() {
         shortcuts. Each project is a student&apos;s own idea, built from
         scratch.
       </p>
-      <div className="flex flex-wrap gap-0">
+      <div className="flex flex-wrap gap-x-7 gap-y-3">
         {[
           { val: projects, label: "Projects built" },
           { val: students, label: "Students" },
@@ -55,7 +55,7 @@ export default function Hero() {
         ].map((stat, i) => (
           <div
             key={stat.label}
-            className={`pr-7 mr-7 border-r border-white/10 ${i === 2 ? "border-0 pr-0 mr-0" : ""}`}
+            className={`pr-7 border-r border-white/10 ${i === 2 ? "border-0 pr-0" : ""}`}
           >
             <div className="font-serif text-[28px] text-teal leading-none">
               <AnimatedCounter target={stat.val} />

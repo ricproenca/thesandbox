@@ -17,12 +17,12 @@ export default function ProjectCard({
     <button
       onClick={onClick}
       className={`bg-white border-[1.5px] border-border rounded-[14px] overflow-hidden cursor-pointer transition-[border-color,transform,box-shadow] duration-200 hover:border-teal hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(13,45,62,0.1)] text-left flex flex-col font-body animate-[fadeUp_0.4s_ease_both] ${
-        featured ? "col-span-full flex-row max-h-[260px]" : ""
+        featured ? "col-span-full flex-col md:flex-row max-h-[none] md:max-h-[260px]" : ""
       }`}
       style={{ animationDelay: `${delay}s` }}
     >
       <div
-        className={`${featured ? "w-[360px] flex-shrink-0 h-auto" : "h-[180px]"} relative overflow-hidden flex items-center justify-center`}
+        className={`${featured ? "w-full md:w-[360px] md:h-full flex-shrink-0 h-[180px]" : "h-[180px]"} relative overflow-hidden flex items-center justify-center`}
         style={{ background: project.bg }}
       >
         <div

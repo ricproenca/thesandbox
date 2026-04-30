@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Serif_Display, DM_Mono, Outfit } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const dmSerif = DM_Serif_Display({
   weight: "400",
@@ -21,24 +23,24 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Built by Students — The Sandbox",
+  title: "The Sandbox — Technology Club",
   description:
-    "Real projects, built by real students. Browse the showcase of student work from The Sandbox technology club.",
+    "An after-school technology club where students build their own projects at their own pace. No curriculum, no homework, no grades. Just a space where things get made. For KS3 to A Level.",
   authors: [{ name: "The Sandbox" }],
   robots: "index, follow",
-  alternates: { canonical: "https://thesandboxclub.netlify.app/showcase.html" },
+  alternates: { canonical: "https://thesandboxclub.netlify.app/" },
   openGraph: {
-    title: "Built by Students — The Sandbox",
+    title: "The Sandbox — Technology Club",
     description:
-      "Real projects, built by real students during Sandbox sessions. No templates, no shortcuts.",
+      "An after-school club where students choose their own project, work at their own pace, and leave with something real.",
     type: "website",
-    url: "https://thesandboxclub.netlify.app/showcase.html",
+    url: "https://thesandboxclub.netlify.app/",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Built by Students — The Sandbox",
+    title: "The Sandbox — Technology Club",
     description:
-      "Real projects, built by real students during Sandbox sessions.",
+      "An after-school club where students choose their own project, work at their own pace, and leave with something real.",
   },
 };
 
@@ -53,7 +55,12 @@ export default function RootLayout({
       className={`${dmSerif.variable} ${dmMono.variable} ${outfit.variable}`}
     >
       <body className="min-h-screen flex flex-col antialiased">
-        {children}
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
+        <Navbar />
+        <div className="flex-1">{children}</div>
+        <Footer />
       </body>
     </html>
   );

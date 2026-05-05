@@ -28,10 +28,11 @@ export default function FilterBar({
 }: FilterBarProps) {
   return (
     <div
-      className="bg-white border-b-2 border-teal px-8 lg:px-12 py-3 flex items-center gap-2 flex-wrap sm:flex-nowrap overflow-x-auto sticky top-16 z-[90] shadow-[0_2px_8px_rgba(13,45,62,0.06)]"
+      className="bg-white border-b-2 border-teal px-8 lg:px-12 py-3 shadow-[0_2px_8px_rgba(13,45,62,0.06)]"
       role="group"
       aria-label="Filter projects"
     >
+      <div className="max-w-[1200px] mx-auto flex items-center gap-2 flex-wrap sm:flex-nowrap overflow-x-auto">
       <span className="font-mono text-[10px] text-muted tracking-[0.1em] uppercase mr-1">
         Filter
       </span>
@@ -62,6 +63,7 @@ export default function FilterBar({
           onClick={onFilterChange}
         />
       ))}
+      </div>
     </div>
   );
 }

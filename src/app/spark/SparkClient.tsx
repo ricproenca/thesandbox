@@ -43,7 +43,7 @@ export default function SparkClient() {
         search={search}
         onSearchChange={setSearch}
       />
-      <main id="grid" className="max-w-[1200px] mx-auto px-8 lg:px-12 py-8 pb-16">
+      <main id="grid" className="max-w-[1200px] mx-auto px-8 lg:px-12 py-16">
         <div className="mb-4 text-sm text-muted font-mono">
           {filtered.length} project{filtered.length !== 1 ? "s" : ""}
           {activeCat !== "all" || activeLevel !== "all" || activeLang !== "all" || search ? " found" : ""}

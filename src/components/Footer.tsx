@@ -24,18 +24,6 @@ export default function Footer() {
           Academic Year 2025/26
         </div>
       </div>
-      <div className="max-w-[1200px] mx-auto px-8 lg:px-12 pb-6">
-        <div className="bg-navy/5 border border-navy/10 rounded-[10px] px-5 py-4 flex items-start gap-4">
-          <span className="text-2xl flex-shrink-0">🤖</span>
-          <div className="text-[14px] text-navy/60 leading-[1.65]">
-            <strong className="text-navy/80 font-semibold">Built with AI, supervised by a human.</strong> This website
-            was designed and developed using AI tools under the supervision of a
-            CS teacher &mdash; a real example of how The Sandbox approaches
-            technology: use it well, understand what it produces, and take
-            responsibility for the result.
-          </div>
-        </div>
-      </div>
     </footer>
   );
 }

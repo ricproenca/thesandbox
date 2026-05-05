@@ -5,6 +5,7 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import ShowcaseSection from "@/components/ShowcaseSection";
 import PracticalInfoSection from "@/components/PracticalInfoSection";
 import DisclaimerSection from "@/components/DisclaimerSection";
+import AiTransparencySection from "@/components/AiTransparencySection";
 import CTASection from "@/components/CTASection";
 
 export default function HomePage() {
@@ -18,6 +19,7 @@ export default function HomePage() {
       <PracticalInfoSection />
       <DisclaimerSection />
       <CTASection />
+      <AiTransparencySection />
     </main>
   );
 }

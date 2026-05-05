@@ -71,7 +71,7 @@ export default function HomePage() {
   return (
     <main id="main-content">
       {/* HERO */}
-      <section className="bg-navy px-8 lg:px-12 pt-16 pb-12 relative overflow-hidden">
+      <section className="px-8 lg:px-12 pt-16 pb-12 relative overflow-hidden">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -79,14 +79,21 @@ export default function HomePage() {
               "radial-gradient(ellipse 50% 100% at 90% 50%, rgba(28, 197, 202, 0.05), transparent 70%)",
           }}
         />
-        <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row md:items-center gap-10">
+        <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-24">
+          <Image
+            src="/assets/logo/sandbox_logo.png"
+            alt="The Sandbox"
+            width={320}
+            height={320}
+            className="rounded-xl opacity-90 flex-shrink-0"
+          />
           <div>
-            <h1 className="font-serif text-[clamp(32px,5vw,52px)] font-normal text-white leading-[1.05] mb-4">
+            <h1 className="font-serif text-[clamp(32px,5vw,52px)] font-normal text-navy leading-[1.05] mb-4">
               What will you
               <br />
               <em className="text-orange italic">build?</em>
             </h1>
-            <p className="text-[16px] text-white/55 leading-[1.7] max-w-[520px] mb-6">
+            <p className="text-[16px] text-muted leading-[1.7] max-w-[520px] mb-6">
               An after-school club where you choose your own project, work at your
               own pace, and leave with something real.
             </p>
@@ -105,7 +112,7 @@ export default function HomePage() {
               </a>
               <Link
                 href="/spark"
-                className="border border-white/20 text-white text-[14px] font-bold px-6 py-3 rounded-[8px] no-underline inline-flex items-center gap-1.5 transition-colors hover:border-teal hover:text-teal"
+                className="border border-navy/20 text-navy text-[14px] font-bold px-6 py-3 rounded-[8px] no-underline inline-flex items-center gap-1.5 transition-colors hover:border-teal hover:text-teal"
               >
                 Project Spark
               </Link>
@@ -120,25 +127,18 @@ export default function HomePage() {
               ].map((stat, i) => (
                 <div
                   key={stat.label}
-                  className={`pr-7 border-r border-white/10 ${i === 4 ? "border-0 pr-0" : ""}`}
+                  className={`pr-7 border-r border-navy/10 ${i === 4 ? "border-0 pr-0" : ""}`}
                 >
-                  <div className="font-serif text-[28px] text-teal leading-none">
+                  <div className="font-serif text-[28px] text-teal-dark leading-none">
                     {stat.val}
                   </div>
-                  <div className="text-[11px] text-white/35 mt-1 font-mono tracking-[0.04em]">
+                  <div className="text-[11px] text-muted/60 mt-1 font-mono tracking-[0.04em]">
                     {stat.label}
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <Image
-            src="/assets/logo/sandbox_logo_transparent.png"
-            alt="The Sandbox"
-            width={240}
-            height={240}
-            className="rounded-xl opacity-90 flex-shrink-0 order-first md:order-last"
-          />
         </div>
       </section>
 
@@ -248,7 +248,7 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-          <div className="bg-navy rounded-[12px] px-6 sm:px-10 py-8 flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+          <div className="bg-navy rounded-[12px] px-6 sm:px-10 py-8 flex flex-col sm:flex-row items-center sm:justify-between gap-6 text-center sm:text-left">
             <div>
               <div className="font-serif text-[22px] font-normal text-white mb-1">
                 Browse all projects in the Spark Gallery
@@ -306,7 +306,7 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-5">
+          <div className="grid grid-cols-3 gap-5">
             <div className="border-[1.5px] border-border rounded-[14px] p-6">
               <div className="font-mono text-[10px] tracking-[0.1em] uppercase text-muted mb-1">
                 When &amp; where
@@ -375,7 +375,7 @@ export default function HomePage() {
               &middot; Showcase &middot;
             </Link>
           </div>
-          <div className="bg-navy rounded-[12px] px-6 sm:px-10 py-8 flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+          <div className="bg-navy rounded-[12px] px-6 sm:px-10 py-8 flex flex-col sm:flex-row items-center sm:justify-between gap-6 text-center sm:text-left">
             <div>
               <span className="font-mono text-[10px] font-semibold tracking-[0.08em] uppercase bg-orange/12 border border-orange/30 text-orange px-[10px] py-[3px] rounded-full mb-2 inline-block">
                 Annual event
@@ -430,7 +430,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <div className="bg-navy rounded-[12px] px-6 sm:px-10 py-8 flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+          <div className="bg-navy rounded-[12px] px-6 sm:px-10 py-8 flex flex-col sm:flex-row items-center sm:justify-between gap-6 text-center sm:text-left">
             <div>
               <div className="font-serif text-[22px] text-white mb-1">
                 Fill out the form to secure your spot
@@ -452,15 +452,18 @@ export default function HomePage() {
       </section>
 
       {/* DISCLAIMER */}
-      <section className="bg-bg px-8 lg:px-12 py-12">
+      <section className="bg-white px-8 lg:px-12 py-16">
         <div className="max-w-[1200px] mx-auto">
-          <div className="border-[1.5px] border-border rounded-[14px] p-8 bg-white flex items-start gap-4">
-            <span className="text-[24px] flex-shrink-0">📋</span>
+          <div className="border-l-4 border-teal bg-teal/5 rounded-r-[14px] p-8 flex items-start gap-6">
+            <span className="text-[36px] flex-shrink-0">📋</span>
             <div>
-              <h3 className="font-serif text-[18px] text-navy mb-3">
+              <h3 className="font-serif text-[22px] text-navy mb-1">
                 A note for students &amp; parents
               </h3>
-              <div className="text-[14px] text-muted leading-[1.7] space-y-3">
+              <p className="text-[14px] text-navy/70 mb-6">
+                Please read — important information about how the club works.
+              </p>
+              <div className="text-[15px] text-navy/75 leading-[1.75] space-y-4">
                 <p>
                   The Sandbox is a voluntary, co-curricular activity.
                   Participation is entirely optional and carries no academic
@@ -475,12 +478,10 @@ export default function HomePage() {
                   accepts no liability for loss or damage.
                 </p>
                 <p>
-                  AI tools (Claude, ChatGPT, GitHub Copilot) are used as
-                  professional learning aids under the club&apos;s explicit
+                  AI tools are used as professional learning aids under the club&apos;s explicit
                   policy:{" "}
-                  <strong className="text-navy">
-                    you may use AI on any project — if you can explain every
-                    line of the output.
+                  <strong className="text-navy font-semibold">
+                    you may use AI on any project — if you can explain the output.
                   </strong>{" "}
                   Students are taught to verify, question, and understand
                   AI-generated code rather than treat it as an answer.
@@ -496,12 +497,28 @@ export default function HomePage() {
                   Questions?{" "}
                   <a
                     href="mailto:ricardo.duarteproenca@education.lu"
-                    className="text-teal-dark no-underline hover:underline"
+                    className="text-teal-dark font-semibold no-underline hover:underline"
                   >
                     Contact us
                   </a>
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI TRANSPARENCY */}
+      <section className="bg-bg px-8 lg:px-12 py-10">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="bg-navy rounded-[12px] px-6 sm:px-10 py-6 flex items-center gap-5 border border-white/[0.08]">
+            <span className="text-2xl flex-shrink-0">🤖</span>
+            <div className="text-[14px] text-white/60 leading-[1.65]">
+              <strong className="text-white/80 font-semibold">Built with AI, supervised by a human.</strong> This website
+              was designed and developed using AI tools under the supervision of a
+              CS teacher &mdash; a real example of how The Sandbox approaches
+              technology: use it well, understand what it produces, and take
+              responsibility for the result.
             </div>
           </div>
         </div>

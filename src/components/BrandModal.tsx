@@ -70,43 +70,45 @@ export default function BrandModal({ src, alt, onClose, prev, next }: BrandModal
        <div
          ref={containerRef}
          tabIndex={-1}
-         className="relative w-[90vw] h-[90vh] cursor-default outline-none"
+         className="flex flex-col items-center cursor-default outline-none"
          onClick={(e) => e.stopPropagation()}
        >
-        <button
-          onClick={handleClose}
-          className="absolute -top-12 right-0 text-white/70 hover:text-white text-2xl bg-transparent border-none cursor-pointer p-2 rounded"
-          aria-label="Close preview"
-        >
-          &times;
-        </button>
-        {prev && (
-          <button
-            onClick={prev}
-            className="absolute -left-12 top-1/2 -translate-y-1/2 text-white/70 hover:text-white text-3xl bg-transparent border-none cursor-pointer p-4 rounded"
-            aria-label="Previous image"
-          >
-            &#8249;
-          </button>
-        )}
-        {next && (
-          <button
-            onClick={next}
-            className="absolute -right-12 top-1/2 -translate-y-1/2 text-white/70 hover:text-white text-3xl bg-transparent border-none cursor-pointer p-4 rounded"
-            aria-label="Next image"
-          >
-            &#8250;
-          </button>
-        )}
-        <Image
-          src={src}
-          alt={alt}
-          fill
-          sizes="90vw"
-          className="object-contain rounded-lg"
-        />
-        <div className="text-center text-white/50 text-sm mt-3 font-mono">{alt}</div>
-      </div>
+         <button
+           onClick={handleClose}
+           className="absolute -top-12 right-0 text-white/70 hover:text-white text-2xl bg-transparent border-none cursor-pointer p-2 rounded"
+           aria-label="Close preview"
+         >
+           &times;
+         </button>
+         {prev && (
+           <button
+             onClick={prev}
+             className="absolute -left-12 top-1/2 -translate-y-1/2 text-white/70 hover:text-white text-3xl bg-transparent border-none cursor-pointer p-4 rounded"
+             aria-label="Previous image"
+           >
+             &#8249;
+           </button>
+         )}
+         {next && (
+           <button
+             onClick={next}
+             className="absolute -right-12 top-1/2 -translate-y-1/2 text-white/70 hover:text-white text-3xl bg-transparent border-none cursor-pointer p-4 rounded"
+             aria-label="Next image"
+           >
+             &#8250;
+           </button>
+         )}
+         <div className="relative w-[90vw] h-[85vh]">
+           <Image
+             src={src}
+             alt={alt}
+             fill
+             sizes="90vw"
+             className="object-contain rounded-lg"
+           />
+         </div>
+         <div className="text-center text-white/50 text-sm mt-3 font-mono">{alt}</div>
+       </div>
     </div>
   );
 }

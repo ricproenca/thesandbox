@@ -34,24 +34,27 @@ export default function BrandWallpapers() {
         {WALLPAPERS.map((w, i) => (
           <div
             key={w.label}
-            className="border-[1.5px] border-border rounded-[14px] overflow-hidden bg-white cursor-pointer transition-[border-color,transform,box-shadow] hover:border-teal hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(13,45,62,0.08)]"
-            onClick={() => open(i)}
+            className="border-[1.5px] border-border rounded-[14px] overflow-hidden bg-white transition-[border-color,transform,box-shadow] hover:border-teal hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(13,45,62,0.08)]"
           >
-            <div className="relative aspect-video">
+            <button
+              onClick={() => open(i)}
+              className="relative aspect-video w-full cursor-pointer border-none p-0 bg-transparent"
+              aria-label={`Preview ${w.label}`}
+            >
               <Image
                 src={w.src}
                 alt={w.label}
                 fill
                 className="object-cover"
               />
-            </div>
+            </button>
             <div className="px-4 py-3 mt-2 flex items-center justify-between">
               <span className="text-[13px] text-navy font-semibold">{w.label}</span>
               <a
                 href={w.src}
                 download
-                onClick={(e) => e.stopPropagation()}
                 className="text-[12px] font-bold text-teal-dark no-underline border border-teal-dark/30 px-3 py-1 rounded-sm hover:bg-teal-dark hover:text-white transition-colors"
+                aria-label={`Download ${w.label}`}
               >
                 &darr;
               </a>

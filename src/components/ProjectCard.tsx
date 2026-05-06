@@ -27,6 +27,7 @@ export default function ProjectCard({
       >
         <div
           dangerouslySetInnerHTML={{ __html: makeSVGBg(project.cat, cc.text) }}
+          aria-hidden="true"
         />
         <span className="text-[56px] relative z-10 drop-shadow-[0_4px_16px_rgba(0,0,0,0.12)]">
           {project.emoji}

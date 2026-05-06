@@ -57,21 +57,21 @@ export default function HeroSection() {
               Project Spark
             </Link>
           </div>
-          <div className="flex flex-wrap gap-x-7 gap-y-3 mb-10">
+          <dl className="flex flex-wrap gap-x-7 gap-y-3 mb-10">
             {STATS.map((stat, i) => (
               <div
                 key={stat.label}
                 className={`pr-7 border-r border-navy/10 ${i === 4 ? "border-0 pr-0" : ""}`}
               >
-                <div className="font-serif text-[28px] text-teal-dark leading-none">
+                <dt className="font-serif text-[28px] text-teal-dark leading-none">
                   {stat.val}
-                </div>
-                <div className="text-[11px] text-muted/60 mt-1 font-mono tracking-[0.04em]">
+                </dt>
+                <dd className="text-[11px] text-muted/60 mt-1 font-mono tracking-[0.04em]">
                   {stat.label}
-                </div>
+                </dd>
               </div>
             ))}
-          </div>
+          </dl>
         </div>
       </div>
     </section>

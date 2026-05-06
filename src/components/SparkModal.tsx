@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import { CAT_COLORS, type SparkProject } from "@/lib/spark";
 
 function makeModalVisual(p: SparkProject): string {
@@ -23,19 +23,53 @@ interface SparkModalProps {
 }
 
 export default function SparkModal({ project, onClose }: SparkModalProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const previouslyFocusedRef = useRef<HTMLElement | null>(null);
+
   useEffect(() => {
-    function handleKey(e: KeyboardEvent) {
-      if (e.key === "Escape") onClose();
-    }
     if (project) {
-      document.addEventListener("keydown", handleKey);
-      document.body.style.overflow = "hidden";
+      previouslyFocusedRef.current = document.activeElement as HTMLElement;
+      setTimeout(() => containerRef.current?.focus(), 0);
     }
+  }, [project]);
+
+  const handleClose = useCallback(() => {
+    onClose();
+    previouslyFocusedRef.current?.focus();
+  }, [onClose]);
+
+  useEffect(() => {
+    if (!project) return;
+    function handleKey(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        handleClose();
+      }
+      if (e.key === "Tab") {
+        const el = containerRef.current;
+        if (!el) return;
+        const focusable = Array.from(
+          el.querySelectorAll<HTMLElement>("button, [href], [tabindex]:not([tabindex='-1'])")
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    }
+    document.addEventListener("keydown", handleKey);
+    document.body.style.overflow = "hidden";
     return () => {
       document.removeEventListener("keydown", handleKey);
       document.body.style.overflow = "";
     };
-  }, [project, onClose]);
+  }, [project, handleClose]);
 
   if (!project) return null;
 
@@ -45,21 +79,30 @@ export default function SparkModal({ project, onClose }: SparkModalProps) {
     <div
       className="fixed inset-0 bg-navy/70 backdrop-blur-sm z-[200] flex items-center justify-center p-8 transition-opacity duration-200"
       onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
+        if (e.target === e.currentTarget) handleClose();
       }}
+      role="dialog"
+      aria-modal="true"
+      aria-label={`${project.title} project details`}
     >
-      <div className="bg-white border-2 border-teal rounded-[16px] w-full max-w-[560px] max-h-[85vh] overflow-y-auto transition-transform duration-250 translate-y-0 scale-100">
+      <div
+        ref={containerRef}
+        tabIndex={-1}
+        className="bg-white border-2 border-teal rounded-[16px] w-full max-w-[560px] max-h-[85vh] overflow-y-auto transition-transform duration-250 translate-y-0 scale-100 outline-none"
+      >
         <div
           className="h-[180px] rounded-t-[14px] overflow-hidden relative flex items-center justify-center"
           style={{ background: project.bg }}
         >
           <button
-            onClick={onClose}
+            onClick={handleClose}
             className="absolute top-4 right-4 bg-navy/50 border border-white/20 text-white w-[30px] h-[30px] rounded-full cursor-pointer flex items-center justify-center transition-all duration-150 hover:bg-navy/80 text-[0.9rem] z-10"
+            aria-label="Close project details"
           >
             &times;
           </button>
           <div
+            aria-hidden="true"
             dangerouslySetInnerHTML={{
               __html: makeModalVisual(project),
             }}
@@ -88,7 +131,7 @@ export default function SparkModal({ project, onClose }: SparkModalProps) {
             {project.questions.map((q) => (
               <li
                 key={q}
-                className="text-[0.85rem] text-navy px-[0.85rem] py-[0.6rem] bg-[#edf1f5] border-[1.5px] border-border rounded-[8px] leading-[1.5] cursor-pointer transition-all duration-150 hover:border-teal-dark hover:text-teal-dark hover:bg-teal-dim"
+                className="text-[0.85rem] text-navy px-[0.85rem] py-[0.6rem] bg-[#edf1f5] border-[1.5px] border-border rounded-[8px] leading-[1.5]"
               >
                 <span className="font-mono text-muted/40">&rarr; </span>
                 {q}

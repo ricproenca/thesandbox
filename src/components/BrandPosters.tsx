@@ -48,24 +48,27 @@ export default function BrandPosters() {
         {POSTERS.map((poster, i) => (
           <div
             key={poster.label}
-            className="border-[1.5px] border-border rounded-[14px] overflow-hidden bg-white cursor-pointer transition-[border-color,transform,box-shadow] hover:border-teal hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(13,45,62,0.08)]"
-            onClick={() => open(i)}
+            className="border-[1.5px] border-border rounded-[14px] overflow-hidden bg-white transition-[border-color,transform,box-shadow] hover:border-teal hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(13,45,62,0.08)]"
           >
-            <div className="relative aspect-[3/4]">
+            <button
+              onClick={() => open(i)}
+              className="relative aspect-[3/4] w-full cursor-pointer border-none p-0 bg-transparent"
+              aria-label={`Preview ${poster.label}`}
+            >
               <Image
                 src={poster.src}
                 alt={poster.label}
                 fill
                 className="object-cover"
               />
-            </div>
+            </button>
             <div className="px-4 py-3 mt-2 flex items-center justify-between">
               <span className="text-[14px] text-navy font-semibold">{poster.label}</span>
               <a
                 href={poster.src}
                 download
-                onClick={(e) => e.stopPropagation()}
                 className="text-[12px] font-bold text-teal-dark no-underline border border-teal-dark/30 px-3 py-1 rounded-sm hover:bg-teal-dark hover:text-white transition-colors"
+                aria-label={`Download ${poster.label}`}
               >
                 &darr; Download
               </a>

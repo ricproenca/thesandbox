@@ -49,6 +49,7 @@ export default function SparkGrid({
             >
               <div
                 dangerouslySetInnerHTML={{ __html: makeVisual(p) }}
+                aria-hidden="true"
               />
               <span className="text-[2.75rem] relative z-10 drop-shadow-[0_2px_8px_rgba(0,0,0,0.15)]">
                 {p.emoji}

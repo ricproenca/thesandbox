@@ -43,6 +43,7 @@ export default function BrandLogos() {
               href={logo.src}
               download
               className="text-[13px] font-bold text-teal-dark no-underline border border-teal-dark/30 px-4 py-2 rounded-sm hover:bg-teal-dark hover:text-white transition-colors"
+              aria-label={`Download ${logo.label} logo`}
             >
               &darr; Download
             </a>

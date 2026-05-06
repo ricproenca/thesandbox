@@ -82,7 +82,7 @@ function FilterButton({
   const isActive = active === value;
   return (
     <button
-      className={`border-[1.5px] font-mono text-[11px] tracking-[0.04em] uppercase px-3 py-1.5 rounded-sm cursor-pointer transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-teal focus:ring-offset-1 ${
+      className={`border-[1.5px] font-mono text-[11px] tracking-[0.04em] uppercase px-3 py-1.5 rounded-sm cursor-pointer transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-1 ${
         isActive
           ? "bg-teal-dark border-teal-dark text-white font-semibold"
           : "border-border text-muted hover:border-teal-dark hover:text-teal-dark hover:bg-teal-dim"

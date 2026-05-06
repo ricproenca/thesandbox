@@ -14,6 +14,15 @@ const POSTERS = [
   { src: "/assets/posters/poster_6.png", label: "Poster 6" },
   { src: "/assets/posters/poster_7.png", label: "Poster 7" },
   { src: "/assets/posters/poster_8.png", label: "Poster 8" },
+  { src: "/assets/posters/sandbox_poster_1.png", label: "Sandbox Poster 1" },
+  { src: "/assets/posters/sandbox_poster_2.png", label: "Sandbox Poster 2" },
+  { src: "/assets/posters/sandbox_poster_3.png", label: "Sandbox Poster 3" },
+  { src: "/assets/posters/sandbox_poster_4.png", label: "Sandbox Poster 4" },
+  { src: "/assets/posters/sandbox_poster_5.png", label: "Sandbox Poster 5" },
+  { src: "/assets/posters/sandbox_poster_6.png", label: "Sandbox Poster 6" },
+  { src: "/assets/posters/sandbox_poster_7.png", label: "Sandbox Poster 7" },
+  { src: "/assets/posters/sandbox_poster_8.png", label: "Sandbox Poster 8" },
+  { src: "/assets/posters/sandbox_poster_9.png", label: "Sandbox Poster 9" },
 ];
 
 export default function BrandPosters() {
@@ -50,7 +59,7 @@ export default function BrandPosters() {
                 className="object-cover"
               />
             </div>
-            <div className="px-4 py-3 flex items-center justify-between">
+            <div className="px-4 py-3 mt-2 flex items-center justify-between">
               <span className="text-[14px] text-navy font-semibold">{poster.label}</span>
               <a
                 href={poster.src}

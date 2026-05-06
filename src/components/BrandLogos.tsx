@@ -6,6 +6,7 @@ const LOGOS = [
   { src: "/assets/logo/sandbox_logo_black.png", label: "Black" },
   { src: "/assets/logo/sandbox_logo_minimal.png", label: "Minimal" },
   { src: "/assets/logo/sandbox_logo_minimal-removebg-preview.png", label: "Minimal (No BG)" },
+  { src: "/assets/logo/sandbox_qr_code.png", label: "QR Code" },
 ];
 
 export default function BrandLogos() {
@@ -35,7 +36,7 @@ export default function BrandLogos() {
                 className="object-contain"
               />
             </div>
-            <div className="text-[14px] text-navy font-semibold text-center mb-3">
+            <div className="text-[14px] text-navy font-semibold text-center mb-3 mt-4">
               {logo.label}
             </div>
             <a

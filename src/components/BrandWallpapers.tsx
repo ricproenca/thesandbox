@@ -9,8 +9,6 @@ const WALLPAPERS = [
   { src: "/assets/wallpapers/wallpaper_1.png", label: "Wallpaper 1" },
   { src: "/assets/wallpapers/wallpaper_2.png", label: "Wallpaper 2" },
   { src: "/assets/wallpapers/wallpaper_3.png", label: "Wallpaper 3" },
-  { src: "/assets/wallpapers/wallpaper_4.png", label: "Wallpaper 4" },
-  { src: "/assets/wallpapers/wallpaper_5.png", label: "Wallpaper 5" },
 ];
 
 export default function BrandWallpapers() {
@@ -47,7 +45,7 @@ export default function BrandWallpapers() {
                 className="object-cover"
               />
             </div>
-            <div className="px-4 py-3 flex items-center justify-between">
+            <div className="px-4 py-3 mt-2 flex items-center justify-between">
               <span className="text-[13px] text-navy font-semibold">{w.label}</span>
               <a
                 href={w.src}

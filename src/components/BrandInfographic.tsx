@@ -31,7 +31,7 @@ export default function BrandInfographic() {
             className="object-contain bg-bg"
           />
         </div>
-        <div className="px-5 py-3 flex items-center justify-between border-t border-border">
+        <div className="px-5 py-3 mt-3 flex items-center justify-between border-t border-border">
           <span className="text-[14px] text-navy font-semibold">Sandbox Infographic</span>
           <a
             href="/assets/others/infographic.png"

@@ -29,18 +29,31 @@ export const metadata: Metadata = {
   authors: [{ name: "The Sandbox" }],
   robots: "index, follow",
   alternates: { canonical: "https://thesandboxclub.netlify.app/" },
+  icons: {
+    icon: "/assets/icons/favicon.ico",
+    apple: "/assets/icons/apple-touch-icon.png",
+  },
   openGraph: {
     title: "The Sandbox — Technology Club",
     description:
       "An after-school club where students choose their own project, work at their own pace, and leave with something real.",
     type: "website",
     url: "https://thesandboxclub.netlify.app/",
+    images: [
+      {
+        url: "/assets/icons/icon-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "The Sandbox Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "The Sandbox — Technology Club",
     description:
       "An after-school club where students choose their own project, work at their own pace, and leave with something real.",
+    images: ["/assets/icons/icon-512x512.png"],
   },
 };
 

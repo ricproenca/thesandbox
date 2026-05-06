@@ -1,10 +1,27 @@
 import { TIMELINE_STEPS } from "@/lib/timeline";
 import Section from "./Section";
 
-const INFO_CARDS = [
-  { label: "When & where", val: "Weekly · 2 hours", sub: "Same room, same time each week. School computers provided." },
-  { label: "Who can join", val: "KS3 to A Level", sub: "No experience needed. Newcomers as welcome as advanced students." },
-  { label: "The AI rule", val: "Use it — if you can explain every line.", sub: "AI is a professional tool here. Not a shortcut.", dark: true },
+const UNSTUCK_LAYERS = [
+  {
+    layer: "1",
+    source: "Yourself",
+    how: "Read the error. Google it. Try one fix. Spend at least 10 minutes before moving on.",
+  },
+  {
+    layer: "2",
+    source: "A peer",
+    how: "Describe the problem out loud to another student. Most bugs get solved in this step.",
+  },
+  {
+    layer: "3",
+    source: "AI tools",
+    how: "Claude, ChatGPT, Copilot. Paste the error and your code. Read and understand the answer before applying.",
+  },
+  {
+    layer: "4",
+    source: "The teacher",
+    how: "Can ask after layers 1–3. Explain what you tried and what the AI said.",
+  },
 ];
 
 export default function HowItWorksSection() {
@@ -22,44 +39,68 @@ export default function HowItWorksSection() {
         Two hours. Five moments. No lectures, no homework, no grades — just
         structured time to build.
       </p>
-      <div className="relative mb-10">
-        <div className="absolute left-4 top-8 bottom-8 w-px bg-border" />
-        <div className="space-y-8">
-          {TIMELINE_STEPS.map((step) => (
-            <div key={step.num} className="relative pl-12">
-              <div className="absolute left-0 top-0 w-8 h-8 rounded-full bg-navy text-white font-mono text-[13px] font-bold flex items-center justify-center z-10">
-                {step.num}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        {/* Timeline - Left */}
+        <div className="relative">
+          <div className="absolute left-4 top-8 bottom-8 w-px bg-border" />
+          <div className="space-y-8">
+            {TIMELINE_STEPS.map((step) => (
+              <div key={step.num} className="relative pl-12">
+                <div className="absolute left-0 top-0 w-8 h-8 rounded-full bg-navy text-white font-mono text-[13px] font-bold flex items-center justify-center z-10">
+                  {step.num}
+                </div>
+                <div className="font-mono text-[11px] text-teal mb-1">
+                  {step.time}
+                </div>
+                <h3 className="font-serif text-[18px] text-navy mb-1">
+                  {step.title}
+                </h3>
+                <p className="text-[14px] text-muted leading-[1.6]">
+                  {step.desc}
+                </p>
               </div>
-              <div className="font-mono text-[11px] text-teal mb-1">
-                {step.time}
-              </div>
-              <h3 className="font-serif text-[18px] text-navy mb-1">
-                {step.title}
-              </h3>
-              <p className="text-[14px] text-muted leading-[1.6]">
-                {step.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="grid grid-cols-3 gap-5">
-        {INFO_CARDS.map((item, i) => (
-          <div
-            key={i}
-            className={`border-[1.5px] border-border rounded-[14px] p-6 ${item.dark ? "bg-navy border-navy" : ""}`}
-          >
-            <div className={`font-mono text-[10px] tracking-[0.1em] uppercase mb-1 ${item.dark ? "text-teal" : "text-muted"}`}>
-              {item.label}
-            </div>
-            <div className={`font-serif text-[20px] mb-1 ${item.dark ? "text-white" : "text-navy"}`}>
-              {item.val}
-            </div>
-            <div className={`text-[13px] ${item.dark ? "text-white/50" : "text-muted"}`}>
-              {item.sub}
-            </div>
+            ))}
           </div>
-        ))}
+        </div>
+        {/* How students get unstuck - Right */}
+        <div>
+          <h3 className="font-serif text-[20px] text-navy mb-1">
+            How students get unstuck
+          </h3>
+          <p className="text-[13px] text-muted mb-6 leading-[1.6]">
+            Before a student can ask the teacher for help, they work through four
+            layers in order. AI sits at Layer 3 — a professional tool, not a first resort.
+          </p>
+          <div className="border-[1.5px] border-border rounded-[14px] overflow-hidden">
+            <table className="w-full text-left">
+              <thead>
+                <tr className="bg-navy text-white font-mono text-[10px] tracking-[0.1em] uppercase">
+                  <th className="px-4 py-3 font-semibold">Layer</th>
+                  <th className="px-4 py-3 font-semibold">Source</th>
+                  <th className="px-4 py-3 font-semibold">How to use it</th>
+                </tr>
+              </thead>
+              <tbody>
+                {UNSTUCK_LAYERS.map((item, i) => (
+                  <tr
+                    key={item.layer}
+                    className={i % 2 === 0 ? "bg-bg" : "bg-white"}
+                  >
+                    <td className="px-4 py-3 font-mono text-[13px] font-bold text-navy border-t border-border">
+                      {item.layer}
+                    </td>
+                    <td className="px-4 py-3 font-mono text-[12px] text-teal border-t border-border">
+                      {item.source}
+                    </td>
+                    <td className="px-4 py-3 text-[13px] text-muted leading-[1.5] border-t border-border">
+                      {item.how}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </Section>
   );

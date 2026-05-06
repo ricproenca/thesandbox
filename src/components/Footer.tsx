@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center gap-4">
           <Link href="/brand" className="group relative text-[2.75rem] text-navy/70 no-underline transition-colors hover:text-teal leading-none" aria-label="Brand">
-            🎨
+            🏷️
             <span className="absolute -top-8 left-1/2 -translate-x-1/2 text-[11px] font-medium text-navy bg-bg border border-navy/10 rounded px-2 py-0.5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
               Brand
             </span>

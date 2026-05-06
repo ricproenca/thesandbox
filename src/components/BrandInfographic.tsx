@@ -26,16 +26,18 @@ export default function BrandInfographic() {
           aria-label="Preview Sandbox Infographic full size"
         >
           <Image
-            src="/assets/others/infographic.png"
-            alt="The Sandbox Infographic"
-            fill
-            className="object-contain bg-bg"
-          />
+             src="/assets/others/sandbox_info.png"
+             alt="The Sandbox Infographic"
+             fill
+             sizes="(max-width: 800px) 100vw, 800px"
+             priority
+             className="object-contain bg-bg"
+           />
         </button>
         <div className="px-5 py-3 mt-3 flex items-center justify-between border-t border-border">
           <span className="text-[14px] text-navy font-semibold">Sandbox Infographic</span>
           <a
-            href="/assets/others/infographic.png"
+            href="/assets/others/sandbox_info.png"
             download
             className="text-[13px] font-bold text-teal-dark no-underline border border-teal-dark/30 px-4 py-2 rounded-sm hover:bg-teal-dark hover:text-white transition-colors"
             aria-label="Download Sandbox Infographic"
@@ -46,7 +48,7 @@ export default function BrandInfographic() {
       </div>
       {open && (
         <BrandModal
-          src="/assets/others/infographic.png"
+          src="/assets/others/sandbox_info.png"
           alt="The Sandbox Infographic"
           onClose={() => setOpen(false)}
         />

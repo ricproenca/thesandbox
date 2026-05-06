@@ -22,7 +22,9 @@ export default function AboutSection() {
           <div
             key={p.title}
             className={`border-[1.5px] border-border rounded-[14px] p-6 relative ${
-              p.badge ? "bg-navy border-navy" : "bg-white"
+              p.badge
+                ? "bg-[#fffbeb] border-[rgba(180,83,9,0.2)]"
+                : "bg-white"
             }`}
           >
             {p.badge && (
@@ -31,13 +33,11 @@ export default function AboutSection() {
               </span>
             )}
             <span className="text-[32px] mb-3 block">{p.icon}</span>
-            <h3
-              className={`font-semibold text-[16px] mb-2 ${p.badge ? "text-white" : "text-navy"}`}
-            >
+            <h3 className={`font-semibold text-[16px] mb-2 ${p.badge ? "text-navy" : "text-navy"}`}>
               {p.title}
             </h3>
             <p
-              className={`text-[14px] leading-[1.6] ${p.badge ? "text-white/50" : "text-muted"}`}
+              className={`text-[14px] leading-[1.6] ${p.badge ? "text-[#78450a]" : "text-muted"}`}
             >
               {p.desc}
             </p>

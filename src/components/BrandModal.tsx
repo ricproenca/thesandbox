@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useCallback } from "react";
+import Image from "next/image";
 
 interface BrandModalProps {
   src: string;
@@ -66,12 +67,12 @@ export default function BrandModal({ src, alt, onClose, prev, next }: BrandModal
       aria-modal="true"
       aria-label={`Image preview: ${alt}`}
     >
-      <div
-        ref={containerRef}
-        tabIndex={-1}
-        className="relative max-w-[90vw] max-h-[90vh] cursor-default outline-none"
-        onClick={(e) => e.stopPropagation()}
-      >
+       <div
+         ref={containerRef}
+         tabIndex={-1}
+         className="relative w-[90vw] h-[90vh] cursor-default outline-none"
+         onClick={(e) => e.stopPropagation()}
+       >
         <button
           onClick={handleClose}
           className="absolute -top-12 right-0 text-white/70 hover:text-white text-2xl bg-transparent border-none cursor-pointer p-2 rounded"
@@ -97,7 +98,13 @@ export default function BrandModal({ src, alt, onClose, prev, next }: BrandModal
             &#8250;
           </button>
         )}
-        <img src={src} alt={alt} className="max-w-full max-h-[85vh] object-contain rounded-lg" />
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="90vw"
+          className="object-contain rounded-lg"
+        />
         <div className="text-center text-white/50 text-sm mt-3 font-mono">{alt}</div>
       </div>
     </div>

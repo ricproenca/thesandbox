@@ -2,7 +2,7 @@ import Section from "./Section";
 import Banner from "./Banner";
 
 const PRACTICAL_ITEMS = [
-  { icon: "📅", label: "When", val: "Schedule to be announced", sub: "Weekly sessions starting in October. Dates and times coming soon." },
+  { icon: "📅", label: "When", val: "Schedule", sub: "Mondays from 11:30 - 13:00. Weekly sessions starting in October." },
   { icon: "📍", label: "Where", val: "Location to be announced", sub: "Room assignment pending — Check back soon!" },
   { icon: "👥", label: "Who", val: "KS3 to A Level", sub: "All experience levels. No selection process." },
   { icon: "💻", label: "What to bring", val: "Nothing", sub: "School computers provided. Bring your own device if you prefer." },

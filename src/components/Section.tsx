@@ -19,7 +19,7 @@ export default function Section({
 }: SectionProps) {
   return (
     <section id={id} className={`${bgMap[variant]} px-8 lg:px-12 py-16 scroll-mt-16 ${className}`}>
-      <div className="max-w-[1200px] mx-auto">{children}</div>
+      <div className="max-w-[1200px] mx-auto reveal">{children}</div>
     </section>
   );
 }

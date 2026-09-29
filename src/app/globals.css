@@ -5,6 +5,7 @@
   --color-navy-deep: #071e2a;
   --color-teal: #1cc5ca;
   --color-teal-dark: #1285a4;
+  --color-teal-ink: #0f6f89; /* teal for small text on light backgrounds (5.8:1 on white) */
   --color-teal-dim: rgba(28, 197, 202, 0.1);
   --color-orange: #f77924;
   --color-orange-light: #fff3e8;
@@ -12,6 +13,11 @@
   --color-muted: #4a7080;
   --color-border: #e2edf2;
   --color-surface2: #edf1f5;
+  /* project idea theme accents (used alongside orange and teal) */
+  --color-accent-green: #2f9e6a;
+  --color-accent-violet: #7c5ce0;
+  --color-accent-rose: #e0487a;
+  --color-accent-sky: #2f86d6;
   --font-body: var(--font-outfit);
   --font-serif: var(--font-dm-serif);
   --font-mono: var(--font-dm-mono);
@@ -54,5 +60,37 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes heroFloat {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+/* Motion only for people who haven't asked their device to reduce it */
+@media (prefers-reduced-motion: no-preference) {
+  /* Sections fade up as they scroll into view. Browsers without scroll-driven
+     animations (e.g. Firefox today) simply show the content without the effect. */
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: fadeUp linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 30%;
+    }
+  }
+
+  .hero-float {
+    animation: heroFloat 4s ease-in-out infinite alternate;
+  }
+  .hero-float-delay-1 {
+    animation-delay: -1.3s;
+  }
+  .hero-float-delay-2 {
+    animation-delay: -2.6s;
   }
 }

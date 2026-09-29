@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { REGISTER_URL } from "@/lib/practical";
 import Section from "./Section";
 
 const OBJECTIONS = [
@@ -25,7 +26,7 @@ export default function CTASection() {
         </p>
         <div className="flex justify-center gap-4 flex-wrap mb-8">
           <a
-            href="https://forms.cloud.microsoft/e/20XRHrbVef"
+            href={REGISTER_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-orange text-white text-[14px] font-bold px-6 py-3 rounded-[8px] no-underline inline-flex items-center gap-1.5 transition-[transform,opacity] hover:-translate-y-px hover:opacity-90"

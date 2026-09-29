@@ -1,14 +1,15 @@
 import { PILLARS } from "@/lib/pillars";
+import Icon from "./Icon";
 import Section from "./Section";
 
 export default function AboutSection() {
   return (
     <Section>
-      <span className="font-mono text-[12px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
+      <span className="font-mono text-[12px] font-medium tracking-[0.15em] uppercase text-teal-ink mb-3 block">
         What is The Sandbox?
       </span>
       <h2 className="font-serif text-[clamp(28px,4vw,40px)] font-normal text-navy leading-[1.1] mb-4 text-balance">
-        A place where things get <em className="text-orange italic">made.</em>
+        A place where things get made.
       </h2>
       <p className="text-[16px] text-muted leading-[1.7] max-w-[520px] mb-10">
         No fixed curriculum. No pressure. No experience needed. You come in,
@@ -19,24 +20,26 @@ export default function AboutSection() {
         {PILLARS.map((p) => (
           <div
             key={p.title}
-            className={`border-[1.5px] border-border rounded-[14px] p-6 relative ${
-              p.badge
-                ? "bg-[#fffbeb] border-[rgba(180,83,9,0.2)]"
-                : "bg-white"
+            className={`border-[1.5px] rounded-[14px] p-6 relative ${
+              p.badge ? "bg-orange-light border-orange/25" : "bg-white border-border"
             }`}
           >
             {p.badge && (
-              <span className="absolute top-4 right-4 font-mono text-[12px] font-semibold tracking-[0.08em] uppercase bg-orange/12 border border-orange/30 text-orange px-[10px] py-[3px] rounded-full">
+              <span className="absolute top-4 right-4 font-mono text-[12px] font-semibold tracking-[0.08em] uppercase bg-orange/15 text-navy px-[10px] py-[3px] rounded-full">
                 {p.badge}
               </span>
             )}
-            <span className="text-[32px] mb-3 block">{p.icon}</span>
-            <h3 className={`font-semibold text-[16px] mb-2 ${p.badge ? "text-navy" : "text-navy"}`}>
+            <span
+              className={`w-11 h-11 rounded-[10px] flex items-center justify-center mb-4 ${
+                p.badge ? "bg-orange/15 text-orange" : "bg-teal/10 text-teal-ink"
+              }`}
+            >
+              <Icon name={p.icon} size={22} />
+            </span>
+            <h3 className="font-semibold text-[16px] text-navy mb-2">
               {p.title}
             </h3>
-            <p
-              className={`text-[14px] leading-[1.6] ${p.badge ? "text-[#78450a]" : "text-muted"}`}
-            >
+            <p className={`text-[14px] leading-[1.6] ${p.badge ? "text-navy/75" : "text-muted"}`}>
               {p.desc}
             </p>
           </div>

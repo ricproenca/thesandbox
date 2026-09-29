@@ -14,7 +14,7 @@ All content is hard-coded TypeScript in `src/lib/`. Never put content in compone
 | project idea, "something students could build", theme | `src/lib/ideas.ts` | `THEMES` |
 | session plan, timeline, "what happens in a session" | `src/lib/timeline.ts` | `TIMELINE_STEPS` |
 | what the club is about, pillars | `src/lib/pillars.ts` | `PILLARS` |
-| when / where / who / what to bring | `src/components/PracticalInfoSection.tsx` | `PRACTICAL_ITEMS` |
+| when / where / who / what to bring, registration link | `src/lib/practical.ts` | `PRACTICAL_ITEMS`, `REGISTER_URL` |
 
 Read the file and 2–3 neighbouring entries before writing. Copy their shape and tone.
 
@@ -24,6 +24,7 @@ Read the file and 2–3 neighbouring entries before writing. Copy their shape an
 - `title`: a hook written for a 12–17 year old, e.g. "A plant that asks for water", not "Soil moisture monitor".
 - `hook`: one sentence that says what they would make and why it's fun. Avoid jargon and library names.
 - `level`: one of the `Level` union (`"First project"`, `"Some experience"`, `"Stretch goal"`). Aim for a mix across the list.
+- `accent`: the theme's colour (`orange`, `teal`, `green`, `violet`, `rose`, `sky`). Give a new theme a colour no other theme uses.
 - `tools`: one short tag (`Python`, `JavaScript`, `Web`, `Hardware`, `No code to start`).
 - Only suggest things that need no purchase, or hardware the school has. The parents' note promises students never have to buy anything.
 - The hero stats count ideas and themes automatically (`IDEA_COUNT`, `THEMES.length`), so there is no copy to update by hand.

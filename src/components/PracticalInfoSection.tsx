@@ -1,29 +1,26 @@
+import { PRACTICAL_ITEMS, REGISTER_URL } from "@/lib/practical";
+import Icon from "./Icon";
 import Section from "./Section";
 import Banner from "./Banner";
 
-const PRACTICAL_ITEMS = [
-  { icon: "📅", label: "When", val: "Schedule", sub: "Mondays from 11:30 - 13:00. Weekly sessions starting in October." },
-  { icon: "📍", label: "Where", val: "Location to be announced", sub: "Room assignment pending — Check back soon!" },
-  { icon: "👥", label: "Who", val: "KS3 to A Level", sub: "All experience levels. No selection process." },
-  { icon: "💻", label: "What to bring", val: "Nothing", sub: "School computers provided. Bring your own device if you prefer." },
-];
-
 export default function PracticalInfoSection() {
   return (
-    <Section>
-      <span className="font-mono text-[12px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
+    <Section variant="bg">
+      <span className="font-mono text-[12px] font-medium tracking-[0.15em] uppercase text-teal-ink mb-3 block">
         Practical info
       </span>
       <h2 className="font-serif text-[clamp(28px,4vw,40px)] font-normal text-navy leading-[1.1] mb-10 text-balance">
-        Everything you need to know before you <em className="text-orange italic">show up.</em>
+        Everything you need to know before you show up.
       </h2>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-5 mb-10">
         {PRACTICAL_ITEMS.map((item) => (
           <div
             key={item.label}
-            className="border-[1.5px] border-border rounded-[14px] p-6 flex items-start gap-4"
+            className="border-[1.5px] border-border rounded-[14px] bg-white p-6 flex items-start gap-4"
           >
-            <span className="text-[24px] flex-shrink-0">{item.icon}</span>
+            <span className="w-10 h-10 rounded-[10px] bg-teal/10 text-teal-ink flex items-center justify-center">
+              <Icon name={item.icon} />
+            </span>
             <div>
               <div className="font-mono text-[12px] tracking-[0.1em] uppercase text-muted mb-1">
                 {item.label}
@@ -37,9 +34,7 @@ export default function PracticalInfoSection() {
         ))}
       </div>
       <p className="flex items-start gap-3 text-[15px] text-navy leading-[1.6] mb-10">
-        <span className="text-[22px] leading-none flex-shrink-0" aria-hidden="true">
-          🏆
-        </span>
+        <Icon name="trophy" className="text-orange mt-[2px]" />
         <span>
           <strong className="font-semibold">End-of-year Showcase.</strong>{" "}
           <span className="text-muted">
@@ -51,7 +46,7 @@ export default function PracticalInfoSection() {
         title="Fill out the form to secure your spot"
         description="Or feel free to just show up and join us on the day."
         buttonText="Register Now →"
-        buttonHref="https://forms.cloud.microsoft/e/20XRHrbVef"
+        buttonHref={REGISTER_URL}
       />
     </Section>
   );

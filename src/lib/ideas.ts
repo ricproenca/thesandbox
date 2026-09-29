@@ -8,9 +8,12 @@ export interface Idea {
   tools: string;
 }
 
+export type Accent = "orange" | "teal" | "green" | "violet" | "rose" | "sky";
+
 export interface Theme {
   icon: string;
   name: string;
+  accent: Accent;
   ideas: Idea[];
 }
 
@@ -18,6 +21,7 @@ export const THEMES: Theme[] = [
   {
     icon: "🎮",
     name: "Games",
+    accent: "orange",
     ideas: [
       {
         icon: "🐍",
@@ -38,6 +42,7 @@ export const THEMES: Theme[] = [
   {
     icon: "📲",
     name: "Real apps",
+    accent: "teal",
     ideas: [
       {
         icon: "🎒",
@@ -58,6 +63,7 @@ export const THEMES: Theme[] = [
   {
     icon: "🏠",
     name: "Smart home",
+    accent: "green",
     ideas: [
       {
         icon: "🪴",
@@ -78,6 +84,7 @@ export const THEMES: Theme[] = [
   {
     icon: "🤖",
     name: "AI",
+    accent: "violet",
     ideas: [
       {
         icon: "✊",
@@ -98,6 +105,7 @@ export const THEMES: Theme[] = [
   {
     icon: "🎨",
     name: "Music & creative",
+    accent: "rose",
     ideas: [
       {
         icon: "🎵",
@@ -118,6 +126,7 @@ export const THEMES: Theme[] = [
   {
     icon: "📊",
     name: "Data & sport",
+    accent: "sky",
     ideas: [
       {
         icon: "🎧",

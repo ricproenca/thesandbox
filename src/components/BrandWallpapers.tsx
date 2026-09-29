@@ -21,7 +21,7 @@ export default function BrandWallpapers() {
 
   return (
     <Section>
-      <span className="font-mono text-[12px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
+      <span className="font-mono text-[12px] font-medium tracking-[0.15em] uppercase text-teal-ink mb-3 block">
         Wallpapers
       </span>
       <h2 className="font-serif text-[clamp(24px,3vw,32px)] font-normal text-navy leading-[1.1] mb-2">
@@ -54,7 +54,7 @@ export default function BrandWallpapers() {
               <a
                 href={w.src}
                 download
-                className="text-[12px] font-bold text-teal-dark no-underline border border-teal-dark/30 px-3 py-1 rounded-sm hover:bg-teal-dark hover:text-white transition-colors"
+                className="text-[12px] font-bold text-teal-ink no-underline border border-teal-dark/30 px-3 py-1 rounded-sm hover:bg-teal-dark hover:text-white transition-colors"
                 aria-label={`Download ${w.label}`}
               >
                 &darr;

@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { REGISTER_URL } from "@/lib/practical";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -89,7 +90,7 @@ export default function Navbar() {
           </Link>
         ))}
         <a
-          href="https://forms.cloud.microsoft/e/20XRHrbVef"
+          href={REGISTER_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-orange text-white text-[13px] font-bold px-5 py-2 rounded-[8px] no-underline transition-[transform,opacity] hover:-translate-y-px hover:opacity-90"
@@ -131,7 +132,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://forms.cloud.microsoft/e/20XRHrbVef"
+            href={REGISTER_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-orange text-white text-[14px] font-bold px-5 py-3 rounded-[8px] no-underline text-center mt-3"

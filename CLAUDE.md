@@ -15,10 +15,12 @@ Next.js 16 (App Router) + React 19 + Tailwind CSS 4, all under `src/`; imports u
 
 - **Routes** (`src/app/`): `/` (home), `/brand`, `/join`. `layout.tsx` wraps every page in `Navbar` + `Footer` and defines the three `next/font` variables (`--font-dm-serif`, `--font-dm-mono`, `--font-outfit`).
 - **`/spark` and `/showcase` were removed** (too much for a club just starting); `next.config.ts` redirects them home. The project ideas now live in the home page's `IdeasSection` (`#ideas`). The old code is in git history if a real showcase comes back.
-- **Content is hard-coded data in `src/lib/`**, not fetched: `ideas.ts` (starter project ideas, grouped by theme), `pillars.ts`, `timeline.ts`. Add or edit content there, not in components.
+- **Content is hard-coded data in `src/lib/`**, not fetched: `ideas.ts` (starter project ideas, grouped by theme), `practical.ts` (when/where/who and `REGISTER_URL`, shared by home and `/join`), `pillars.ts`, `timeline.ts`. Add or edit content there, not in components.
 - **Server/client split**: `page.tsx` files stay server components so they can export `metadata`; interactive state lives in `"use client"` components (e.g. `Navbar`, `BrandModal`).
 - **Components** (`src/components/`) are flat: `Brand*` for the brand page, plus section components (`*Section.tsx`) composed by pages.
-- **Theming**: design tokens are Tailwind 4 `@theme inline` variables in `src/app/globals.css` (navy/teal/orange palette, `font-body|serif|mono`). Use these tokens rather than raw hex values.
+- **Theming**: design tokens are Tailwind 4 `@theme inline` variables in `src/app/globals.css` (navy/teal/orange palette, `accent-*` colours for idea themes, `font-body|serif|mono`). Use these tokens rather than raw hex values. Small teal text on light backgrounds uses `text-teal-ink` (bright `teal` fails contrast there); bright `teal` is for navy sections and decoration.
+- **Icons**: structural icons come from `src/components/Icon.tsx` (outlined, `currentColor`). Emoji are used only in the project ideas.
+- **Motion**: `Section` adds `.reveal` (CSS scroll-driven fade-up); all motion lives in `globals.css` behind `prefers-reduced-motion: no-preference`.
 
 ## Repo notes
 

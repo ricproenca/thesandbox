@@ -6,9 +6,9 @@ import Section from "./Section";
 import BrandModal from "./BrandModal";
 
 const WALLPAPERS = [
-  { src: "/assets/wallpapers/wallpaper_1.png", label: "Wallpaper 1" },
-  { src: "/assets/wallpapers/wallpaper_2.png", label: "Wallpaper 2" },
-  { src: "/assets/wallpapers/wallpaper_3.png", label: "Wallpaper 3" },
+  { src: "/assets/wallpapers/wallpaper_1.jpg", label: "Wallpaper 1" },
+  { src: "/assets/wallpapers/wallpaper_2.jpg", label: "Wallpaper 2" },
+  { src: "/assets/wallpapers/wallpaper_3.jpg", label: "Wallpaper 3" },
 ];
 
 export default function BrandWallpapers() {

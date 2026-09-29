@@ -6,7 +6,6 @@ const LOGOS = [
   { src: "/assets/logo/sandbox_logo_black.png", label: "Black" },
   { src: "/assets/logo/sandbox_logo_minimal.png", label: "Minimal" },
   { src: "/assets/logo/sandbox_logo_minimal_nobg.png", label: "Minimal (No BG)" },
-  { src: "/assets/others/sandbox_qr_code.png", label: "QR Code" },
 ];
 
 export default function BrandLogos() {
@@ -21,7 +20,7 @@ export default function BrandLogos() {
       <p className="text-[15px] text-muted leading-[1.6] max-w-[480px] mb-8">
         PNG format. Use the default for light backgrounds, black for white, and minimal for clean layouts.
       </p>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-5">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-5">
         {LOGOS.map((logo) => (
           <div
             key={logo.label}

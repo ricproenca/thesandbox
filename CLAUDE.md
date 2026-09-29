@@ -11,7 +11,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture
 
-Next.js 16 (App Router) + React 19 + Tailwind CSS 4, all under `src/`; imports use the `@/` alias. This is a port of the original static HTML site preserved in `backup/` (`index.html`, `showcase.html`, `spark_gallery.html`, …) — page metadata and canonical URLs still reference the old `.html` paths on `thesandboxclub.netlify.app`.
+Next.js 16 (App Router) + React 19 + Tailwind CSS 4, all under `src/`; imports use the `@/` alias. This is a port of the original static HTML site preserved in `backup/` (`index.html`, `showcase.html`, `spark_gallery.html`, …). The site is deployed at https://thesandboxclub.vercel.app (formerly Netlify); `SITE_URL` in `src/lib/site.ts` is the single source for it, used as `metadataBase` so page canonicals are relative paths.
 
 - **Routes** (`src/app/`): `/` (home), `/brand`, `/join`. `layout.tsx` wraps every page in `Navbar` + `Footer` and defines the three `next/font` variables (`--font-dm-serif`, `--font-dm-mono`, `--font-outfit`).
 - **`/spark` and `/showcase` were removed** (too much for a club just starting); `next.config.ts` redirects them home. The project ideas now live in the home page's `IdeasSection` (`#ideas`). The old code is in git history if a real showcase comes back.
@@ -24,4 +24,5 @@ Next.js 16 (App Router) + React 19 + Tailwind CSS 4, all under `src/`; imports u
 
 ## Repo notes
 
+- `design/posters/`, `design/wallpapers/` and `design/infographic/` hold the HTML sources for the Brand page posters, wallpapers and infographic; each has a README on how to preview and re-render them into `public/assets/`. Posters are printed, so they stay white.
 - `docs/` (~200MB of posters and `.docx` files) and `backup/` are reference material, not app code — don't glob or read them. Static assets served by the app live in `public/`.

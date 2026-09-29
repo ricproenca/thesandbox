@@ -34,8 +34,8 @@ export default function HowItWorksSection() {
         Every session follows the same rhythm.
       </h2>
       <p className="text-[16px] text-white/65 leading-[1.7] max-w-[520px] mb-10">
-        Ninety minutes. Five moments. No lectures, no homework, no grades — just
-        structured time to build.
+        Ninety minutes. Five moments. Most of it is time to build, with a clear
+        routine around it.
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Timeline - Left */}

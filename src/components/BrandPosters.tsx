@@ -6,11 +6,10 @@ import Section from "./Section";
 import BrandModal from "./BrandModal";
 
 const POSTERS = [
-  { src: "/assets/posters/sandbox_poster_1.png", label: "Sandbox Poster 1" },
-  { src: "/assets/posters/sandbox_poster_2.png", label: "Sandbox Poster 2" },
-  { src: "/assets/posters/sandbox_poster_3.png", label: "Sandbox Poster 3" },
-  { src: "/assets/posters/sandbox_poster_4.png", label: "Sandbox Poster 4" },
-  { src: "/assets/posters/sandbox_poster_5.png", label: "Sandbox Poster 5" },
+  // Sources live in design/posters/ (HTML); see its README to edit and re-render.
+  { src: "/assets/posters/sandbox_poster_build_v2.png", label: "What will you build?" },
+  { src: "/assets/posters/sandbox_poster_anything_v2.png", label: "Build anything" },
+  { src: "/assets/posters/sandbox_poster_ideas_v2.png", label: "12 project ideas" },
 ];
 
 export default function BrandPosters() {
@@ -30,9 +29,9 @@ export default function BrandPosters() {
         Print-ready posters.
       </h2>
       <p className="text-[15px] text-muted leading-[1.6] max-w-[480px] mb-8">
-        Click to preview. Download for events, showcases, or presentations.
+        A4, 300 dpi. Click to preview, or download to print for noticeboards, events and presentations. White backgrounds, so they print well on a school printer.
       </p>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {POSTERS.map((poster, i) => (
           <div
             key={poster.label}
@@ -40,7 +39,7 @@ export default function BrandPosters() {
           >
             <button
               onClick={() => open(i)}
-              className="relative aspect-[3/4] w-full cursor-pointer border-none p-0 bg-transparent"
+              className="relative aspect-[210/297] w-full cursor-pointer border-none p-0 bg-transparent"
               aria-label={`Preview ${poster.label}`}
             >
               <Image
@@ -56,7 +55,7 @@ export default function BrandPosters() {
               <a
                 href={poster.src}
                 download
-                className="text-[12px] font-bold text-teal-ink no-underline border border-teal-dark/30 px-3 py-1 rounded-sm hover:bg-teal-dark hover:text-white transition-colors"
+                className="whitespace-nowrap text-[12px] font-bold text-teal-ink no-underline border border-teal-dark/30 px-3 py-1 rounded-sm hover:bg-teal-dark hover:text-white transition-colors"
                 aria-label={`Download ${poster.label}`}
               >
                 &darr; Download

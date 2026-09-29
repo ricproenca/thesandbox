@@ -4,7 +4,7 @@ import Section from "./Section";
 
 const OBJECTIONS = [
   "No experience needed",
-  "No homework",
+  "Your own project",
   "KS3 to A Level",
 ];
 
@@ -21,8 +21,8 @@ export default function CTASection() {
           <em className="text-orange italic">build?</em>
         </h2>
         <p className="text-[16px] text-white/55 leading-[1.7] mb-8">
-          No experience needed. No homework. No pressure. Just show up with an
-          idea — or let us help you find one.
+          No experience needed. Bring an idea, or come along and we&apos;ll
+          help you find one.
         </p>
         <div className="flex justify-center gap-4 flex-wrap mb-8">
           <a

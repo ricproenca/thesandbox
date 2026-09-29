@@ -31,7 +31,7 @@ Read the file and 2–3 neighbouring entries before writing. Copy their shape an
 
 ## Session timeline (`timeline.ts`)
 
-A session is 90 minutes (Mondays 11:30–13:00). Step times must add up to 0–90 min. "90 min" also appears in `HeroSection.tsx` stats and "Ninety minutes" in `HowItWorksSection.tsx`. Update those if the length changes.
+A session is 90 minutes (Mondays 11:30–13:00). Step times must add up to 0–90 min. "90 min" also appears in `HeroSection.tsx` stats and "Ninety minutes" in `HowItWorksSection.tsx`. Update those if the length changes. The session times are also drawn into the Brand page infographic and the posters; re-render them from `design/` (see the READMEs there) and tell the user.
 
 ## Verify
 

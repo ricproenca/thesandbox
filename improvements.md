@@ -6,6 +6,16 @@
 
 ## Done
 
+- Fixed the Brand page preview: it now opens full screen and always shows the whole image, with a visible close (✕) button, a Download button, and arrows that sit beside the image (below it on phones).
+- Turned the two new wallpapers into artwork with almost no text ("Cube orbit" and "Building blocks"); only the logo, QR code and a faint "Please don't turn off the PC" remain.
+- Added the QR code to the "Where ideas take shape" wallpaper (original artwork kept in `design/wallpapers/source/`), so all three wallpapers now carry it.
+- Added the new QR code (links to https://thesandboxclub.vercel.app/) to all three posters, both new wallpapers and the infographic, checked that it scans from every rendered image, and gave the re-rendered files `_v2` names so caches can't show old versions.
+- Replaced the AI-art infographic with a simple, white "The Sandbox, at a glance" diagram (how it works, the 90-minute session to scale, the four steps for getting unstuck), with its source in `design/infographic/`.
+- Reworded every "no homework / no grades / no pressure / no curriculum" line positively, so the site doesn't read as criticism of normal lessons.
+- Replaced wallpapers 1 and 3 (which had "no homework" in the artwork) with two new 4K wallpapers in the poster style, with sources in `design/wallpapers/`.
+- Moved the site address from Netlify to https://thesandboxclub.vercel.app in the page metadata (one `SITE_URL` in `src/lib/site.ts`), the posters and the docs, and gave `/join` its own title and canonical URL.
+- Replaced the five old posters with three new A4 posters at 300 dpi ("What will you build?", "Build anything" and "12 project ideas"), with editable sources in `design/posters/`.
+- Removed the outdated QR code from the Brand page and from the posters.
 - Made the home hero navy with poster-style art (glowing ring, floating isometric cubes, circuit traces) in place of the logo box.
 - Replaced the structural emoji with one outlined icon set (`Icon.tsx`), keeping emoji only in the project ideas.
 - Added a `teal-ink` token (5.8:1 on white) for small teal text on light backgrounds.

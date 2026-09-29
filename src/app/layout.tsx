@@ -3,6 +3,7 @@ import { DM_Serif_Display, DM_Mono, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SITE_URL } from "@/lib/site";
 
 const dmSerif = DM_Serif_Display({
   weight: "400",
@@ -23,12 +24,13 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "The Sandbox — Technology Club",
   description:
-    "An after-school technology club where students build their own projects at their own pace. No curriculum, no homework, no grades. Just a space where things get made. For KS3 to A Level.",
+    "An after-school technology club where students choose their own project and build it at their own pace, with a teacher on hand to help. For KS3 to A Level, no experience needed.",
   authors: [{ name: "The Sandbox" }],
   robots: "index, follow",
-  alternates: { canonical: "https://thesandboxclub.netlify.app/" },
+  alternates: { canonical: "/" },
   icons: {
     icon: "/assets/icons/favicon.ico",
     apple: "/assets/icons/apple-touch-icon.png",
@@ -38,7 +40,7 @@ export const metadata: Metadata = {
     description:
       "An after-school club where students choose their own project, work at their own pace, and leave with something real.",
     type: "website",
-    url: "https://thesandboxclub.netlify.app/",
+    url: "/",
     images: [
       {
         url: "/assets/icons/icon-512x512.png",

@@ -3,12 +3,12 @@ import Section from "./Section";
 
 const FAQ = [
   {
-    q: "Is it graded or compulsory?",
+    q: "How does it fit with school?",
     a: (
       <>
-        No. The Sandbox is a voluntary, co-curricular activity with no academic
-        grade or formal assessment. Students are free to join, take a break, or
-        leave at any time.
+        The Sandbox is a voluntary, co-curricular activity that runs alongside
+        lessons and isn&apos;t part of formal assessment. Students are free to
+        join, take a break, or leave at any time.
       </>
     ),
   },

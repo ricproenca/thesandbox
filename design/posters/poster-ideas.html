@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Poster: 12 project ideas</title>
+<link rel="stylesheet" href="poster.css" />
+<style>
+  /* Idea titles mirror src/lib/ideas.ts. Update both together. */
+  .p3 {
+    background: #fff;
+    color: var(--navy);
+    padding: 48px 56px;
+    display: flex;
+    flex-direction: column;
+  }
+  .p3 .grid-bg { color: rgba(13, 45, 62, 0.05); }
+  .p3 .glow {
+    position: absolute;
+    right: -200px;
+    top: -200px;
+    width: 640px;
+    height: 640px;
+    background: radial-gradient(circle, rgba(28, 197, 202, 0.16), transparent 65%);
+  }
+  .top { position: relative; display: flex; justify-content: space-between; align-items: center; }
+  .top .pill { background: var(--navy); color: #fff; }
+  h1 { position: relative; font-size: 64px; line-height: 1.02; margin-top: 44px; }
+  h1 em { color: var(--orange); font-style: italic; }
+  .lede { position: relative; font-size: 19px; color: var(--muted); margin-top: 14px; }
+  .scan { position: absolute; right: 56px; top: 140px; text-align: center; }
+  .scan .qr { width: 128px; height: 128px; border: 1.5px solid #e2edf2; }
+  .scan span { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-ink); margin-top: 8px; }
+  .themes { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 30px; }
+  .theme { background: #fff; border: 1.5px solid #e2edf2; border-top: 5px solid var(--accent); border-radius: 14px; padding: 16px 20px 18px; }
+  .theme h2 { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--navy); margin-bottom: 10px; }
+  .theme li { list-style: none; display: flex; gap: 12px; align-items: flex-start; font-family: var(--serif); font-size: 21px; line-height: 1.2; }
+  .theme li + li { margin-top: 10px; padding-top: 10px; border-top: 1px solid #e2edf2; }
+  .theme li span { font-size: 22px; line-height: 1.1; }
+  .own { position: relative; margin-top: 18px; text-align: center; border: 1.5px dashed var(--teal-dark); border-radius: 14px; padding: 14px; font-family: var(--serif); font-size: 24px; }
+  .own em { color: var(--orange); }
+  .cta { position: relative; margin: auto -56px -48px; background: var(--orange); padding: 20px 56px; display: flex; justify-content: space-between; align-items: center; }
+  .cta b { font-size: 20px; font-weight: 700; }
+  .cta b small { display: block; font-weight: 500; font-size: 15px; opacity: 0.9; margin-top: 2px; }
+  .cta span { font-family: var(--mono); font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="poster p3">
+  <div class="grid-bg"></div>
+  <div class="glow"></div>
+
+  <div class="top">
+    <div class="brand">
+      <img src="../../public/assets/logo/sandbox_logo.png" alt="" style="border:1px solid #e2edf2" />
+      <div><b>The Sandbox</b><span>Technology Club</span></div>
+    </div>
+    <span class="pill">Project ideas</span>
+  </div>
+
+  <div class="scan"><img class="qr" src="../../public/assets/posters/qrcode.png" alt="QR code linking to thesandboxclub.vercel.app" /><span>Scan to join</span></div>
+
+  <h1 class="serif">Stuck for an idea?<br /><em>Here are twelve.</em></h1>
+  <p class="lede">Steal one, mix two together, or ignore them all.</p>
+
+  <div class="themes">
+    <div class="theme" style="--accent: var(--orange)">
+      <h2>Games</h2>
+      <ul>
+        <li><span>🐍</span>Snake, but you break the rules</li>
+        <li><span>📱</span>A party game your class can join</li>
+      </ul>
+    </div>
+    <div class="theme" style="--accent: var(--teal-dark)">
+      <h2>Real apps</h2>
+      <ul>
+        <li><span>🎒</span>The app your school is missing</li>
+        <li><span>💸</span>Where did my money go?</li>
+      </ul>
+    </div>
+    <div class="theme" style="--accent: var(--green)">
+      <h2>Smart home</h2>
+      <ul>
+        <li><span>🪴</span>A plant that asks for water</li>
+        <li><span>🚨</span>A keep-out alarm for your room</li>
+      </ul>
+    </div>
+    <div class="theme" style="--accent: var(--violet)">
+      <h2>AI</h2>
+      <ul>
+        <li><span>✊</span>Rock-paper-scissors against your webcam</li>
+        <li><span>🧠</span>A study buddy that quizzes you</li>
+      </ul>
+    </div>
+    <div class="theme" style="--accent: var(--rose)">
+      <h2>Music &amp; creative</h2>
+      <ul>
+        <li><span>🎵</span>Make your favourite song visible</li>
+        <li><span>🌐</span>Your own website, live on the internet</li>
+      </ul>
+    </div>
+    <div class="theme" style="--accent: var(--sky)">
+      <h2>Data &amp; sport</h2>
+      <ul>
+        <li><span>🎧</span>Your own Spotify Wrapped</li>
+        <li><span>⚽</span>Settle the argument with data</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="own">Got your own idea? <em>Even better.</em></div>
+
+  <div class="cta">
+    <b>Mondays 11:30–13:00<small>KS3 to A Level &middot; no experience needed</small></b>
+    <span>thesandboxclub.vercel.app</span>
+  </div>
+</div>
+</body>
+</html>

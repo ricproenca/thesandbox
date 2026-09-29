@@ -6,9 +6,10 @@ import Section from "./Section";
 import BrandModal from "./BrandModal";
 
 const WALLPAPERS = [
-  { src: "/assets/wallpapers/wallpaper_1.jpg", label: "Wallpaper 1" },
-  { src: "/assets/wallpapers/wallpaper_2.jpg", label: "Wallpaper 2" },
-  { src: "/assets/wallpapers/wallpaper_3.jpg", label: "Wallpaper 3" },
+  // The PNGs come from design/wallpapers/ (HTML); see its README to edit and re-render.
+  { src: "/assets/wallpapers/wallpaper_cubes.png", label: "Cube orbit" },
+  { src: "/assets/wallpapers/wallpaper_blocks.png", label: "Building blocks" },
+  { src: "/assets/wallpapers/wallpaper_ideas_v2.jpg", label: "Where ideas take shape" },
 ];
 
 export default function BrandWallpapers() {
@@ -28,9 +29,9 @@ export default function BrandWallpapers() {
         Desktop backgrounds.
       </h2>
       <p className="text-[15px] text-muted leading-[1.6] max-w-[480px] mb-8">
-        The Sandbox wallpapers for your screen. Click to preview.
+        Wallpapers for club and classroom computers, each with a QR code to join. Click to preview.
       </p>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {WALLPAPERS.map((w, i) => (
           <div
             key={w.label}
@@ -54,10 +55,10 @@ export default function BrandWallpapers() {
               <a
                 href={w.src}
                 download
-                className="text-[12px] font-bold text-teal-ink no-underline border border-teal-dark/30 px-3 py-1 rounded-sm hover:bg-teal-dark hover:text-white transition-colors"
+                className="whitespace-nowrap text-[12px] font-bold text-teal-ink no-underline border border-teal-dark/30 px-3 py-1 rounded-sm hover:bg-teal-dark hover:text-white transition-colors"
                 aria-label={`Download ${w.label}`}
               >
-                &darr;
+                &darr; Download
               </a>
             </div>
           </div>

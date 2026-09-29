@@ -12,9 +12,8 @@ export default function AboutSection() {
         A place where things get made.
       </h2>
       <p className="text-[16px] text-muted leading-[1.7] max-w-[520px] mb-10">
-        No fixed curriculum. No pressure. No experience needed. You come in,
-        pick a project that excites you, and build it — with a guide nearby
-        when you get stuck.
+        You come in, pick a project that excites you, and build it at your own
+        pace, with a guide nearby when you get stuck. No experience needed.
       </p>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-6 mb-12">
         {PILLARS.map((p) => (
@@ -48,8 +47,8 @@ export default function AboutSection() {
       <div className="border-l-2 border-teal pl-6 max-w-[640px]">
         <p className="text-[16px] text-navy leading-[1.7] italic">
           Students come in, work on their own projects, and leave having
-          built something real. No fixed curriculum. No pressure. Just a
-          space, a guide, and the freedom to create.
+          built something real. A space, a guide, and the freedom to
+          create.
         </p>
         <div className="text-[13px] text-muted mt-2 font-mono">
           — The Sandbox, Academic Year 2026/27

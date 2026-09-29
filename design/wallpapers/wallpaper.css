@@ -1,0 +1,69 @@
+/* Shared frame for the club wallpapers: 1920×1080 CSS px, rendered at 2× (3840×2160).
+   Wallpapers are artwork, not posters: keep text to the small corner elements below.
+   The left edge stays clear for desktop icons, the bottom for the taskbar. */
+.wall {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+  background: var(--navy);
+  color: #fff;
+  font-family: var(--body);
+}
+.wall .grid-bg {
+  color: rgba(255, 255, 255, 0.035);
+  background-size: 48px 48px;
+}
+.glow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.corner-brand {
+  position: absolute;
+  right: 64px;
+  top: 56px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+.corner-brand img {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #fff;
+}
+.corner-scan {
+  position: absolute;
+  right: 64px;
+  bottom: 88px;
+  text-align: center;
+}
+.corner-scan .qr {
+  width: 132px;
+  height: 132px;
+}
+.corner-scan span {
+  display: block;
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 10px;
+}
+.pc-note {
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  transform: translateX(-50%);
+  font-family: var(--mono);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.45);
+}

@@ -1,0 +1,104 @@
+/* Shared styles for the A4 posters. Each poster is 794×1123 CSS px (A4 at 96 dpi);
+   render.mjs screenshots it at 3.125× to get 2481×3509 px (A4 at 300 dpi). */
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display:ital@0;1&family=Outfit:wght@400;500;600;700&display=block");
+
+:root {
+  --navy: #0d2d3e;
+  --navy-deep: #071e2a;
+  --teal: #1cc5ca;
+  --teal-dark: #1285a4;
+  --teal-ink: #0f6f89;
+  --orange: #f77924;
+  --bg: #f4f7f9;
+  --muted: #4a7080;
+  --green: #2f9e6a;
+  --violet: #7c5ce0;
+  --rose: #e0487a;
+  --sky: #2f86d6;
+  --serif: "DM Serif Display", Georgia, serif;
+  --mono: "DM Mono", ui-monospace, monospace;
+  --body: "Outfit", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: #888;
+}
+
+.poster {
+  width: 794px;
+  height: 1123px;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.mono {
+  font-family: var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.serif {
+  font-family: var(--serif);
+  font-weight: 400;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #fff;
+}
+.brand b {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+.brand span {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.pill {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 999px;
+}
+
+/* QR code (links to https://thesandboxclub.vercel.app/). The PNG has its own white
+   quiet zone; keep it on white and at least ~110 CSS px (≈29 mm on A4). */
+.qr {
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+}
+
+/* Soft blueprint grid used as a background texture */
+.grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(currentColor 1px, transparent 1px),
+    linear-gradient(90deg, currentColor 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}

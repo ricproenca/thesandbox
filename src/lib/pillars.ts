@@ -4,7 +4,7 @@ export const PILLARS: { icon: IconName; title: string; desc: string; badge?: str
   {
     icon: "target",
     title: "Your project, your choice",
-    desc: "No one tells you what to build. You pick something that genuinely interests you — games, AI, hardware, the web.",
+    desc: "You pick something that genuinely interests you: games, AI, hardware, the web.",
   },
   {
     icon: "zap",

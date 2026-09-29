@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Wallpaper: Block pile</title>
+<link rel="stylesheet" href="../posters/poster.css" />
+<link rel="stylesheet" href="wallpaper.css" />
+<style>
+  .wall { background: var(--navy-deep); }
+  .glow { width: 1400px; height: 1400px; background: radial-gradient(circle, rgba(247, 121, 36, 0.14), rgba(28, 197, 202, 0.10) 40%, transparent 70%); }
+  /* the pile is generated on a true isometric grid (see README) */
+  .pile { position: absolute; left: 50%; top: 50%; width: 900px; height: 900px; transform: translate(-50%, -54%); }
+</style>
+</head>
+<body>
+<div class="wall">
+  <div class="grid-bg"></div>
+  <div class="glow"></div>
+  <svg class="pile" viewBox="0 -60 900 900" aria-hidden="true">
+    <defs>
+      <symbol id="c-orange" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#ffc08f"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#f77924"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#b9540f"/></symbol>
+      <symbol id="c-teal" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#7eeef0"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#1cc5ca"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#1285a4"/></symbol>
+      <symbol id="c-green" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#8fdcb6"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#2f9e6a"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#1f6e49"/></symbol>
+      <symbol id="c-violet" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#c3b3f5"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#7c5ce0"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#5238a8"/></symbol>
+      <symbol id="c-rose" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#f7a8c2"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#e0487a"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#a82e58"/></symbol>
+      <symbol id="c-sky" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#9fcdf7"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#2f86d6"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#1d5f9e"/></symbol>
+    </defs>
+    <use href="#c-teal" x="375.0" y="330.0" width="150" height="172.4" />
+    <use href="#c-orange" x="375.0" y="243.8" width="150" height="172.4" />
+    <use href="#c-sky" x="375.0" y="157.6" width="150" height="172.4" />
+    <use href="#c-violet" x="375.0" y="71.4" width="150" height="172.4" />
+    <use href="#c-orange" x="450.0" y="373.1" width="150" height="172.4" />
+    <use href="#c-violet" x="300.0" y="373.1" width="150" height="172.4" />
+    <use href="#c-violet" x="450.0" y="286.9" width="150" height="172.4" />
+    <use href="#c-rose" x="300.0" y="286.9" width="150" height="172.4" />
+    <use href="#c-orange" x="450.0" y="200.7" width="150" height="172.4" />
+    <use href="#c-green" x="525.0" y="416.2" width="150" height="172.4" />
+    <use href="#c-teal" x="375.0" y="416.2" width="150" height="172.4" />
+    <use href="#c-green" x="225.0" y="416.2" width="150" height="172.4" />
+    <use href="#c-teal" x="525.0" y="330.0" width="150" height="172.4" />
+    <use href="#c-green" x="375.0" y="330.0" width="150" height="172.4" />
+    <use href="#c-sky" x="600.0" y="459.3" width="150" height="172.4" />
+    <use href="#c-rose" x="450.0" y="459.3" width="150" height="172.4" />
+    <use href="#c-sky" x="300.0" y="459.3" width="150" height="172.4" />
+    <use href="#c-orange" x="525.0" y="502.4" width="150" height="172.4" />
+    <use href="#c-teal" x="375.0" y="502.4" width="150" height="172.4" />
+    <use href="#c-rose" x="610" y="150" width="90" height="103.4" opacity="0.95" />
+    <use href="#c-teal" x="700" y="60" width="62" height="71.3" opacity="0.85" />
+    <use href="#c-sky" x="250" y="120" width="70" height="80.5" opacity="0.9" />
+    <use href="#c-orange" x="560" y="-10" width="44" height="50.6" opacity="0.75" />
+    <use href="#c-green" x="170" y="20" width="40" height="46.0" opacity="0.7" />
+    <use href="#c-violet" x="780" y="-40" width="32" height="36.8" opacity="0.6" />
+  </svg>
+
+  <div class="corner-brand"><img src="../../public/assets/logo/sandbox_logo.png" alt="" />The Sandbox</div>
+  <div class="corner-scan"><img class="qr" src="../../public/assets/posters/qrcode.png" alt="" /><span>Scan to join</span></div>
+  <div class="pc-note">Please don&rsquo;t turn off the PC</div>
+</div>
+</body>
+</html>

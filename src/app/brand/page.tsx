@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Download logos, posters, wallpapers, and infographics for The Sandbox Technology Club.",
   robots: "index, follow",
-  alternates: { canonical: "https://thesandboxclub.netlify.app/brand" },
+  alternates: { canonical: "/brand" },
 };
 
 export default function BrandPage() {

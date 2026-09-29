@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Poster: Build anything</title>
+<link rel="stylesheet" href="poster.css" />
+<style>
+  /* Mostly white so it's cheap to print on a school printer */
+  .p2 {
+    background: #fff;
+    color: var(--navy);
+    padding: 48px 56px;
+    display: flex;
+    flex-direction: column;
+  }
+  .p2 .grid-bg { color: rgba(13, 45, 62, 0.05); }
+  .top { position: relative; display: flex; justify-content: space-between; align-items: center; }
+  .top .pill { background: var(--navy); color: #fff; }
+  .kicker { position: relative; font-size: 14px; color: var(--teal-ink); margin-top: 100px; }
+  ul.lines { position: relative; list-style: none; margin-top: 18px; }
+  ul.lines li { display: flex; align-items: center; gap: 22px; font-family: var(--serif); font-size: 86px; line-height: 1.12; white-space: nowrap; }
+  ul.lines svg { width: 50px; height: 58px; flex-shrink: 0; }
+  ul.lines li.last { font-style: italic; color: var(--orange); font-size: 90px; margin-top: 8px; }
+  .nos { position: relative; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 52px; }
+  .nos span { font-family: var(--mono); font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; border: 1.5px solid var(--navy); border-radius: 999px; padding: 8px 16px; }
+  .panel { position: relative; margin: auto -56px -48px; background: var(--bg); color: var(--navy); border-top: 4px solid var(--navy); padding: 34px 56px 38px; display: grid; grid-template-columns: 1.3fr 1fr; gap: 24px; align-items: end; }
+  .scan { position: absolute; right: 56px; top: 640px; text-align: center; }
+  .scan .qr { width: 132px; height: 132px; border: 1.5px solid #e2edf2; }
+  .scan span { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-ink); margin-top: 8px; }
+  .panel .serif { font-size: 38px; line-height: 1.1; }
+  .panel .serif em { color: var(--orange); }
+  .panel p { color: var(--muted); font-size: 17px; line-height: 1.5; margin-top: 10px; }
+  .panel dl { display: grid; gap: 12px; }
+  .panel dt { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal-ink); }
+  .panel dd { font-size: 19px; font-weight: 600; }
+  .panel .url { grid-column: 1 / -1; border-top: 1px solid rgba(13, 45, 62, 0.15); padding-top: 18px; display: flex; justify-content: space-between; font-size: 15px; color: var(--muted); }
+  .panel .url b { font-family: var(--mono); font-weight: 500; color: var(--navy); font-size: 17px; }
+</style>
+</head>
+<body>
+<div class="poster p2">
+  <div class="grid-bg"></div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <!-- one isometric cube per accent colour: top, left, right faces -->
+      <symbol id="c-orange" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#ffc08f"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#f77924"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#b9540f"/></symbol>
+      <symbol id="c-teal" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#7eeef0"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#1cc5ca"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#1285a4"/></symbol>
+      <symbol id="c-green" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#8fdcb6"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#2f9e6a"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#1f6e49"/></symbol>
+      <symbol id="c-violet" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#c3b3f5"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#7c5ce0"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#5238a8"/></symbol>
+    </defs>
+  </svg>
+
+  <div class="top">
+    <div class="brand">
+      <img src="../../public/assets/logo/sandbox_logo.png" alt="" style="border:1px solid #e2edf2" />
+      <div><b>The Sandbox</b><span>Technology Club</span></div>
+    </div>
+    <span class="pill">After-school club</span>
+  </div>
+
+  <div class="kicker mono">Mondays &middot; KS3 to A Level</div>
+  <ul class="lines">
+    <li><svg><use href="#c-orange" /></svg>Build a game.</li>
+    <li><svg><use href="#c-teal" /></svg>Build an app.</li>
+    <li><svg><use href="#c-green" /></svg>Build a robot.</li>
+    <li class="last"><svg><use href="#c-violet" /></svg>Build anything.</li>
+  </ul>
+
+  <div class="nos">
+    <span>Your project, your choice</span>
+    <span>Your pace, your level</span>
+    <span>No experience needed</span>
+  </div>
+
+  <div class="scan"><img class="qr" src="../../public/assets/posters/qrcode.png" alt="QR code linking to thesandboxclub.vercel.app" /><span>Scan to join</span></div>
+
+  <div class="panel">
+    <div>
+      <div class="serif">You pick the project.<br /><em>We help you finish it.</em></div>
+      <p>Bring an idea, or come along and we&rsquo;ll help you find one.</p>
+    </div>
+    <dl>
+      <div><dt>When</dt><dd>Mondays, 11:30–13:00</dd></div>
+      <div><dt>Starts</dt><dd>October</dd></div>
+      <div><dt>Bring</dt><dd>Nothing. Computers provided.</dd></div>
+    </dl>
+    <div class="url"><span>Scan the code or visit</span><b>thesandboxclub.vercel.app</b></div>
+  </div>
+</div>
+</body>
+</html>

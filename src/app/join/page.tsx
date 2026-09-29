@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Icon from "@/components/Icon";
 import { PRACTICAL_ITEMS, REGISTER_URL } from "@/lib/practical";
+
+export const metadata: Metadata = {
+  title: "Join the club — The Sandbox",
+  description:
+    "Sign up for The Sandbox Technology Club: Mondays 11:30–13:00 from October, KS3 to A Level, no experience needed.",
+  alternates: { canonical: "/join" },
+};
 
 export default function JoinPage() {
   return (
@@ -47,10 +55,10 @@ export default function JoinPage() {
         </ul>
       </div>
       <Image
-        src="/assets/posters/sandbox_poster_3.png"
-        alt="The Sandbox poster: build your own projects, no curriculum, no experience needed, KS3 to A Level"
-        width={848}
-        height={1264}
+        src="/assets/posters/sandbox_poster_build_v2.png"
+        alt="The Sandbox poster: What will you build? Mondays 11:30–13:00, starting October, KS3 to A Level, no experience needed"
+        width={2481}
+        height={3509}
         sizes="(max-width: 768px) 100vw, 380px"
         className="w-full max-w-[380px] h-auto rounded-[14px] shadow-[0_20px_50px_rgba(13,45,62,0.25)] md:sticky md:top-24"
       />

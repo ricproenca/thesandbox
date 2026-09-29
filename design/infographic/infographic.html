@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Infographic: The Sandbox at a glance</title>
+<link rel="stylesheet" href="../posters/poster.css" />
+<style>
+  /* 1500×1000 CSS px (3:2), rendered at 2.4× → 3600×2400. Content mirrors the website:
+     session times from src/lib/timeline.ts, unstuck layers from HowItWorksSection.tsx. */
+  .info {
+    width: 1500px;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    color: var(--navy);
+    font-family: var(--body);
+    padding: 48px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header { display: flex; justify-content: space-between; align-items: center; }
+  header h1 { font-family: var(--serif); font-weight: 400; font-size: 50px; line-height: 1; margin-top: 14px; }
+  header h1 em { color: var(--orange); }
+  .head-right { display: flex; align-items: center; gap: 22px; }
+  .scan { text-align: center; }
+  .scan .qr { width: 112px; height: 112px; border: 1.5px solid #e2edf2; }
+  .scan span { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-ink); margin-top: 6px; }
+  .facts { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+  .facts span { font-size: 18px; font-weight: 600; background: var(--bg); border: 1.5px solid #e2edf2; border-radius: 999px; padding: 10px 18px; }
+  .row { margin-top: 0; }
+  .label { font-family: var(--mono); font-size: 15px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal-ink); margin-bottom: 14px; }
+
+  /* 1. How it works */
+  .steps { display: grid; grid-template-columns: 1fr 36px 1fr 36px 1fr; align-items: stretch; }
+  .step { display: flex; align-items: center; gap: 18px; background: var(--bg); border-radius: 16px; padding: 26px 24px; }
+  .step .ico { width: 64px; height: 64px; border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step .ico svg { width: 34px; height: 34px; }
+  .step b { display: block; font-size: 27px; line-height: 1.15; }
+  .step span { display: block; font-size: 19px; color: var(--muted); margin-top: 4px; line-height: 1.35; }
+  .arrow { display: flex; align-items: center; justify-content: center; color: #b9c9d2; }
+  .arrow svg { width: 28px; height: 28px; }
+
+  /* 2. Session bar, segment widths proportional to minutes (total 90) */
+  .bar { display: flex; height: 68px; border-radius: 12px; overflow: hidden; }
+  .bar div { display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 21px; white-space: nowrap; }
+  .legend { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-top: 16px; }
+  .legend div { border-left: 5px solid var(--c); padding-left: 12px; }
+  .legend small { display: block; font-family: var(--mono); font-size: 15px; color: var(--muted); }
+  .legend b { display: block; font-size: 23px; margin-top: 2px; }
+  .legend span { display: block; font-size: 17px; color: var(--muted); margin-top: 2px; line-height: 1.3; }
+
+  /* 3. Getting unstuck */
+  .unstuck { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+  .layer { position: relative; padding: 22px 30px 22px 44px; background: var(--c); color: var(--t, var(--navy)); clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%, 22px 50%); }
+  .layer:first-child { clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%); padding-left: 24px; border-radius: 12px 0 0 12px; }
+  .layer b { font-size: 25px; display: block; }
+  .layer span { font-size: 18px; display: block; margin-top: 2px; line-height: 1.3; opacity: 0.85; }
+
+  footer { display: flex; justify-content: space-between; align-items: center; border-top: 1.5px solid #e2edf2; padding-top: 16px; font-size: 17px; color: var(--muted); }
+  footer b { font-family: var(--mono); font-weight: 500; color: var(--navy); font-size: 18px; }
+</style>
+</head>
+<body>
+<div class="info">
+  <header>
+    <div>
+      <div class="brand">
+        <img src="../../public/assets/logo/sandbox_logo.png" alt="" style="border:1px solid #e2edf2" />
+        <div><b>The Sandbox</b><span>Technology Club</span></div>
+      </div>
+      <h1>The Sandbox, <em>at a glance</em></h1>
+    </div>
+    <div class="head-right">
+      <div class="facts">
+        <span>Mondays 11:30–13:00</span>
+        <span>KS3 to A Level &middot; No experience needed</span>
+      </div>
+      <div class="scan"><img class="qr" src="../../public/assets/posters/qrcode.png" alt="QR code linking to thesandboxclub.vercel.app" /><span>Scan to join</span></div>
+    </div>
+  </header>
+
+  <section class="row">
+    <div class="label">How it works</div>
+    <div class="steps">
+      <div class="step">
+        <div class="ico" style="background:rgba(247,121,36,.14);color:#c85a12">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <div><b>Pick a project</b><span>A game, an app, a robot: your choice.</span></div>
+      </div>
+      <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="step">
+        <div class="ico" style="background:rgba(28,197,202,.16);color:var(--teal-ink)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+        </div>
+        <div><b>Build at your own pace</b><span>Beginner or experienced, with help nearby.</span></div>
+      </div>
+      <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="step">
+        <div class="ico" style="background:rgba(124,92,224,.14);color:var(--violet)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+        </div>
+        <div><b>Show what you made</b><span>Every week, and at the end-of-year Showcase.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="label">A 90-minute session</div>
+    <div class="bar">
+      <div style="flex:10;background:var(--orange)">10</div>
+      <div style="flex:60;background:var(--teal-dark)">Build time &middot; 60 min</div>
+      <div style="flex:10;background:var(--violet)">10</div>
+      <div style="flex:5;background:var(--green)">5</div>
+      <div style="flex:5;background:var(--rose)">5</div>
+    </div>
+    <div class="legend">
+      <div style="--c:var(--orange)"><small>0–10 min</small><b>Stand-up</b><span>What I&rsquo;m building today</span></div>
+      <div style="--c:var(--teal-dark)"><small>10–70 min</small><b>Build time</b><span>Work on your project</span></div>
+      <div style="--c:var(--violet)"><small>70–80 min</small><b>Pair feedback</b><span>One thing that works, one to add</span></div>
+      <div style="--c:var(--green)"><small>80–85 min</small><b>Commit check</b><span>&ldquo;Next time I will have…&rdquo;</span></div>
+      <div style="--c:var(--rose)"><small>85–90 min</small><b>Show and tell</b><span>One student demos</span></div>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="label">Stuck? Try these in order</div>
+    <div class="unstuck">
+      <div class="layer" style="--c:#d6f4f5"><b>1 &middot; Yourself</b><span>Read the error, try one fix</span></div>
+      <div class="layer" style="--c:#a9e8ea"><b>2 &middot; A peer</b><span>Explain it out loud</span></div>
+      <div class="layer" style="--c:#4fd3d7"><b>3 &middot; AI tools</b><span>Understand the answer first</span></div>
+      <div class="layer" style="--c:var(--teal-ink);--t:#fff"><b>4 &middot; The teacher</b><span>Say what you&rsquo;ve tried</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>An after-school technology club at Lycée | International School Michel Lucius</span>
+    <b>thesandboxclub.vercel.app</b>
+  </footer>
+</div>
+</body>
+</html>

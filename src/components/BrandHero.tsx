@@ -9,12 +9,11 @@ export default function BrandHero() {
         }}
       />
       <div className="max-w-[1200px] mx-auto text-center">
-        <span className="font-mono text-[11px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
+        <span className="font-mono text-[12px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
           &middot; Brand &amp; Media &middot;
         </span>
-        <h1 className="font-serif text-[clamp(32px,5vw,52px)] font-normal text-white leading-[1.05] mb-4">
-          Everything you need to
-          <br />
+        <h1 className="font-serif text-[clamp(32px,5vw,52px)] font-normal text-white leading-[1.05] mb-4 text-balance">
+          Everything you need to{" "}
           <em className="text-orange italic">represent.</em>
         </h1>
         <p className="text-[16px] text-white/55 leading-[1.7] max-w-[520px] mx-auto">

@@ -1,8 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import CategoriesSection from "@/components/CategoriesSection";
+import IdeasSection from "@/components/IdeasSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
-import ShowcaseSection from "@/components/ShowcaseSection";
 import PracticalInfoSection from "@/components/PracticalInfoSection";
 import DisclaimerSection from "@/components/DisclaimerSection";
 import AiTransparencySection from "@/components/AiTransparencySection";
@@ -13,13 +12,12 @@ export default function HomePage() {
     <main id="main-content">
       <HeroSection />
       <AboutSection />
-      <CategoriesSection />
+      <IdeasSection />
       <HowItWorksSection />
-      <ShowcaseSection />
       <PracticalInfoSection />
       <DisclaimerSection />
-      <CTASection />
       <AiTransparencySection />
+      <CTASection />
     </main>
   );
 }

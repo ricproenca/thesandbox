@@ -4,13 +4,11 @@ import Section from "./Section";
 export default function AboutSection() {
   return (
     <Section>
-      <span className="font-mono text-[11px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
+      <span className="font-mono text-[12px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
         What is The Sandbox?
       </span>
-      <h2 className="font-serif text-[clamp(28px,4vw,40px)] font-normal text-navy leading-[1.1] mb-4">
-        A place where things
-        <br />
-        get <em className="text-orange italic">made.</em>
+      <h2 className="font-serif text-[clamp(28px,4vw,40px)] font-normal text-navy leading-[1.1] mb-4 text-balance">
+        A place where things get <em className="text-orange italic">made.</em>
       </h2>
       <p className="text-[16px] text-muted leading-[1.7] max-w-[520px] mb-10">
         No fixed curriculum. No pressure. No experience needed. You come in,
@@ -28,7 +26,7 @@ export default function AboutSection() {
             }`}
           >
             {p.badge && (
-              <span className="absolute top-4 right-4 font-mono text-[10px] font-semibold tracking-[0.08em] uppercase bg-orange/12 border border-orange/30 text-orange px-[10px] py-[3px] rounded-full">
+              <span className="absolute top-4 right-4 font-mono text-[12px] font-semibold tracking-[0.08em] uppercase bg-orange/12 border border-orange/30 text-orange px-[10px] py-[3px] rounded-full">
                 {p.badge}
               </span>
             )}
@@ -51,7 +49,7 @@ export default function AboutSection() {
           space, a guide, and the freedom to create.
         </p>
         <div className="text-[13px] text-muted mt-2 font-mono">
-          — The Sandbox, Academic Year 2025/26
+          — The Sandbox, Academic Year 2026/27
         </div>
       </div>
     </Section>

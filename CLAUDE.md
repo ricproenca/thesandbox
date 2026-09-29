@@ -13,11 +13,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Next.js 16 (App Router) + React 19 + Tailwind CSS 4, all under `src/`; imports use the `@/` alias. This is a port of the original static HTML site preserved in `backup/` (`index.html`, `showcase.html`, `spark_gallery.html`, …) — page metadata and canonical URLs still reference the old `.html` paths on `thesandboxclub.netlify.app`.
 
-- **Routes** (`src/app/`): `/` (home), `/brand`, `/join`, `/showcase`, `/spark`. `layout.tsx` wraps every page in `Navbar` + `Footer` and defines the three `next/font` variables (`--font-dm-serif`, `--font-dm-mono`, `--font-outfit`).
-- **Content is hard-coded data in `src/lib/`**, not fetched: `projects.ts` (showcase), `spark.ts` (Spark gallery, the largest file), `categories.ts`, `pillars.ts`, `timeline.ts`. Add or edit content there, not in components.
-- **`projects.ts` and `spark.ts` are near-duplicates** with different shapes: `Category`/`Level`/`CAT_COLORS`/`LEVEL_COLORS` are defined separately in each (Spark adds an `academic` category and language filtering). Keep the two in sync when touching shared concepts.
-- **Server/client split**: `page.tsx` files stay server components so they can export `metadata`; interactive filtering/modal state lives in a `"use client"` sibling (`spark/SparkClient.tsx`) or in the client component itself (`showcase/page.tsx` is fully client, so it has no metadata export).
-- **Components** (`src/components/`) are flat and prefixed by feature: `Brand*`, `Spark*`, plus section components (`*Section.tsx`) composed by pages.
+- **Routes** (`src/app/`): `/` (home), `/brand`, `/join`. `layout.tsx` wraps every page in `Navbar` + `Footer` and defines the three `next/font` variables (`--font-dm-serif`, `--font-dm-mono`, `--font-outfit`).
+- **`/spark` and `/showcase` were removed** (too much for a club just starting); `next.config.ts` redirects them home. The project ideas now live in the home page's `IdeasSection` (`#ideas`). The old code is in git history if a real showcase comes back.
+- **Content is hard-coded data in `src/lib/`**, not fetched: `ideas.ts` (starter project ideas, grouped by theme), `pillars.ts`, `timeline.ts`. Add or edit content there, not in components.
+- **Server/client split**: `page.tsx` files stay server components so they can export `metadata`; interactive state lives in `"use client"` components (e.g. `Navbar`, `BrandModal`).
+- **Components** (`src/components/`) are flat: `Brand*` for the brand page, plus section components (`*Section.tsx`) composed by pages.
 - **Theming**: design tokens are Tailwind 4 `@theme inline` variables in `src/app/globals.css` (navy/teal/orange palette, `font-body|serif|mono`). Use these tokens rather than raw hex values.
 
 ## Repo notes

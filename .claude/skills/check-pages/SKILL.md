@@ -5,7 +5,7 @@ description: Visually check the site in a real browser by loading every route at
 
 # Check pages in the browser
 
-Routes: `/`, `/brand`, `/join`, `/showcase`, `/spark`.
+Routes: `/`, `/brand`, `/join`.
 
 ## 1. Dev server
 
@@ -23,10 +23,9 @@ Look at each screenshot. Look for horizontal overflow on mobile, overlapping or 
 
 ## 3. Interactions (only where the change touched them)
 
-- `/showcase`: click a filter chip, confirm the grid changes, then open a project card and check the modal. Escape should close it.
-- `/spark`: search, change the language filter, open a card and check its modal.
+- `/`: click "See project ideas" and the "Project ideas" nav link, and confirm both land on the `#ideas` section below the sticky nav.
 - `/brand`: open a wallpaper/poster preview, use the arrow keys to move to the next one, then press Escape.
-- Mobile: open and close the Navbar menu.
+- Mobile: open and close the Navbar menu, and check that the current page is highlighted.
 
 ## 4. Report
 

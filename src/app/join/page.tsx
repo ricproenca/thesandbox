@@ -1,7 +1,7 @@
 export default function JoinPage() {
   return (
     <main className="max-w-[1200px] mx-auto px-8 lg:px-12 py-20">
-      <span className="font-mono text-[11px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
+      <span className="font-mono text-[12px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
         Join the club
       </span>
       <h1 className="font-serif text-[clamp(32px,5vw,52px)] font-normal text-navy leading-[1.05] mb-4">

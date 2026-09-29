@@ -2,6 +2,7 @@ type SectionProps = {
   children: React.ReactNode;
   variant?: "white" | "bg" | "navy";
   className?: string;
+  id?: string;
 };
 
 const bgMap = {
@@ -14,9 +15,10 @@ export default function Section({
   children,
   variant = "white",
   className = "",
+  id,
 }: SectionProps) {
   return (
-    <section className={`${bgMap[variant]} px-8 lg:px-12 py-16 ${className}`}>
+    <section id={id} className={`${bgMap[variant]} px-8 lg:px-12 py-16 scroll-mt-16 ${className}`}>
       <div className="max-w-[1200px] mx-auto">{children}</div>
     </section>
   );

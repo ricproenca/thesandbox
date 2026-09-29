@@ -3,9 +3,9 @@ import Section from "./Section";
 export default function DisclaimerSection() {
   return (
     <Section>
-      <div className="border-l-4 border-teal bg-teal/5 rounded-r-[14px] p-8 flex items-start gap-6">
-        <span className="text-[36px] flex-shrink-0">📋</span>
-        <div>
+      <div className="border-l-4 border-teal bg-teal/5 rounded-r-[14px] p-5 sm:p-8 flex flex-col sm:flex-row items-start gap-3 sm:gap-6">
+        <span className="text-[28px] sm:text-[36px] flex-shrink-0" aria-hidden="true">📋</span>
+        <div className="max-w-[68ch]">
           <h3 className="font-serif text-[22px] text-navy mb-1">
             A note for students &amp; parents
           </h3>

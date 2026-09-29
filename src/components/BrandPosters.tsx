@@ -23,7 +23,7 @@ export default function BrandPosters() {
 
   return (
     <Section variant="bg">
-      <span className="font-mono text-[11px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
+      <span className="font-mono text-[12px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
         Posters
       </span>
       <h2 className="font-serif text-[clamp(24px,3vw,32px)] font-normal text-navy leading-[1.1] mb-2">

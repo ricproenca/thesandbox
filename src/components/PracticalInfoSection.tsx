@@ -11,13 +11,11 @@ const PRACTICAL_ITEMS = [
 export default function PracticalInfoSection() {
   return (
     <Section>
-      <span className="font-mono text-[11px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
+      <span className="font-mono text-[12px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
         Practical info
       </span>
-      <h2 className="font-serif text-[clamp(28px,4vw,40px)] font-normal text-navy leading-[1.1] mb-10">
-        Everything you need to know
-        <br />
-        before you <em className="text-orange italic">show up.</em>
+      <h2 className="font-serif text-[clamp(28px,4vw,40px)] font-normal text-navy leading-[1.1] mb-10 text-balance">
+        Everything you need to know before you <em className="text-orange italic">show up.</em>
       </h2>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-5 mb-10">
         {PRACTICAL_ITEMS.map((item) => (
@@ -27,7 +25,7 @@ export default function PracticalInfoSection() {
           >
             <span className="text-[24px] flex-shrink-0">{item.icon}</span>
             <div>
-              <div className="font-mono text-[10px] tracking-[0.1em] uppercase text-muted mb-1">
+              <div className="font-mono text-[12px] tracking-[0.1em] uppercase text-muted mb-1">
                 {item.label}
               </div>
               <div className="font-serif text-[18px] text-navy mb-1">
@@ -38,6 +36,17 @@ export default function PracticalInfoSection() {
           </div>
         ))}
       </div>
+      <p className="flex items-start gap-3 text-[15px] text-navy leading-[1.6] mb-10">
+        <span className="text-[22px] leading-none flex-shrink-0" aria-hidden="true">
+          🏆
+        </span>
+        <span>
+          <strong className="font-semibold">End-of-year Showcase.</strong>{" "}
+          <span className="text-muted">
+            Every student presents what they built, and families are welcome.
+          </span>
+        </span>
+      </p>
       <Banner
         title="Fill out the form to secure your spot"
         description="Or feel free to just show up and join us on the day."

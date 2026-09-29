@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import { IDEA_COUNT, THEMES } from "@/lib/ideas";
 
 const STATS = [
-  { val: "44+", label: "Project ideas" },
-  { val: "6", label: "Topics" },
-  { val: "4", label: "Skill levels" },
-  { val: "3", label: "Languages" },
-  { val: "2h", label: "Per session" },
+  { val: String(IDEA_COUNT), label: "Starter ideas" },
+  { val: String(THEMES.length), label: "Themes" },
+  { val: "0", label: "Experience needed" },
+  { val: "90 min", label: "Per session" },
 ];
 
 export default function HeroSection() {
   return (
-    <section className="px-8 lg:px-12 pt-16 pb-12 relative overflow-hidden">
+    <section className="px-8 lg:px-12 pt-8 md:pt-16 pb-12 relative overflow-hidden">
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -19,13 +19,16 @@ export default function HeroSection() {
             "radial-gradient(ellipse 50% 100% at 90% 50%, rgba(28, 197, 202, 0.05), transparent 70%)",
         }}
       />
-      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-24">
+      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-24">
+        {/* Small on phones so the heading and "Join the club" stay on the first screen */}
         <Image
           src="/assets/logo/sandbox_logo.png"
           alt="The Sandbox"
           width={320}
           height={320}
-          className="rounded-xl opacity-90 flex-shrink-0"
+          loading="eager"
+          fetchPriority="high"
+          className="rounded-xl opacity-90 flex-shrink-0 w-24 h-24 self-start md:w-80 md:h-80 md:self-auto"
         />
         <div>
           <h1 className="font-serif text-[clamp(32px,5vw,52px)] font-normal text-navy leading-[1.05] mb-4">
@@ -51,22 +54,23 @@ export default function HeroSection() {
               Join the club
             </a>
             <Link
-              href="/spark"
+              href="/#ideas"
               className="border border-navy/20 text-navy text-[14px] font-bold px-6 py-3 rounded-[8px] no-underline inline-flex items-center gap-1.5 transition-colors hover:border-teal hover:text-teal"
             >
-              Project Spark
+              See project ideas
             </Link>
           </div>
-          <dl className="flex flex-wrap gap-x-7 gap-y-3 mb-10">
+          {/* 2×2 grid until there's room for one row; dividers only in the row layout */}
+          <dl className="grid grid-cols-2 gap-x-7 gap-y-4 xl:flex mb-10">
             {STATS.map((stat, i) => (
               <div
                 key={stat.label}
-                className={`pr-7 border-r border-navy/10 ${i === 4 ? "border-0 pr-0" : ""}`}
+                className={`xl:pr-7 xl:border-r border-navy/10 ${i === STATS.length - 1 ? "xl:border-0 xl:pr-0" : ""}`}
               >
                 <dt className="font-serif text-[28px] text-teal-dark leading-none">
                   {stat.val}
                 </dt>
-                <dd className="text-[11px] text-muted/60 mt-1 font-mono tracking-[0.04em]">
+                <dd className="text-[12px] text-muted/60 mt-1 font-mono tracking-[0.04em]">
                   {stat.label}
                 </dd>
               </div>

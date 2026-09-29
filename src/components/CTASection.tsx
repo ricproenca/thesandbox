@@ -11,7 +11,7 @@ export default function CTASection() {
   return (
     <Section variant="navy" className="text-center">
       <div className="max-w-[640px] mx-auto">
-        <span className="font-mono text-[11px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
+        <span className="font-mono text-[12px] font-medium tracking-[0.15em] uppercase text-teal mb-3 block">
           Ready to build something?
         </span>
         <h2 className="font-serif text-[clamp(28px,4vw,40px)] font-normal text-white leading-[1.1] mb-4">
@@ -33,10 +33,10 @@ export default function CTASection() {
             Join the club &rarr;
           </a>
           <Link
-            href="/spark"
+            href="/#ideas"
             className="border border-white/20 text-white text-[14px] font-bold px-6 py-3 rounded-[8px] no-underline inline-flex items-center gap-1.5 transition-colors hover:border-teal hover:text-teal"
           >
-            Browse projects first
+            See project ideas
           </Link>
         </div>
         <div className="flex justify-center gap-6 flex-wrap">

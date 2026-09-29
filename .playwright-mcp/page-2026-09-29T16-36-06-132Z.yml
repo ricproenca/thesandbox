@@ -1,0 +1,196 @@
+- generic [active] [ref=f680e1]:
+  - link "Skip to main content" [ref=f680e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation [ref=f680e3]:
+    - link "The Sandbox The Sandbox Technology Club" [ref=f680e4] [cursor=pointer]:
+      - /url: /
+      - img "The Sandbox" [ref=f680e5]
+      - generic [ref=f680e6]:
+        - generic [ref=f680e7]: The Sandbox
+        - generic [ref=f680e8]: Technology Club
+    - button "Toggle menu" [ref=f680e9] [cursor=pointer]
+  - generic [ref=f680e13]:
+    - generic [ref=f680e15]:
+      - generic [ref=f680e16]: Built by students
+      - heading [level=1] [ref=f680e17]:
+        - text: Real projects.
+        - emphasis [ref=f680e18]: Real students.
+      - paragraph [ref=f680e19]: Everything here was built during a Sandbox session. No templates. No shortcuts. Each project is a student's own idea, built from scratch.
+      - generic [ref=f680e20]:
+        - generic [ref=f680e21]:
+          - generic [ref=f680e22]: "0"
+          - generic [ref=f680e23]: Projects built
+        - generic [ref=f680e24]:
+          - generic [ref=f680e25]: "0"
+          - generic [ref=f680e26]: Students
+        - generic [ref=f680e27]:
+          - generic [ref=f680e28]: "0"
+          - generic [ref=f680e29]: Categories
+    - group "Filter projects" [ref=f680e30]:
+      - generic [ref=f680e31]:
+        - generic [ref=f680e32]: Filter
+        - button "All" [pressed] [ref=f680e33] [cursor=pointer]
+        - button "Games" [ref=f680e36] [cursor=pointer]
+        - button "Web" [ref=f680e39] [cursor=pointer]
+        - button "AI" [ref=f680e42] [cursor=pointer]
+        - button "Data" [ref=f680e45] [cursor=pointer]
+        - button "Hardware" [ref=f680e48] [cursor=pointer]
+        - button "Tools" [ref=f680e51] [cursor=pointer]
+        - button "Newcomer" [ref=f680e53] [cursor=pointer]
+        - button "Beginner" [ref=f680e54] [cursor=pointer]
+        - button "Intermediate" [ref=f680e55] [cursor=pointer]
+        - button "Advanced" [ref=f680e56] [cursor=pointer]
+    - main [ref=f680e57]:
+      - generic [ref=f680e58]: DEMO SHOWCASEThe projects below are placeholders for demonstration purposes.Real student work will appear here soon.
+      - generic [ref=f680e60]:
+        - generic [ref=f680e61]: Year 2025/26
+        - generic [ref=f680e64]:
+          - button "🐍 Python · pygame &star; Featured project games beginner Snake Evolved Alex M. · Year 9 Started with a basic Snake clone and kept going. By session four the game had a two-player mode, procedurally generated … Python pygame" [ref=f680e65] [cursor=pointer]:
+            - generic [ref=f680e66]:
+              - generic [ref=f680e71]: 🐍
+              - generic [ref=f680e72]: Python · pygame
+            - generic [ref=f680e73]:
+              - generic [ref=f680e74]: "&star; Featured project"
+              - generic [ref=f680e75]:
+                - generic [ref=f680e76]: games
+                - generic [ref=f680e77]: beginner
+              - heading "Snake Evolved" [level=3] [ref=f680e79]
+              - generic [ref=f680e80]: Alex M. · Year 9
+              - paragraph [ref=f680e81]: Started with a basic Snake clone and kept going. By session four the game had a two-player mode, procedurally generated …
+              - generic [ref=f680e82]:
+                - generic [ref=f680e83]: Python
+                - generic [ref=f680e84]: pygame
+          - button "🌦️ JavaScript · API web beginner Weather Dashboard Sara K. · Year 10 Connected to the OpenWeatherMap API to pull live weather for any city. Added a 5-day forecast, a dark/light mode toggle … JavaScript HTML CSS OpenWeatherMap API" [ref=f680e85] [cursor=pointer]:
+            - generic [ref=f680e86]:
+              - generic [ref=f680e89]: 🌦️
+              - generic [ref=f680e90]: JavaScript · API
+            - generic [ref=f680e91]:
+              - generic [ref=f680e92]:
+                - generic [ref=f680e93]: web
+                - generic [ref=f680e94]: beginner
+              - heading "Weather Dashboard" [level=3] [ref=f680e96]
+              - generic [ref=f680e97]: Sara K. · Year 10
+              - paragraph [ref=f680e98]: Connected to the OpenWeatherMap API to pull live weather for any city. Added a 5-day forecast, a dark/light mode toggle …
+              - generic [ref=f680e99]:
+                - generic [ref=f680e100]: JavaScript
+                - generic [ref=f680e101]: HTML
+                - generic [ref=f680e102]: CSS
+                - generic [ref=f680e103]: OpenWeatherMap API
+          - button "🤖 Python · Claude API ai intermediate AI Study Buddy Tom R. · Year 12 Built for his own A Level Biology revision. Upload any notes as a PDF, the app reads them and generates quiz questions a… Python Flask Claude API HTML CSS" [ref=f680e104] [cursor=pointer]:
+            - generic [ref=f680e105]:
+              - generic [ref=f680e125]: 🤖
+              - generic [ref=f680e126]: Python · Claude API
+            - generic [ref=f680e127]:
+              - generic [ref=f680e128]:
+                - generic [ref=f680e129]: ai
+                - generic [ref=f680e130]: intermediate
+              - heading "AI Study Buddy" [level=3] [ref=f680e132]
+              - generic [ref=f680e133]: Tom R. · Year 12
+              - paragraph [ref=f680e134]: Built for his own A Level Biology revision. Upload any notes as a PDF, the app reads them and generates quiz questions a…
+              - generic [ref=f680e135]:
+                - generic [ref=f680e136]: Python
+                - generic [ref=f680e137]: Flask
+                - generic [ref=f680e138]: Claude API
+                - generic [ref=f680e139]: HTML
+                - generic [ref=f680e140]: CSS
+          - button "🎵 JavaScript · Web Audio API web intermediate Music Visualiser Léa D. · Year 11 Uses the Web Audio API to analyse the frequency content of any music file or microphone input in real time. Three visual… JavaScript Web Audio API Canvas" [ref=f680e141] [cursor=pointer]:
+            - generic [ref=f680e142]:
+              - generic [ref=f680e145]: 🎵
+              - generic [ref=f680e146]: JavaScript · Web Audio API
+            - generic [ref=f680e147]:
+              - generic [ref=f680e148]:
+                - generic [ref=f680e149]: web
+                - generic [ref=f680e150]: intermediate
+              - heading "Music Visualiser" [level=3] [ref=f680e152]
+              - generic [ref=f680e153]: Léa D. · Year 11
+              - paragraph [ref=f680e154]: Uses the Web Audio API to analyse the frequency content of any music file or microphone input in real time. Three visual…
+              - generic [ref=f680e155]:
+                - generic [ref=f680e156]: JavaScript
+                - generic [ref=f680e157]: Web Audio API
+                - generic [ref=f680e158]: Canvas
+          - button "📊 Python · Spotify API data intermediate Spotify Stats Noa V. · Year 10 Connected to his own Spotify account via the API and built a dashboard showing listening patterns over the past year. To… Python Spotify API matplotlib Flask" [ref=f680e159] [cursor=pointer]:
+            - generic [ref=f680e160]:
+              - generic [ref=f680e167]: 📊
+              - generic [ref=f680e168]: Python · Spotify API
+            - generic [ref=f680e169]:
+              - generic [ref=f680e170]:
+                - generic [ref=f680e171]: data
+                - generic [ref=f680e172]: intermediate
+              - heading "Spotify Stats" [level=3] [ref=f680e174]
+              - generic [ref=f680e175]: Noa V. · Year 10
+              - paragraph [ref=f680e176]: Connected to his own Spotify account via the API and built a dashboard showing listening patterns over the past year. To…
+              - generic [ref=f680e177]:
+                - generic [ref=f680e178]: Python
+                - generic [ref=f680e179]: Spotify API
+                - generic [ref=f680e180]: matplotlib
+                - generic [ref=f680e181]: Flask
+          - button "🚦 Python · Raspberry Pi hardware intermediate Smart Traffic Light Mia T. · Year 9 A real working traffic light on a breadboard, wired to a Raspberry Pi. Started with the basic sequence, then added a ped… Python Raspberry Pi GPIO Ultrasonic sensor" [ref=f680e182] [cursor=pointer]:
+            - generic [ref=f680e183]:
+              - generic [ref=f680e188]: 🚦
+              - generic [ref=f680e189]: Python · Raspberry Pi
+            - generic [ref=f680e190]:
+              - generic [ref=f680e191]:
+                - generic [ref=f680e192]: hardware
+                - generic [ref=f680e193]: intermediate
+              - heading "Smart Traffic Light" [level=3] [ref=f680e195]
+              - generic [ref=f680e196]: Mia T. · Year 9
+              - paragraph [ref=f680e197]: A real working traffic light on a breadboard, wired to a Raspberry Pi. Started with the basic sequence, then added a ped…
+              - generic [ref=f680e198]:
+                - generic [ref=f680e199]: Python
+                - generic [ref=f680e200]: Raspberry Pi
+                - generic [ref=f680e201]: GPIO
+                - generic [ref=f680e202]: Ultrasonic sensor
+          - button "🧱 Python · pygame games intermediate Tetris Emil S. · Year 11 Full Tetris from scratch. The rotation logic alone — representing each piece as a matrix and rotating it correctly while… Python pygame" [ref=f680e203] [cursor=pointer]:
+            - generic [ref=f680e204]:
+              - generic [ref=f680e209]: 🧱
+              - generic [ref=f680e210]: Python · pygame
+            - generic [ref=f680e211]:
+              - generic [ref=f680e212]:
+                - generic [ref=f680e213]: games
+                - generic [ref=f680e214]: intermediate
+              - heading "Tetris" [level=3] [ref=f680e216]
+              - generic [ref=f680e217]: Emil S. · Year 11
+              - paragraph [ref=f680e218]: Full Tetris from scratch. The rotation logic alone — representing each piece as a matrix and rotating it correctly while…
+              - generic [ref=f680e219]:
+                - generic [ref=f680e220]: Python
+                - generic [ref=f680e221]: pygame
+          - button "🔐 Python · cryptography tools advanced Password Manager Yuki A. · Year 13 A local password manager with a master password, AES-256 encryption for stored credentials, and a Tkinter GUI. The chall… Python cryptography lib SQLite tkinter" [ref=f680e222] [cursor=pointer]:
+            - generic [ref=f680e223]:
+              - generic [ref=f680e225]: 🔐
+              - generic [ref=f680e226]: Python · cryptography
+            - generic [ref=f680e227]:
+              - generic [ref=f680e228]:
+                - generic [ref=f680e229]: tools
+                - generic [ref=f680e230]: advanced
+              - heading "Password Manager" [level=3] [ref=f680e232]
+              - generic [ref=f680e233]: Yuki A. · Year 13
+              - paragraph [ref=f680e234]: A local password manager with a master password, AES-256 encryption for stored credentials, and a Tkinter GUI. The chall…
+              - generic [ref=f680e235]:
+                - generic [ref=f680e236]: Python
+                - generic [ref=f680e237]: cryptography lib
+                - generic [ref=f680e238]: SQLite
+                - generic [ref=f680e239]: tkinter
+      - generic [ref=f680e240]:
+        - generic [ref=f680e241]:
+          - generic [ref=f680e242]: Got a project to show?
+          - generic [ref=f680e243]: Built something during a Sandbox session? Tell your teacher — it might appear here.
+        - link "Get involved →" [ref=f680e244] [cursor=pointer]:
+          - /url: https://forms.cloud.microsoft/e/20XRHrbVef
+  - contentinfo [ref=f680e245]:
+    - generic [ref=f680e246]:
+      - generic [ref=f680e247]:
+        - link [ref=f680e248] [cursor=pointer]:
+          - /url: /
+          - img "The Sandbox" [ref=f680e249]
+        - generic [ref=f680e250]:
+          - generic [ref=f680e251]: The Sandbox
+          - link "Lycée | International School Michel Lucius · Luxembourg" [ref=f680e253] [cursor=pointer]:
+            - /url: https://lml.lu
+      - generic [ref=f680e254]:
+        - link "Brand" [ref=f680e255] [cursor=pointer]:
+          - /url: /brand
+          - text: 🏷️
+        - link "Contact" [ref=f680e256] [cursor=pointer]:
+          - /url: mailto:ricardo.duarteproenca@education.lu
+          - text: 📬
+  - alert [ref=f680e257]

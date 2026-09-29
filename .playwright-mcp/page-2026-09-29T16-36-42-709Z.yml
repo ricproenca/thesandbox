@@ -1,0 +1,859 @@
+- generic [active] [ref=f681e1]:
+  - link "Skip to main content" [ref=f681e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation [ref=f681e3]:
+    - link "The Sandbox The Sandbox Technology Club" [ref=f681e4] [cursor=pointer]:
+      - /url: /
+      - img "The Sandbox" [ref=f681e5]
+      - generic [ref=f681e6]:
+        - generic [ref=f681e7]: The Sandbox
+        - generic [ref=f681e8]: Technology Club
+    - button "Toggle menu" [ref=f681e9] [cursor=pointer]
+  - generic [ref=f681e13]:
+    - banner [ref=f681e14]:
+      - generic [ref=f681e15]:
+        - generic [ref=f681e16]: · Project Spark Gallery ·
+        - heading [level=1] [ref=f681e17]:
+          - text: What do you want to
+          - emphasis [ref=f681e18]: build?
+        - paragraph [ref=f681e19]: Browse real projects. Click anything that makes you curious. Don't look for the "right" one — look for the one you can't stop thinking about.
+    - generic [ref=f681e21]:
+      - textbox "Search projects" [ref=f681e22]:
+        - /placeholder: Search projects...
+      - generic [ref=f681e23]:
+        - generic [ref=f681e24]: Topic
+        - button "All" [pressed] [ref=f681e25] [cursor=pointer]
+        - button "Web" [ref=f681e26] [cursor=pointer]
+        - button "Data" [ref=f681e27] [cursor=pointer]
+        - button "Games" [ref=f681e28] [cursor=pointer]
+        - button "AI" [ref=f681e29] [cursor=pointer]
+        - button "Hardware" [ref=f681e30] [cursor=pointer]
+        - button "Tools" [ref=f681e31] [cursor=pointer]
+        - button "Academic" [ref=f681e32] [cursor=pointer]
+      - generic [ref=f681e33]:
+        - generic [ref=f681e34]: Level
+        - button "All" [pressed] [ref=f681e35] [cursor=pointer]
+        - button "Newcomer" [ref=f681e36] [cursor=pointer]
+        - button "Beginner" [ref=f681e37] [cursor=pointer]
+        - button "Intermediate" [ref=f681e38] [cursor=pointer]
+        - button "Advanced" [ref=f681e39] [cursor=pointer]
+      - generic [ref=f681e40]:
+        - generic [ref=f681e41]: Language
+        - button "All" [pressed] [ref=f681e42] [cursor=pointer]
+        - button "Python" [ref=f681e43] [cursor=pointer]
+        - button "JavaScript" [ref=f681e44] [cursor=pointer]
+        - button "HTML / CSS" [ref=f681e45] [cursor=pointer]
+        - button "No code needed" [ref=f681e46] [cursor=pointer]
+    - main [ref=f681e47]:
+      - generic [ref=f681e48]: 44 projects
+      - generic [ref=f681e49]:
+        - button "👋 tools newcomer Hello, World — but make it yours Your very first program. Three lines. One win. Then you own it. print() Variables Running code First win Python Trinket.io (no install)" [ref=f681e50] [cursor=pointer]:
+          - generic [ref=f681e51]: 👋
+          - generic [ref=f681e53]:
+            - generic [ref=f681e54]:
+              - generic [ref=f681e55]: tools
+              - generic [ref=f681e56]: newcomer
+            - heading "Hello, World — but make it yours" [level=2] [ref=f681e58]
+            - paragraph [ref=f681e59]: Your very first program. Three lines. One win. Then you own it.
+            - generic [ref=f681e60]:
+              - generic [ref=f681e61]: print()
+              - generic [ref=f681e62]: Variables
+              - generic [ref=f681e63]: Running code
+              - generic [ref=f681e64]: First win
+            - generic [ref=f681e65]:
+              - generic [ref=f681e66]: Python
+              - generic [ref=f681e67]: Trinket.io (no install)
+        - button "🎲 games newcomer Number Guessing Game The computer picks a number. You guess it. It tells you if you're hot or cold. Random numbers While loops If/else User input Python Trinket.io / IDLE" [ref=f681e68] [cursor=pointer]:
+          - generic [ref=f681e69]: 🎲
+          - generic [ref=f681e77]:
+            - generic [ref=f681e78]:
+              - generic [ref=f681e79]: games
+              - generic [ref=f681e80]: newcomer
+            - heading "Number Guessing Game" [level=2] [ref=f681e82]
+            - paragraph [ref=f681e83]: The computer picks a number. You guess it. It tells you if you're hot or cold.
+            - generic [ref=f681e84]:
+              - generic [ref=f681e85]: Random numbers
+              - generic [ref=f681e86]: While loops
+              - generic [ref=f681e87]: If/else
+              - generic [ref=f681e88]: User input
+            - generic [ref=f681e89]:
+              - generic [ref=f681e90]: Python
+              - generic [ref=f681e91]: Trinket.io / IDLE
+        - button "🎨 web newcomer My First Webpage A real webpage — your name, a photo, something you love. In a browser. Today. HTML tags CSS colour Text editor Browser HTML CSS Any text editor" [ref=f681e92] [cursor=pointer]:
+          - generic [ref=f681e93]: 🎨
+          - generic [ref=f681e97]:
+            - generic [ref=f681e98]:
+              - generic [ref=f681e99]: web
+              - generic [ref=f681e100]: newcomer
+            - heading "My First Webpage" [level=2] [ref=f681e102]
+            - paragraph [ref=f681e103]: A real webpage — your name, a photo, something you love. In a browser. Today.
+            - generic [ref=f681e104]:
+              - generic [ref=f681e105]: HTML tags
+              - generic [ref=f681e106]: CSS colour
+              - generic [ref=f681e107]: Text editor
+              - generic [ref=f681e108]: Browser
+            - generic [ref=f681e109]:
+              - generic [ref=f681e110]: HTML
+              - generic [ref=f681e111]: CSS
+              - generic [ref=f681e112]: Any text editor
+        - button "🧮 tools newcomer Personal Calculator Build a calculator that solves problems you actually have. Input Arithmetic Variables print() Python or JavaScript Trinket.io / IDLE" [ref=f681e113] [cursor=pointer]:
+          - generic [ref=f681e114]: 🧮
+          - generic [ref=f681e116]:
+            - generic [ref=f681e117]:
+              - generic [ref=f681e118]: tools
+              - generic [ref=f681e119]: newcomer
+            - heading "Personal Calculator" [level=2] [ref=f681e121]
+            - paragraph [ref=f681e122]: Build a calculator that solves problems you actually have.
+            - generic [ref=f681e123]:
+              - generic [ref=f681e124]: Input
+              - generic [ref=f681e125]: Arithmetic
+              - generic [ref=f681e126]: Variables
+              - generic [ref=f681e127]: print()
+            - generic [ref=f681e128]:
+              - generic [ref=f681e129]: Python
+              - generic [ref=f681e130]: or
+              - generic [ref=f681e131]: JavaScript
+              - generic [ref=f681e132]: Trinket.io / IDLE
+        - button "✂️ games newcomer Rock Paper Scissors Play against the computer. It never cheats — you can read the code to prove it. Random choice If/elif/else Comparison Loops Python or JavaScript Trinket.io / IDLE" [ref=f681e133] [cursor=pointer]:
+          - generic [ref=f681e134]: ✂️
+          - generic [ref=f681e142]:
+            - generic [ref=f681e143]:
+              - generic [ref=f681e144]: games
+              - generic [ref=f681e145]: newcomer
+            - heading "Rock Paper Scissors" [level=2] [ref=f681e147]
+            - paragraph [ref=f681e148]: Play against the computer. It never cheats — you can read the code to prove it.
+            - generic [ref=f681e149]:
+              - generic [ref=f681e150]: Random choice
+              - generic [ref=f681e151]: If/elif/else
+              - generic [ref=f681e152]: Comparison
+              - generic [ref=f681e153]: Loops
+            - generic [ref=f681e154]:
+              - generic [ref=f681e155]: Python
+              - generic [ref=f681e156]: or
+              - generic [ref=f681e157]: JavaScript
+              - generic [ref=f681e158]: Trinket.io / IDLE
+        - button "🌀 games newcomer Turtle Spirals Draw hypnotic patterns with ten lines of code. The computer becomes a pen. turtle library Loops Angles Drawing Python turtle (built-in, no install)" [ref=f681e159] [cursor=pointer]:
+          - generic [ref=f681e160]: 🌀
+          - generic [ref=f681e168]:
+            - generic [ref=f681e169]:
+              - generic [ref=f681e170]: games
+              - generic [ref=f681e171]: newcomer
+            - heading "Turtle Spirals" [level=2] [ref=f681e173]
+            - paragraph [ref=f681e174]: Draw hypnotic patterns with ten lines of code. The computer becomes a pen.
+            - generic [ref=f681e175]:
+              - generic [ref=f681e176]: turtle library
+              - generic [ref=f681e177]: Loops
+              - generic [ref=f681e178]: Angles
+              - generic [ref=f681e179]: Drawing
+            - generic [ref=f681e180]:
+              - generic [ref=f681e181]: Python
+              - generic [ref=f681e182]: turtle (built-in, no install)
+        - button "⭕ games newcomer Tic-Tac-Toe Build noughts and crosses — then make the computer play against you. 2D lists Win conditions User input Game logic Python or JavaScript HTML CSS IDLE / Trinket" [ref=f681e183] [cursor=pointer]:
+          - generic [ref=f681e184]: ⭕
+          - generic [ref=f681e192]:
+            - generic [ref=f681e193]:
+              - generic [ref=f681e194]: games
+              - generic [ref=f681e195]: newcomer
+            - heading "Tic-Tac-Toe" [level=2] [ref=f681e197]
+            - paragraph [ref=f681e198]: Build noughts and crosses — then make the computer play against you.
+            - generic [ref=f681e199]:
+              - generic [ref=f681e200]: 2D lists
+              - generic [ref=f681e201]: Win conditions
+              - generic [ref=f681e202]: User input
+              - generic [ref=f681e203]: Game logic
+            - generic [ref=f681e204]:
+              - generic [ref=f681e205]: Python
+              - generic [ref=f681e206]: or
+              - generic [ref=f681e207]: JavaScript
+              - generic [ref=f681e208]: HTML
+              - generic [ref=f681e209]: CSS
+              - generic [ref=f681e210]: IDLE / Trinket
+        - button "🪢 games newcomer Hangman Guess the word letter by letter before the hangman is complete. Strings Lists Random Game state Python IDLE / Trinket" [ref=f681e211] [cursor=pointer]:
+          - generic [ref=f681e212]: 🪢
+          - generic [ref=f681e220]:
+            - generic [ref=f681e221]:
+              - generic [ref=f681e222]: games
+              - generic [ref=f681e223]: newcomer
+            - heading "Hangman" [level=2] [ref=f681e225]
+            - paragraph [ref=f681e226]: Guess the word letter by letter before the hangman is complete.
+            - generic [ref=f681e227]:
+              - generic [ref=f681e228]: Strings
+              - generic [ref=f681e229]: Lists
+              - generic [ref=f681e230]: Random
+              - generic [ref=f681e231]: Game state
+            - generic [ref=f681e232]:
+              - generic [ref=f681e233]: Python
+              - generic [ref=f681e234]: IDLE / Trinket
+        - button "🌦️ web beginner Weather Dashboard Fetch live weather for any city and display it beautifully. APIs JSON CSS design User input JavaScript HTML CSS or Python OpenWeatherMap API" [ref=f681e235] [cursor=pointer]:
+          - generic [ref=f681e236]: 🌦️
+          - generic [ref=f681e240]:
+            - generic [ref=f681e241]:
+              - generic [ref=f681e242]: web
+              - generic [ref=f681e243]: beginner
+            - heading "Weather Dashboard" [level=2] [ref=f681e245]
+            - paragraph [ref=f681e246]: Fetch live weather for any city and display it beautifully.
+            - generic [ref=f681e247]:
+              - generic [ref=f681e248]: APIs
+              - generic [ref=f681e249]: JSON
+              - generic [ref=f681e250]: CSS design
+              - generic [ref=f681e251]: User input
+            - generic [ref=f681e252]:
+              - generic [ref=f681e253]: JavaScript
+              - generic [ref=f681e254]: HTML
+              - generic [ref=f681e255]: CSS
+              - generic [ref=f681e256]: or
+              - generic [ref=f681e257]: Python
+              - generic [ref=f681e258]: OpenWeatherMap API
+        - button "🐍 games beginner Snake Game Build the classic game from scratch. Then make it yours. Game loops Keyboard events Collision detection Score tracking Python or JavaScript turtle / pygame" [ref=f681e259] [cursor=pointer]:
+          - generic [ref=f681e260]: 🐍
+          - generic [ref=f681e268]:
+            - generic [ref=f681e269]:
+              - generic [ref=f681e270]: games
+              - generic [ref=f681e271]: beginner
+            - heading "Snake Game" [level=2] [ref=f681e273]
+            - paragraph [ref=f681e274]: Build the classic game from scratch. Then make it yours.
+            - generic [ref=f681e275]:
+              - generic [ref=f681e276]: Game loops
+              - generic [ref=f681e277]: Keyboard events
+              - generic [ref=f681e278]: Collision detection
+              - generic [ref=f681e279]: Score tracking
+            - generic [ref=f681e280]:
+              - generic [ref=f681e281]: Python
+              - generic [ref=f681e282]: or
+              - generic [ref=f681e283]: JavaScript
+              - generic [ref=f681e284]: turtle / pygame
+        - button "🏓 games beginner Pong Two paddles. One ball. Build the game that started it all. Pygame Collision detection Two-player input Basic physics Python pygame" [ref=f681e285] [cursor=pointer]:
+          - generic [ref=f681e286]: 🏓
+          - generic [ref=f681e294]:
+            - generic [ref=f681e295]:
+              - generic [ref=f681e296]: games
+              - generic [ref=f681e297]: beginner
+            - heading "Pong" [level=2] [ref=f681e299]
+            - paragraph [ref=f681e300]: Two paddles. One ball. Build the game that started it all.
+            - generic [ref=f681e301]:
+              - generic [ref=f681e302]: Pygame
+              - generic [ref=f681e303]: Collision detection
+              - generic [ref=f681e304]: Two-player input
+              - generic [ref=f681e305]: Basic physics
+            - generic [ref=f681e306]:
+              - generic [ref=f681e307]: Python
+              - generic [ref=f681e308]: pygame
+        - button "💣 games beginner PhotoBomb Bomb photos with stickers as fast and accurately as you can. pygame Mouse events Image handling Scoring Python pygame" [ref=f681e309] [cursor=pointer]:
+          - generic [ref=f681e310]: 💣
+          - generic [ref=f681e318]:
+            - generic [ref=f681e319]:
+              - generic [ref=f681e320]: games
+              - generic [ref=f681e321]: beginner
+            - heading "PhotoBomb" [level=2] [ref=f681e323]
+            - paragraph [ref=f681e324]: Bomb photos with stickers as fast and accurately as you can.
+            - generic [ref=f681e325]:
+              - generic [ref=f681e326]: pygame
+              - generic [ref=f681e327]: Mouse events
+              - generic [ref=f681e328]: Image handling
+              - generic [ref=f681e329]: Scoring
+            - generic [ref=f681e330]:
+              - generic [ref=f681e331]: Python
+              - generic [ref=f681e332]: pygame
+        - button "✅ tools beginner Personal Productivity App Build the todo app you actually want to use. File storage GUI / Web UI Data persistence UX thinking Python or JavaScript HTML CSS tkinter JSON" [ref=f681e333] [cursor=pointer]:
+          - generic [ref=f681e334]: ✅
+          - generic [ref=f681e336]:
+            - generic [ref=f681e337]:
+              - generic [ref=f681e338]: tools
+              - generic [ref=f681e339]: beginner
+            - heading "Personal Productivity App" [level=2] [ref=f681e341]
+            - paragraph [ref=f681e342]: Build the todo app you actually want to use.
+            - generic [ref=f681e343]:
+              - generic [ref=f681e344]: File storage
+              - generic [ref=f681e345]: GUI / Web UI
+              - generic [ref=f681e346]: Data persistence
+              - generic [ref=f681e347]: UX thinking
+            - generic [ref=f681e348]:
+              - generic [ref=f681e349]: Python
+              - generic [ref=f681e350]: or
+              - generic [ref=f681e351]: JavaScript
+              - generic [ref=f681e352]: HTML
+              - generic [ref=f681e353]: CSS
+              - generic [ref=f681e354]: tkinter
+              - generic [ref=f681e355]: JSON
+        - button "🔗 web beginner Personal Portfolio Site Build your own corner of the internet. Make it unforgettable. HTML / CSS Responsive design Personal branding Deployment HTML CSS JavaScript GitHub Pages" [ref=f681e356] [cursor=pointer]:
+          - generic [ref=f681e357]: 🔗
+          - generic [ref=f681e361]:
+            - generic [ref=f681e362]:
+              - generic [ref=f681e363]: web
+              - generic [ref=f681e364]: beginner
+            - heading "Personal Portfolio Site" [level=2] [ref=f681e366]
+            - paragraph [ref=f681e367]: Build your own corner of the internet. Make it unforgettable.
+            - generic [ref=f681e368]:
+              - generic [ref=f681e369]: HTML / CSS
+              - generic [ref=f681e370]: Responsive design
+              - generic [ref=f681e371]: Personal branding
+              - generic [ref=f681e372]: Deployment
+            - generic [ref=f681e373]:
+              - generic [ref=f681e374]: HTML
+              - generic [ref=f681e375]: CSS
+              - generic [ref=f681e376]: JavaScript
+              - generic [ref=f681e377]: GitHub Pages
+        - button "📈 data beginner Spotify Stats Dashboard Visualise your own listening habits — what does your music say about you? OAuth REST APIs Data viz Personal data Python or JavaScript Spotify API matplotlib" [ref=f681e378] [cursor=pointer]:
+          - generic [ref=f681e379]: 📈
+          - generic [ref=f681e386]:
+            - generic [ref=f681e387]:
+              - generic [ref=f681e388]: data
+              - generic [ref=f681e389]: beginner
+            - heading "Spotify Stats Dashboard" [level=2] [ref=f681e391]
+            - paragraph [ref=f681e392]: Visualise your own listening habits — what does your music say about you?
+            - generic [ref=f681e393]:
+              - generic [ref=f681e394]: OAuth
+              - generic [ref=f681e395]: REST APIs
+              - generic [ref=f681e396]: Data viz
+              - generic [ref=f681e397]: Personal data
+            - generic [ref=f681e398]:
+              - generic [ref=f681e399]: Python
+              - generic [ref=f681e400]: or
+              - generic [ref=f681e401]: JavaScript
+              - generic [ref=f681e402]: Spotify API
+              - generic [ref=f681e403]: matplotlib
+        - button "🃏 games beginner Flashcard Quiz App Build a quiz app for any subject — then use it to revise. File reading Lists Random Score tracking Python or JavaScript HTML CSS JSON / text files IDLE" [ref=f681e404] [cursor=pointer]:
+          - generic [ref=f681e405]: 🃏
+          - generic [ref=f681e413]:
+            - generic [ref=f681e414]:
+              - generic [ref=f681e415]: games
+              - generic [ref=f681e416]: beginner
+            - heading "Flashcard Quiz App" [level=2] [ref=f681e418]
+            - paragraph [ref=f681e419]: Build a quiz app for any subject — then use it to revise.
+            - generic [ref=f681e420]:
+              - generic [ref=f681e421]: File reading
+              - generic [ref=f681e422]: Lists
+              - generic [ref=f681e423]: Random
+              - generic [ref=f681e424]: Score tracking
+            - generic [ref=f681e425]:
+              - generic [ref=f681e426]: Python
+              - generic [ref=f681e427]: or
+              - generic [ref=f681e428]: JavaScript
+              - generic [ref=f681e429]: HTML
+              - generic [ref=f681e430]: CSS
+              - generic [ref=f681e431]: JSON / text files
+              - generic [ref=f681e432]: IDLE
+        - button "💬 tools beginner Chatbot for Your School Club A simple chatbot that answers questions about something you care about. String matching Dictionaries User input Logic flow Python or JavaScript HTML Dictionary / JSON" [ref=f681e433] [cursor=pointer]:
+          - generic [ref=f681e434]: 💬
+          - generic [ref=f681e436]:
+            - generic [ref=f681e437]:
+              - generic [ref=f681e438]: tools
+              - generic [ref=f681e439]: beginner
+            - heading "Chatbot for Your School Club" [level=2] [ref=f681e441]
+            - paragraph [ref=f681e442]: A simple chatbot that answers questions about something you care about.
+            - generic [ref=f681e443]:
+              - generic [ref=f681e444]: String matching
+              - generic [ref=f681e445]: Dictionaries
+              - generic [ref=f681e446]: User input
+              - generic [ref=f681e447]: Logic flow
+            - generic [ref=f681e448]:
+              - generic [ref=f681e449]: Python
+              - generic [ref=f681e450]: or
+              - generic [ref=f681e451]: JavaScript
+              - generic [ref=f681e452]: HTML
+              - generic [ref=f681e453]: Dictionary / JSON
+        - button "🤖 ai intermediate AI Study Buddy A chatbot that quizzes you on any subject you upload. LLM APIs File handling Prompt engineering UI design Python or JavaScript HTML CSS Claude API / OpenAI API Flask" [ref=f681e454] [cursor=pointer]:
+          - generic [ref=f681e455]: 🤖
+          - generic [ref=f681e481]:
+            - generic [ref=f681e482]:
+              - generic [ref=f681e483]: ai
+              - generic [ref=f681e484]: intermediate
+            - heading "AI Study Buddy" [level=2] [ref=f681e486]
+            - paragraph [ref=f681e487]: A chatbot that quizzes you on any subject you upload.
+            - generic [ref=f681e488]:
+              - generic [ref=f681e489]: LLM APIs
+              - generic [ref=f681e490]: File handling
+              - generic [ref=f681e491]: Prompt engineering
+              - generic [ref=f681e492]: UI design
+            - generic [ref=f681e493]:
+              - generic [ref=f681e494]: Python
+              - generic [ref=f681e495]: or
+              - generic [ref=f681e496]: JavaScript
+              - generic [ref=f681e497]: HTML
+              - generic [ref=f681e498]: CSS
+              - generic [ref=f681e499]: Claude API / OpenAI API
+              - generic [ref=f681e500]: Flask
+        - button "📊 data intermediate School Timetable Analyser Turn a messy CSV timetable into a visual, searchable tool. CSV parsing Data visualisation pandas Filtering Python pandas matplotlib / Plotly CSV files" [ref=f681e501] [cursor=pointer]:
+          - generic [ref=f681e502]: 📊
+          - generic [ref=f681e509]:
+            - generic [ref=f681e510]:
+              - generic [ref=f681e511]: data
+              - generic [ref=f681e512]: intermediate
+            - heading "School Timetable Analyser" [level=2] [ref=f681e514]
+            - paragraph [ref=f681e515]: Turn a messy CSV timetable into a visual, searchable tool.
+            - generic [ref=f681e516]:
+              - generic [ref=f681e517]: CSV parsing
+              - generic [ref=f681e518]: Data visualisation
+              - generic [ref=f681e519]: pandas
+              - generic [ref=f681e520]: Filtering
+            - generic [ref=f681e521]:
+              - generic [ref=f681e522]: Python
+              - generic [ref=f681e523]: pandas
+              - generic [ref=f681e524]: matplotlib / Plotly
+              - generic [ref=f681e525]: CSV files
+        - button "🚦 hardware intermediate Smart Traffic Light A real working traffic light on a breadboard, with logic. GPIO pins Physical circuits Timing logic Sensors Python Raspberry Pi GPIO library" [ref=f681e526] [cursor=pointer]:
+          - generic [ref=f681e527]: 🚦
+          - generic [ref=f681e532]:
+            - generic [ref=f681e533]:
+              - generic [ref=f681e534]: hardware
+              - generic [ref=f681e535]: intermediate
+            - heading "Smart Traffic Light" [level=2] [ref=f681e537]
+            - paragraph [ref=f681e538]: A real working traffic light on a breadboard, with logic.
+            - generic [ref=f681e539]:
+              - generic [ref=f681e540]: GPIO pins
+              - generic [ref=f681e541]: Physical circuits
+              - generic [ref=f681e542]: Timing logic
+              - generic [ref=f681e543]: Sensors
+            - generic [ref=f681e544]:
+              - generic [ref=f681e545]: Python
+              - generic [ref=f681e546]: Raspberry Pi
+              - generic [ref=f681e547]: GPIO library
+        - button "🎵 web intermediate Music Visualiser Make music you can see — shapes that react to sound in real time. Web Audio API Canvas animation Frequency analysis Real-time JavaScript Web Audio API HTML Canvas CSS" [ref=f681e548] [cursor=pointer]:
+          - generic [ref=f681e549]: 🎵
+          - generic [ref=f681e553]:
+            - generic [ref=f681e554]:
+              - generic [ref=f681e555]: web
+              - generic [ref=f681e556]: intermediate
+            - heading "Music Visualiser" [level=2] [ref=f681e558]
+            - paragraph [ref=f681e559]: Make music you can see — shapes that react to sound in real time.
+            - generic [ref=f681e560]:
+              - generic [ref=f681e561]: Web Audio API
+              - generic [ref=f681e562]: Canvas animation
+              - generic [ref=f681e563]: Frequency analysis
+              - generic [ref=f681e564]: Real-time
+            - generic [ref=f681e565]:
+              - generic [ref=f681e566]: JavaScript
+              - generic [ref=f681e567]: Web Audio API
+              - generic [ref=f681e568]: HTML Canvas
+              - generic [ref=f681e569]: CSS
+        - button "📰 web intermediate News Aggregator Pull headlines from multiple sources and build your own front page. REST APIs JSON parsing DOM manipulation localStorage JavaScript HTML CSS or Python NewsAPI localStorage" [ref=f681e570] [cursor=pointer]:
+          - generic [ref=f681e571]: 📰
+          - generic [ref=f681e575]:
+            - generic [ref=f681e576]:
+              - generic [ref=f681e577]: web
+              - generic [ref=f681e578]: intermediate
+            - heading "News Aggregator" [level=2] [ref=f681e580]
+            - paragraph [ref=f681e581]: Pull headlines from multiple sources and build your own front page.
+            - generic [ref=f681e582]:
+              - generic [ref=f681e583]: REST APIs
+              - generic [ref=f681e584]: JSON parsing
+              - generic [ref=f681e585]: DOM manipulation
+              - generic [ref=f681e586]: localStorage
+            - generic [ref=f681e587]:
+              - generic [ref=f681e588]: JavaScript
+              - generic [ref=f681e589]: HTML
+              - generic [ref=f681e590]: CSS
+              - generic [ref=f681e591]: or
+              - generic [ref=f681e592]: Python
+              - generic [ref=f681e593]: NewsAPI
+              - generic [ref=f681e594]: localStorage
+        - button "🌡️ hardware intermediate Room Environment Monitor Track temperature, humidity, and light in your room. Log it. Graph it. Sensors Data logging Time series Live dashboard Python Raspberry Pi DHT22 sensor matplotlib" [ref=f681e595] [cursor=pointer]:
+          - generic [ref=f681e596]: 🌡️
+          - generic [ref=f681e601]:
+            - generic [ref=f681e602]:
+              - generic [ref=f681e603]: hardware
+              - generic [ref=f681e604]: intermediate
+            - heading "Room Environment Monitor" [level=2] [ref=f681e606]
+            - paragraph [ref=f681e607]: Track temperature, humidity, and light in your room. Log it. Graph it.
+            - generic [ref=f681e608]:
+              - generic [ref=f681e609]: Sensors
+              - generic [ref=f681e610]: Data logging
+              - generic [ref=f681e611]: Time series
+              - generic [ref=f681e612]: Live dashboard
+            - generic [ref=f681e613]:
+              - generic [ref=f681e614]: Python
+              - generic [ref=f681e615]: Raspberry Pi
+              - generic [ref=f681e616]: DHT22 sensor
+              - generic [ref=f681e617]: matplotlib
+        - button "📝 tools intermediate Markdown Note-Taking App A distraction-free writing app that renders Markdown live as you type. Markdown parsing Real-time rendering File system Search JavaScript HTML CSS or Python marked.js File API" [ref=f681e618] [cursor=pointer]:
+          - generic [ref=f681e619]: 📝
+          - generic [ref=f681e621]:
+            - generic [ref=f681e622]:
+              - generic [ref=f681e623]: tools
+              - generic [ref=f681e624]: intermediate
+            - heading "Markdown Note-Taking App" [level=2] [ref=f681e626]
+            - paragraph [ref=f681e627]: A distraction-free writing app that renders Markdown live as you type.
+            - generic [ref=f681e628]:
+              - generic [ref=f681e629]: Markdown parsing
+              - generic [ref=f681e630]: Real-time rendering
+              - generic [ref=f681e631]: File system
+              - generic [ref=f681e632]: Search
+            - generic [ref=f681e633]:
+              - generic [ref=f681e634]: JavaScript
+              - generic [ref=f681e635]: HTML
+              - generic [ref=f681e636]: CSS
+              - generic [ref=f681e637]: or
+              - generic [ref=f681e638]: Python
+              - generic [ref=f681e639]: marked.js
+              - generic [ref=f681e640]: File API
+        - button "🏃 data intermediate Personal Fitness Tracker Log your own data. See your own patterns. Build the dashboard you want. Data entry SQLite / CSV Charts Date handling Python or JavaScript HTML CSS SQLite matplotlib / Plotly tkinter" [ref=f681e641] [cursor=pointer]:
+          - generic [ref=f681e642]: 🏃
+          - generic [ref=f681e649]:
+            - generic [ref=f681e650]:
+              - generic [ref=f681e651]: data
+              - generic [ref=f681e652]: intermediate
+            - heading "Personal Fitness Tracker" [level=2] [ref=f681e654]
+            - paragraph [ref=f681e655]: Log your own data. See your own patterns. Build the dashboard you want.
+            - generic [ref=f681e656]:
+              - generic [ref=f681e657]: Data entry
+              - generic [ref=f681e658]: SQLite / CSV
+              - generic [ref=f681e659]: Charts
+              - generic [ref=f681e660]: Date handling
+            - generic [ref=f681e661]:
+              - generic [ref=f681e662]: Python
+              - generic [ref=f681e663]: or
+              - generic [ref=f681e664]: JavaScript
+              - generic [ref=f681e665]: HTML
+              - generic [ref=f681e666]: CSS
+              - generic [ref=f681e667]: SQLite
+              - generic [ref=f681e668]: matplotlib / Plotly
+              - generic [ref=f681e669]: tkinter
+        - button "👾 games intermediate Space Invaders Recreate the arcade classic — sprites, waves of enemies, and escalating chaos. Sprite groups Collision detection Animation Game difficulty Python pygame" [ref=f681e670] [cursor=pointer]:
+          - generic [ref=f681e671]: 👾
+          - generic [ref=f681e679]:
+            - generic [ref=f681e680]:
+              - generic [ref=f681e681]: games
+              - generic [ref=f681e682]: intermediate
+            - heading "Space Invaders" [level=2] [ref=f681e684]
+            - paragraph [ref=f681e685]: Recreate the arcade classic — sprites, waves of enemies, and escalating chaos.
+            - generic [ref=f681e686]:
+              - generic [ref=f681e687]: Sprite groups
+              - generic [ref=f681e688]: Collision detection
+              - generic [ref=f681e689]: Animation
+              - generic [ref=f681e690]: Game difficulty
+            - generic [ref=f681e691]:
+              - generic [ref=f681e692]: Python
+              - generic [ref=f681e693]: pygame
+        - button "🧱 games intermediate Tetris Recreate the most iconic puzzle game ever made — and understand why it's tricky. Grid systems Piece rotation Matrix logic Game loop Python pygame" [ref=f681e694] [cursor=pointer]:
+          - generic [ref=f681e695]: 🧱
+          - generic [ref=f681e703]:
+            - generic [ref=f681e704]:
+              - generic [ref=f681e705]: games
+              - generic [ref=f681e706]: intermediate
+            - heading "Tetris" [level=2] [ref=f681e708]
+            - paragraph [ref=f681e709]: Recreate the most iconic puzzle game ever made — and understand why it's tricky.
+            - generic [ref=f681e710]:
+              - generic [ref=f681e711]: Grid systems
+              - generic [ref=f681e712]: Piece rotation
+              - generic [ref=f681e713]: Matrix logic
+              - generic [ref=f681e714]: Game loop
+            - generic [ref=f681e715]:
+              - generic [ref=f681e716]: Python
+              - generic [ref=f681e717]: pygame
+        - button "🏀 games intermediate Hoops — Basketball on Other Planets Shoot hoops on the Moon, Mars, and Jupiter. Physics changes everything. Projectile motion pygame Math / physics Game design Python pygame math library" [ref=f681e718] [cursor=pointer]:
+          - generic [ref=f681e719]: 🏀
+          - generic [ref=f681e727]:
+            - generic [ref=f681e728]:
+              - generic [ref=f681e729]: games
+              - generic [ref=f681e730]: intermediate
+            - heading "Hoops — Basketball on Other Planets" [level=2] [ref=f681e732]
+            - paragraph [ref=f681e733]: Shoot hoops on the Moon, Mars, and Jupiter. Physics changes everything.
+            - generic [ref=f681e734]:
+              - generic [ref=f681e735]: Projectile motion
+              - generic [ref=f681e736]: pygame
+              - generic [ref=f681e737]: Math / physics
+              - generic [ref=f681e738]: Game design
+            - generic [ref=f681e739]:
+              - generic [ref=f681e740]: Python
+              - generic [ref=f681e741]: pygame
+              - generic [ref=f681e742]: math library
+        - button "🔢 games intermediate Sudoku Solver Build a program that can solve any Sudoku — then visualise it solving step by step. Backtracking Recursion 2D grids Algorithm visualisation Python pygame numpy" [ref=f681e743] [cursor=pointer]:
+          - generic [ref=f681e744]: 🔢
+          - generic [ref=f681e752]:
+            - generic [ref=f681e753]:
+              - generic [ref=f681e754]: games
+              - generic [ref=f681e755]: intermediate
+            - heading "Sudoku Solver" [level=2] [ref=f681e757]
+            - paragraph [ref=f681e758]: Build a program that can solve any Sudoku — then visualise it solving step by step.
+            - generic [ref=f681e759]:
+              - generic [ref=f681e760]: Backtracking
+              - generic [ref=f681e761]: Recursion
+              - generic [ref=f681e762]: 2D grids
+              - generic [ref=f681e763]: Algorithm visualisation
+            - generic [ref=f681e764]:
+              - generic [ref=f681e765]: Python
+              - generic [ref=f681e766]: pygame
+              - generic [ref=f681e767]: numpy
+        - button "🧠 ai advanced Image Classifier Train a model to recognise something only you would think of. Machine learning Transfer learning Python Data collection Python TensorFlow / PyTorch OpenCV Teachable Machine" [ref=f681e768] [cursor=pointer]:
+          - generic [ref=f681e769]: 🧠
+          - generic [ref=f681e795]:
+            - generic [ref=f681e796]:
+              - generic [ref=f681e797]: ai
+              - generic [ref=f681e798]: advanced
+            - heading "Image Classifier" [level=2] [ref=f681e800]
+            - paragraph [ref=f681e801]: Train a model to recognise something only you would think of.
+            - generic [ref=f681e802]:
+              - generic [ref=f681e803]: Machine learning
+              - generic [ref=f681e804]: Transfer learning
+              - generic [ref=f681e805]: Python
+              - generic [ref=f681e806]: Data collection
+            - generic [ref=f681e807]:
+              - generic [ref=f681e808]: Python
+              - generic [ref=f681e809]: TensorFlow / PyTorch
+              - generic [ref=f681e810]: OpenCV
+              - generic [ref=f681e811]: Teachable Machine
+        - button "🗺️ games advanced Procedural Map Generator Generate infinite unique worlds with code. Algorithms Randomness Grid systems Visualisation Python or JavaScript pygame noise library" [ref=f681e812] [cursor=pointer]:
+          - generic [ref=f681e813]: 🗺️
+          - generic [ref=f681e821]:
+            - generic [ref=f681e822]:
+              - generic [ref=f681e823]: games
+              - generic [ref=f681e824]: advanced
+            - heading "Procedural Map Generator" [level=2] [ref=f681e826]
+            - paragraph [ref=f681e827]: Generate infinite unique worlds with code.
+            - generic [ref=f681e828]:
+              - generic [ref=f681e829]: Algorithms
+              - generic [ref=f681e830]: Randomness
+              - generic [ref=f681e831]: Grid systems
+              - generic [ref=f681e832]: Visualisation
+            - generic [ref=f681e833]:
+              - generic [ref=f681e834]: Python
+              - generic [ref=f681e835]: or
+              - generic [ref=f681e836]: JavaScript
+              - generic [ref=f681e837]: pygame
+              - generic [ref=f681e838]: noise library
+        - button "🔐 tools advanced Password Manager Build secure credential storage — and understand why it's hard. Cryptography Hashing File encryption Security thinking Python cryptography library SQLite tkinter" [ref=f681e839] [cursor=pointer]:
+          - generic [ref=f681e840]: 🔐
+          - generic [ref=f681e842]:
+            - generic [ref=f681e843]:
+              - generic [ref=f681e844]: tools
+              - generic [ref=f681e845]: advanced
+            - heading "Password Manager" [level=2] [ref=f681e847]
+            - paragraph [ref=f681e848]: Build secure credential storage — and understand why it's hard.
+            - generic [ref=f681e849]:
+              - generic [ref=f681e850]: Cryptography
+              - generic [ref=f681e851]: Hashing
+              - generic [ref=f681e852]: File encryption
+              - generic [ref=f681e853]: Security thinking
+            - generic [ref=f681e854]:
+              - generic [ref=f681e855]: Python
+              - generic [ref=f681e856]: cryptography library
+              - generic [ref=f681e857]: SQLite
+              - generic [ref=f681e858]: tkinter
+        - button "🤝 web advanced Real-Time Collaborative Tool Two people editing the same thing at the same time. Harder than it sounds. WebSockets Node.js Conflict resolution State sync JavaScript or Python Node.js Socket.io HTML Canvas" [ref=f681e859] [cursor=pointer]:
+          - generic [ref=f681e860]: 🤝
+          - generic [ref=f681e864]:
+            - generic [ref=f681e865]:
+              - generic [ref=f681e866]: web
+              - generic [ref=f681e867]: advanced
+            - heading "Real-Time Collaborative Tool" [level=2] [ref=f681e869]
+            - paragraph [ref=f681e870]: Two people editing the same thing at the same time. Harder than it sounds.
+            - generic [ref=f681e871]:
+              - generic [ref=f681e872]: WebSockets
+              - generic [ref=f681e873]: Node.js
+              - generic [ref=f681e874]: Conflict resolution
+              - generic [ref=f681e875]: State sync
+            - generic [ref=f681e876]:
+              - generic [ref=f681e877]: JavaScript
+              - generic [ref=f681e878]: or
+              - generic [ref=f681e879]: Python
+              - generic [ref=f681e880]: Node.js
+              - generic [ref=f681e881]: Socket.io
+              - generic [ref=f681e882]: HTML Canvas
+        - button "🗣️ ai advanced Voice-Controlled Assistant Talk to your computer. It does things. Build the pipeline yourself. Speech recognition NLP / intent parsing APIs Audio Python SpeechRecognition pyttsx3 APIs" [ref=f681e883] [cursor=pointer]:
+          - generic [ref=f681e884]: 🗣️
+          - generic [ref=f681e910]:
+            - generic [ref=f681e911]:
+              - generic [ref=f681e912]: ai
+              - generic [ref=f681e913]: advanced
+            - heading "Voice-Controlled Assistant" [level=2] [ref=f681e915]
+            - paragraph [ref=f681e916]: Talk to your computer. It does things. Build the pipeline yourself.
+            - generic [ref=f681e917]:
+              - generic [ref=f681e918]: Speech recognition
+              - generic [ref=f681e919]: NLP / intent parsing
+              - generic [ref=f681e920]: APIs
+              - generic [ref=f681e921]: Audio
+            - generic [ref=f681e922]:
+              - generic [ref=f681e923]: Python
+              - generic [ref=f681e924]: SpeechRecognition
+              - generic [ref=f681e925]: pyttsx3
+              - generic [ref=f681e926]: APIs
+        - button "📡 data advanced Live Data Pipeline Collect, clean, store, and visualise streaming data — end to end. APIs Data cleaning SQLite / PostgreSQL Streaming Python requests / websockets SQLite Plotly Dash" [ref=f681e927] [cursor=pointer]:
+          - generic [ref=f681e928]: 📡
+          - generic [ref=f681e935]:
+            - generic [ref=f681e936]:
+              - generic [ref=f681e937]: data
+              - generic [ref=f681e938]: advanced
+            - heading "Live Data Pipeline" [level=2] [ref=f681e940]
+            - paragraph [ref=f681e941]: Collect, clean, store, and visualise streaming data — end to end.
+            - generic [ref=f681e942]:
+              - generic [ref=f681e943]: APIs
+              - generic [ref=f681e944]: Data cleaning
+              - generic [ref=f681e945]: SQLite / PostgreSQL
+              - generic [ref=f681e946]: Streaming
+            - generic [ref=f681e947]:
+              - generic [ref=f681e948]: Python
+              - generic [ref=f681e949]: requests / websockets
+              - generic [ref=f681e950]: SQLite
+              - generic [ref=f681e951]: Plotly Dash
+        - button "🤖 hardware advanced Line-Following Robot Build a robot that navigates by itself using sensors and logic. Motor control IR sensors PID control Real-time logic Python Arduino IDE IR sensors Motor driver" [ref=f681e952] [cursor=pointer]:
+          - generic [ref=f681e953]: 🤖
+          - generic [ref=f681e958]:
+            - generic [ref=f681e959]:
+              - generic [ref=f681e960]: hardware
+              - generic [ref=f681e961]: advanced
+            - heading "Line-Following Robot" [level=2] [ref=f681e963]
+            - paragraph [ref=f681e964]: Build a robot that navigates by itself using sensors and logic.
+            - generic [ref=f681e965]:
+              - generic [ref=f681e966]: Motor control
+              - generic [ref=f681e967]: IR sensors
+              - generic [ref=f681e968]: PID control
+              - generic [ref=f681e969]: Real-time logic
+            - generic [ref=f681e970]:
+              - generic [ref=f681e971]: Python
+              - generic [ref=f681e972]: Arduino IDE
+              - generic [ref=f681e973]: IR sensors
+              - generic [ref=f681e974]: Motor driver
+        - button "⚙️ tools advanced Personal API Build your own REST API that other apps — and your own projects — can query. REST design Authentication Database Deployment Python or JavaScript Flask / FastAPI SQLite JWT auth" [ref=f681e975] [cursor=pointer]:
+          - generic [ref=f681e976]: ⚙️
+          - generic [ref=f681e978]:
+            - generic [ref=f681e979]:
+              - generic [ref=f681e980]: tools
+              - generic [ref=f681e981]: advanced
+            - heading "Personal API" [level=2] [ref=f681e983]
+            - paragraph [ref=f681e984]: Build your own REST API that other apps — and your own projects — can query.
+            - generic [ref=f681e985]:
+              - generic [ref=f681e986]: REST design
+              - generic [ref=f681e987]: Authentication
+              - generic [ref=f681e988]: Database
+              - generic [ref=f681e989]: Deployment
+            - generic [ref=f681e990]:
+              - generic [ref=f681e991]: Python
+              - generic [ref=f681e992]: or
+              - generic [ref=f681e993]: JavaScript
+              - generic [ref=f681e994]: Flask / FastAPI
+              - generic [ref=f681e995]: SQLite
+              - generic [ref=f681e996]: JWT auth
+        - button "🌿 games advanced Maze Generator Build an algorithm that creates a perfect, solvable maze from a blank grid. Recursive backtracking Grid graphs Algorithm visualisation pygame Python pygame" [ref=f681e997] [cursor=pointer]:
+          - generic [ref=f681e998]: 🌿
+          - generic [ref=f681e1006]:
+            - generic [ref=f681e1007]:
+              - generic [ref=f681e1008]: games
+              - generic [ref=f681e1009]: advanced
+            - heading "Maze Generator" [level=2] [ref=f681e1011]
+            - paragraph [ref=f681e1012]: Build an algorithm that creates a perfect, solvable maze from a blank grid.
+            - generic [ref=f681e1013]:
+              - generic [ref=f681e1014]: Recursive backtracking
+              - generic [ref=f681e1015]: Grid graphs
+              - generic [ref=f681e1016]: Algorithm visualisation
+              - generic [ref=f681e1017]: pygame
+            - generic [ref=f681e1018]:
+              - generic [ref=f681e1019]: Python
+              - generic [ref=f681e1020]: pygame
+        - button "🧭 games advanced Maze Solver Implement pathfinding algorithms and watch them find the exit. BFS / DFS A* algorithm Heuristics Algorithm comparison Python pygame" [ref=f681e1021] [cursor=pointer]:
+          - generic [ref=f681e1022]: 🧭
+          - generic [ref=f681e1030]:
+            - generic [ref=f681e1031]:
+              - generic [ref=f681e1032]: games
+              - generic [ref=f681e1033]: advanced
+            - heading "Maze Solver" [level=2] [ref=f681e1035]
+            - paragraph [ref=f681e1036]: Implement pathfinding algorithms and watch them find the exit.
+            - generic [ref=f681e1037]:
+              - generic [ref=f681e1038]: BFS / DFS
+              - generic [ref=f681e1039]: A* algorithm
+              - generic [ref=f681e1040]: Heuristics
+              - generic [ref=f681e1041]: Algorithm comparison
+            - generic [ref=f681e1042]:
+              - generic [ref=f681e1043]: Python
+              - generic [ref=f681e1044]: pygame
+        - button "🐍 academic beginner Python Certification Earn a recognised Python Institute certificate — PCEP or PCAP. Certification Python syntax Structured study Exam prep Python Python Institute PCEP / PCAP pythoninstitute.org" [ref=f681e1045] [cursor=pointer]:
+          - generic [ref=f681e1046]: 🐍
+          - generic [ref=f681e1051]:
+            - generic [ref=f681e1052]:
+              - generic [ref=f681e1053]: academic
+              - generic [ref=f681e1054]: beginner
+            - heading "Python Certification" [level=2] [ref=f681e1056]
+            - paragraph [ref=f681e1057]: Earn a recognised Python Institute certificate — PCEP or PCAP.
+            - generic [ref=f681e1058]:
+              - generic [ref=f681e1059]: Certification
+              - generic [ref=f681e1060]: Python syntax
+              - generic [ref=f681e1061]: Structured study
+              - generic [ref=f681e1062]: Exam prep
+            - generic [ref=f681e1063]:
+              - generic [ref=f681e1064]: Python
+              - generic [ref=f681e1065]: Python Institute PCEP / PCAP
+              - generic [ref=f681e1066]: pythoninstitute.org
+        - button "🌐 academic beginner JavaScript Certification Earn a recognised JS Institute certificate in web development and JavaScript. Certification JavaScript Web development Exam prep JavaScript OpenEDG JS Institute HTML CSS" [ref=f681e1067] [cursor=pointer]:
+          - generic [ref=f681e1068]: 🌐
+          - generic [ref=f681e1073]:
+            - generic [ref=f681e1074]:
+              - generic [ref=f681e1075]: academic
+              - generic [ref=f681e1076]: beginner
+            - heading "JavaScript Certification" [level=2] [ref=f681e1078]
+            - paragraph [ref=f681e1079]: Earn a recognised JS Institute certificate in web development and JavaScript.
+            - generic [ref=f681e1080]:
+              - generic [ref=f681e1081]: Certification
+              - generic [ref=f681e1082]: JavaScript
+              - generic [ref=f681e1083]: Web development
+              - generic [ref=f681e1084]: Exam prep
+            - generic [ref=f681e1085]:
+              - generic [ref=f681e1086]: JavaScript
+              - generic [ref=f681e1087]: OpenEDG JS Institute
+              - generic [ref=f681e1088]: HTML
+              - generic [ref=f681e1089]: CSS
+        - button "🧬 academic intermediate Object-Oriented Programming in Python Master classes, objects, inheritance, and the principles that make large programs manageable. Classes Inheritance Encapsulation Design patterns Python IDLE / VS Code" [ref=f681e1090] [cursor=pointer]:
+          - generic [ref=f681e1091]: 🧬
+          - generic [ref=f681e1096]:
+            - generic [ref=f681e1097]:
+              - generic [ref=f681e1098]: academic
+              - generic [ref=f681e1099]: intermediate
+            - heading "Object-Oriented Programming in Python" [level=2] [ref=f681e1101]
+            - paragraph [ref=f681e1102]: Master classes, objects, inheritance, and the principles that make large programs manageable.
+            - generic [ref=f681e1103]:
+              - generic [ref=f681e1104]: Classes
+              - generic [ref=f681e1105]: Inheritance
+              - generic [ref=f681e1106]: Encapsulation
+              - generic [ref=f681e1107]: Design patterns
+            - generic [ref=f681e1108]:
+              - generic [ref=f681e1109]: Python
+              - generic [ref=f681e1110]: IDLE / VS Code
+        - button "⚙️ academic intermediate Algorithms in Python Sorting, searching, recursion, complexity — the thinking that makes you a real programmer. Sorting Recursion Big O notation Problem solving Python IDLE / VS Code" [ref=f681e1111] [cursor=pointer]:
+          - generic [ref=f681e1112]: ⚙️
+          - generic [ref=f681e1117]:
+            - generic [ref=f681e1118]:
+              - generic [ref=f681e1119]: academic
+              - generic [ref=f681e1120]: intermediate
+            - heading "Algorithms in Python" [level=2] [ref=f681e1122]
+            - paragraph [ref=f681e1123]: Sorting, searching, recursion, complexity — the thinking that makes you a real programmer.
+            - generic [ref=f681e1124]:
+              - generic [ref=f681e1125]: Sorting
+              - generic [ref=f681e1126]: Recursion
+              - generic [ref=f681e1127]: Big O notation
+              - generic [ref=f681e1128]: Problem solving
+            - generic [ref=f681e1129]:
+              - generic [ref=f681e1130]: Python
+              - generic [ref=f681e1131]: IDLE / VS Code
+        - button "🏆 academic advanced Luxembourg Informatics Olympiad Compete nationally. Solve hard algorithmic problems under time pressure. Represent your school. Competitive programming Graph algorithms Dynamic programming Problem solving Python OIL portal portal.education.lu/infosolympiad" [ref=f681e1132] [cursor=pointer]:
+          - generic [ref=f681e1133]: 🏆
+          - generic [ref=f681e1138]:
+            - generic [ref=f681e1139]:
+              - generic [ref=f681e1140]: academic
+              - generic [ref=f681e1141]: advanced
+            - heading "Luxembourg Informatics Olympiad" [level=2] [ref=f681e1143]
+            - paragraph [ref=f681e1144]: Compete nationally. Solve hard algorithmic problems under time pressure. Represent your school.
+            - generic [ref=f681e1145]:
+              - generic [ref=f681e1146]: Competitive programming
+              - generic [ref=f681e1147]: Graph algorithms
+              - generic [ref=f681e1148]: Dynamic programming
+              - generic [ref=f681e1149]: Problem solving
+            - generic [ref=f681e1150]:
+              - generic [ref=f681e1151]: Python
+              - generic [ref=f681e1152]: OIL portal
+              - generic [ref=f681e1153]: portal.education.lu/infosolympiad
+  - contentinfo [ref=f681e1154]:
+    - generic [ref=f681e1155]:
+      - generic [ref=f681e1156]:
+        - link [ref=f681e1157] [cursor=pointer]:
+          - /url: /
+          - img "The Sandbox" [ref=f681e1158]
+        - generic [ref=f681e1159]:
+          - generic [ref=f681e1160]: The Sandbox
+          - link "Lycée | International School Michel Lucius · Luxembourg" [ref=f681e1162] [cursor=pointer]:
+            - /url: https://lml.lu
+      - generic [ref=f681e1163]:
+        - link "Brand" [ref=f681e1164] [cursor=pointer]:
+          - /url: /brand
+          - text: 🏷️
+        - link "Contact" [ref=f681e1165] [cursor=pointer]:
+          - /url: mailto:ricardo.duarteproenca@education.lu
+          - text: 📬
+  - alert [ref=f681e1166]

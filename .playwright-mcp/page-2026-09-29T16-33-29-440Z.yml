@@ -1,0 +1,316 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation [ref=e3]:
+    - link "The Sandbox The Sandbox Technology Club" [ref=e4] [cursor=pointer]:
+      - /url: /
+      - img "The Sandbox" [ref=e5]
+      - generic [ref=e6]:
+        - generic [ref=e7]: The Sandbox
+        - generic [ref=e8]: Technology Club
+    - button "Toggle menu" [ref=e9] [cursor=pointer]
+  - main [ref=e14]:
+    - generic [ref=e16]:
+      - img "The Sandbox" [ref=e17]
+      - generic [ref=e18]:
+        - heading [level=1] [ref=e19]:
+          - text: What will you
+          - emphasis [ref=e20]: build?
+        - paragraph [ref=e21]: An after-school club where you choose your own project, work at your own pace, and leave with something real.
+        - generic [ref=e22]: After-school · KS3 to A Level
+        - generic [ref=e24]:
+          - link "Join the club" [ref=e25] [cursor=pointer]:
+            - /url: https://forms.cloud.microsoft/e/20XRHrbVef
+          - link "Project Spark" [ref=e26] [cursor=pointer]:
+            - /url: /spark
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - term [ref=e29]: 44+
+            - definition [ref=e30]: Project ideas
+          - generic [ref=e31]:
+            - term [ref=e32]: "6"
+            - definition [ref=e33]: Topics
+          - generic [ref=e34]:
+            - term [ref=e35]: "4"
+            - definition [ref=e36]: Skill levels
+          - generic [ref=e37]:
+            - term [ref=e38]: "3"
+            - definition [ref=e39]: Languages
+          - generic [ref=e40]:
+            - term [ref=e41]: 2h
+            - definition [ref=e42]: Per session
+    - generic [ref=e44]:
+      - generic [ref=e45]: What is The Sandbox?
+      - heading [level=2] [ref=e46]:
+        - text: A place where thingsget
+        - emphasis [ref=e47]: made.
+      - paragraph [ref=e48]: No fixed curriculum. No pressure. No experience needed. You come in, pick a project that excites you, and build it — with a guide nearby when you get stuck.
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: 🎯
+          - heading "Your project, your choice" [level=3] [ref=e52]
+          - paragraph [ref=e53]: No one tells you what to build. You pick something that genuinely interests you — games, AI, hardware, the web.
+        - generic [ref=e54]:
+          - generic [ref=e55]: ⚡
+          - heading "Your pace, your level" [level=3] [ref=e56]
+          - paragraph [ref=e57]: Complete beginner or experienced coder — everyone works at their own level. No one waits for anyone else.
+        - generic [ref=e58]:
+          - generic [ref=e59]: 🏆
+          - heading "Real outcomes" [level=3] [ref=e60]
+          - paragraph [ref=e61]: A portfolio project. Something you can show, explain, and talk about in a university interview.
+        - generic [ref=e62]:
+          - generic [ref=e63]: Academic track
+          - generic [ref=e64]: 🎓
+          - heading "Certifications & Olympiad" [level=3] [ref=e65]
+          - paragraph [ref=e66]: Sit the Python or JS Institute certification. Compete in the Luxembourg Informatics Olympiad. Real credentials.
+      - generic [ref=e67]:
+        - paragraph [ref=e68]: Students come in, work on their own projects, and leave having built something real. No fixed curriculum. No pressure. Just a space, a guide, and the freedom to create.
+        - generic [ref=e69]: — The Sandbox, Academic Year 2025/26
+    - generic [ref=e71]:
+      - generic [ref=e72]: What can you build?
+      - heading [level=2] [ref=e73]:
+        - text: Pick something that makesyou
+        - emphasis [ref=e74]: curious.
+      - paragraph [ref=e75]:
+        - strong [ref=e76]: Project Spark
+        - text: has 44+ real project ideas across 6 categories. Every level welcome — from a first Python program to a line-following robot.
+      - generic [ref=e77]:
+        - link "🎮 Games Games Snake, Tetris, Pong, Space Invaders, Maze Solver, Sudoku Solver, Hoops, PhotoBomb Python JavaScript" [ref=e78] [cursor=pointer]:
+          - /url: /spark?cat=cat-games
+          - generic [ref=e79]:
+            - generic [ref=e80]: 🎮
+            - generic [ref=e81]: Games
+          - generic [ref=e82]:
+            - heading "Games" [level=3] [ref=e83]
+            - paragraph [ref=e84]: Snake, Tetris, Pong, Space Invaders, Maze Solver, Sudoku Solver, Hoops, PhotoBomb
+            - generic [ref=e85]:
+              - generic [ref=e86]: Python
+              - generic [ref=e87]: JavaScript
+        - link "🌐 Web Web Portfolio site, Weather dashboard, Music visualiser, News aggregator, Real-time tools HTML CSS JavaScript" [ref=e88] [cursor=pointer]:
+          - /url: /spark?cat=cat-web
+          - generic [ref=e89]:
+            - generic [ref=e90]: 🌐
+            - generic [ref=e91]: Web
+          - generic [ref=e92]:
+            - heading "Web" [level=3] [ref=e93]
+            - paragraph [ref=e94]: Portfolio site, Weather dashboard, Music visualiser, News aggregator, Real-time tools
+            - generic [ref=e95]:
+              - generic [ref=e96]: HTML
+              - generic [ref=e97]: CSS
+              - generic [ref=e98]: JavaScript
+        - link "🤖 AI AI AI study buddy, Image classifier, Voice assistant, AI-powered chatbot Python JavaScript" [ref=e99] [cursor=pointer]:
+          - /url: /spark?cat=cat-ai
+          - generic [ref=e100]:
+            - generic [ref=e101]: 🤖
+            - generic [ref=e102]: AI
+          - generic [ref=e103]:
+            - heading "AI" [level=3] [ref=e104]
+            - paragraph [ref=e105]: AI study buddy, Image classifier, Voice assistant, AI-powered chatbot
+            - generic [ref=e106]:
+              - generic [ref=e107]: Python
+              - generic [ref=e108]: JavaScript
+        - link "📊 Data Data Spotify stats, Fitness tracker, Live data pipeline, Timetable analyser Python JavaScript" [ref=e109] [cursor=pointer]:
+          - /url: /spark?cat=cat-data
+          - generic [ref=e110]:
+            - generic [ref=e111]: 📊
+            - generic [ref=e112]: Data
+          - generic [ref=e113]:
+            - heading "Data" [level=3] [ref=e114]
+            - paragraph [ref=e115]: Spotify stats, Fitness tracker, Live data pipeline, Timetable analyser
+            - generic [ref=e116]:
+              - generic [ref=e117]: Python
+              - generic [ref=e118]: JavaScript
+        - link "⚙️ Hardware Hardware Smart traffic light, Room environment monitor, Line-following robot Python" [ref=e119] [cursor=pointer]:
+          - /url: /spark?cat=cat-hardware
+          - generic [ref=e120]:
+            - generic [ref=e121]: ⚙️
+            - generic [ref=e122]: Hardware
+          - generic [ref=e123]:
+            - heading "Hardware" [level=3] [ref=e124]
+            - paragraph [ref=e125]: Smart traffic light, Room environment monitor, Line-following robot
+            - generic [ref=e126]: Python
+        - link "🛠️ Tools Tools Password manager, Markdown editor, Personal API, Productivity app Python JavaScript" [ref=e128] [cursor=pointer]:
+          - /url: /spark?cat=cat-tools
+          - generic [ref=e129]:
+            - generic [ref=e130]: 🛠️
+            - generic [ref=e131]: Tools
+          - generic [ref=e132]:
+            - heading "Tools" [level=3] [ref=e133]
+            - paragraph [ref=e134]: Password manager, Markdown editor, Personal API, Productivity app
+            - generic [ref=e135]:
+              - generic [ref=e136]: Python
+              - generic [ref=e137]: JavaScript
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]: Browse all projects in the Spark Gallery
+          - generic [ref=e141]: Filter by topic, level, and language.Don't look for the right one — look for the one you can't stop thinking about.
+        - link "Open the gallery →" [ref=e142] [cursor=pointer]:
+          - /url: /spark
+    - generic [ref=e144]:
+      - generic [ref=e145]: How it works
+      - heading [level=2] [ref=e146]:
+        - text: Every session followsthe same
+        - emphasis [ref=e147]: rhythm.
+      - paragraph [ref=e148]: Two hours. Five moments. No lectures, no homework, no grades — just structured time to build.
+      - generic [ref=e149]:
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e154]: "1"
+            - generic [ref=e155]: 0–10 min
+            - heading "Stand-up circle" [level=3] [ref=e156]
+            - paragraph [ref=e157]: What I'm building, what I did, what I'll do today. Thirty seconds each.
+          - generic [ref=e158]:
+            - generic [ref=e159]: "2"
+            - generic [ref=e160]: 10–80 min
+            - heading "Build time" [level=3] [ref=e161]
+            - paragraph [ref=e162]: "Work independently. Guide circulates. Rule: never touch their keyboard."
+          - generic [ref=e163]:
+            - generic [ref=e164]: "3"
+            - generic [ref=e165]: 80–95 min
+            - heading "Spark session" [level=3] [ref=e166]
+            - paragraph [ref=e167]: "Lost? Open the gallery together. One question: what made you want to click?"
+          - generic [ref=e168]:
+            - generic [ref=e169]: "4"
+            - generic [ref=e170]: 95–105 min
+            - heading "Commit check" [level=3] [ref=e171]
+            - paragraph [ref=e172]: "\"By next session I will have ___.\" One sentence. One demonstrable thing."
+          - generic [ref=e173]:
+            - generic [ref=e174]: "5"
+            - generic [ref=e175]: 105–120 min
+            - heading "Show and tell" [level=3] [ref=e176]
+            - paragraph [ref=e177]: One student shares their screen — working or broken. Questions from the group only.
+        - generic [ref=e178]:
+          - heading "How students get unstuck" [level=3] [ref=e179]
+          - paragraph [ref=e180]: Before a student can ask the teacher for help, they work through four layers in order. AI sits at Layer 3 — a professional tool, not a first resort.
+          - table [ref=e182]:
+            - rowgroup [ref=e183]:
+              - row [ref=e184]:
+                - columnheader "Layer" [ref=e185]
+                - columnheader "Source" [ref=e186]
+                - columnheader "How to use it" [ref=e187]
+            - rowgroup [ref=e188]:
+              - row [ref=e189]:
+                - cell "1" [ref=e190]
+                - cell "Yourself" [ref=e191]
+                - cell "Read the error. Google it. Try one fix. Spend at least 10 minutes before moving on." [ref=e192]
+              - row [ref=e193]:
+                - cell "2" [ref=e194]
+                - cell "A peer" [ref=e195]
+                - cell "Describe the problem out loud to another student. Most bugs get solved in this step." [ref=e196]
+              - row [ref=e197]:
+                - cell "3" [ref=e198]
+                - cell "AI tools" [ref=e199]
+                - cell "Claude, ChatGPT, Copilot. Paste the error and your code. Read and understand the answer before applying." [ref=e200]
+              - row [ref=e201]:
+                - cell "4" [ref=e202]
+                - cell "The teacher" [ref=e203]
+                - cell "Can ask after layers 1–3. Explain what you tried and what the AI said." [ref=e204]
+    - generic [ref=e206]:
+      - generic [ref=e207]: Built by students
+      - heading [level=2] [ref=e208]:
+        - text: Real projects.
+        - emphasis [ref=e209]: Real students.
+      - paragraph [ref=e210]: Everything here was built during a Sandbox session. No templates. No shortcuts.
+      - generic [ref=e211]:
+        - generic [ref=e212]: 🚀
+        - heading "First projects coming soon" [level=3] [ref=e213]
+        - paragraph [ref=e214]: The Sandbox launches next academic year 2026/2027. Watch this space — projects will go live the moment students start building.
+        - link "· Showcase ·" [ref=e215] [cursor=pointer]:
+          - /url: /showcase
+      - generic [ref=e216]:
+        - generic [ref=e217]:
+          - generic [ref=e218]: End-of-year Showcase
+          - generic [ref=e219]:
+            - generic [ref=e220]: Annual event
+            - text: Every student presents what they built. Open to the whole school community.
+        - generic [ref=e221]: Register interest →
+    - generic [ref=e223]:
+      - generic [ref=e224]: Practical info
+      - heading [level=2] [ref=e225]:
+        - text: Everything you need to knowbefore you
+        - emphasis [ref=e226]: show up.
+      - generic [ref=e227]:
+        - generic [ref=e228]:
+          - generic [ref=e229]: 📅
+          - generic [ref=e230]:
+            - generic [ref=e231]: When
+            - generic [ref=e232]: Schedule
+            - generic [ref=e233]: Mondays from 11:30 - 13:00. Weekly sessions starting in October.
+        - generic [ref=e234]:
+          - generic [ref=e235]: 📍
+          - generic [ref=e236]:
+            - generic [ref=e237]: Where
+            - generic [ref=e238]: Location to be announced
+            - generic [ref=e239]: Room assignment pending — Check back soon!
+        - generic [ref=e240]:
+          - generic [ref=e241]: 👥
+          - generic [ref=e242]:
+            - generic [ref=e243]: Who
+            - generic [ref=e244]: KS3 to A Level
+            - generic [ref=e245]: All experience levels. No selection process.
+        - generic [ref=e246]:
+          - generic [ref=e247]: 💻
+          - generic [ref=e248]:
+            - generic [ref=e249]: What to bring
+            - generic [ref=e250]: Nothing
+            - generic [ref=e251]: School computers provided. Bring your own device if you prefer.
+      - generic [ref=e252]:
+        - generic [ref=e253]:
+          - generic [ref=e254]: Fill out the form to secure your spot
+          - generic [ref=e255]: Or feel free to just show up and join us on the day.
+        - link "Register Now →" [ref=e256] [cursor=pointer]:
+          - /url: https://forms.cloud.microsoft/e/20XRHrbVef
+    - generic [ref=e259]:
+      - generic [ref=e260]: 📋
+      - generic [ref=e261]:
+        - heading "A note for students & parents" [level=3] [ref=e262]
+        - paragraph [ref=e263]: Please read — important information about how the club works.
+        - generic [ref=e264]:
+          - paragraph [ref=e265]: The Sandbox is a voluntary, co-curricular activity. Participation is entirely optional and carries no academic grade or formal assessment. Students are free to join, take a break, or leave at any time.
+          - paragraph [ref=e266]: All software used in the club is free, browser-based, or school-licensed. Students are never required to purchase tools, subscriptions, or hardware. Where personal devices (Arduino, Raspberry Pi, etc.) are brought in voluntarily, the school accepts no liability for loss or damage.
+          - paragraph [ref=e267]:
+            - text: "AI tools are used as professional learning aids under the club's explicit policy:"
+            - strong [ref=e268]: you may use AI on any project — if you can explain the output.
+            - text: Students are taught to verify, question, and understand AI-generated code rather than treat it as an answer.
+          - paragraph [ref=e269]: The end-of-year showcase is open to all students and families. Work displayed is shared with the student's explicit consent. No personal data from student projects is stored, shared, or published by the school without parental consent where required.
+          - paragraph [ref=e270]:
+            - text: Questions?
+            - link "Contact us" [ref=e271] [cursor=pointer]:
+              - /url: mailto:ricardo.duarteproenca@education.lu
+    - generic [ref=e274]:
+      - generic [ref=e275]: Ready to build something?
+      - heading [level=2] [ref=e276]:
+        - text: What will you
+        - emphasis [ref=e277]: build?
+      - paragraph [ref=e278]: No experience needed. No homework. No pressure. Just show up with an idea — or let us help you find one.
+      - generic [ref=e279]:
+        - link "Join the club →" [ref=e280] [cursor=pointer]:
+          - /url: https://forms.cloud.microsoft/e/20XRHrbVef
+        - link "Browse projects first" [ref=e281] [cursor=pointer]:
+          - /url: /spark
+      - generic [ref=e282]:
+        - generic [ref=e283]: No experience needed
+        - generic [ref=e285]: No homework
+        - generic [ref=e287]: KS3 to A Level
+    - generic [ref=e291]:
+      - generic [ref=e292]: 🤖
+      - generic [ref=e293]:
+        - strong [ref=e294]: Built with AI, supervised by a human.
+        - text: "This website was designed and developed using AI tools under the supervision of a CS teacher — a real example of how The Sandbox approaches technology: use it well, understand what it produces, and take responsibility for the result."
+  - contentinfo [ref=e295]:
+    - generic [ref=e296]:
+      - generic [ref=e297]:
+        - link [ref=e298] [cursor=pointer]:
+          - /url: /
+          - img "The Sandbox" [ref=e299]
+        - generic [ref=e300]:
+          - generic [ref=e301]: The Sandbox
+          - link "Lycée | International School Michel Lucius · Luxembourg" [ref=e303] [cursor=pointer]:
+            - /url: https://lml.lu
+      - generic [ref=e304]:
+        - link "Brand" [ref=e305] [cursor=pointer]:
+          - /url: /brand
+          - text: 🏷️
+        - link "Contact" [ref=e306] [cursor=pointer]:
+          - /url: mailto:ricardo.duarteproenca@education.lu
+          - text: 📬

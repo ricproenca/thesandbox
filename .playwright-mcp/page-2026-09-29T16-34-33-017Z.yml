@@ -1,0 +1,37 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to main content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation [ref=f1e3]:
+    - link "The Sandbox The Sandbox Technology Club" [ref=f1e4] [cursor=pointer]:
+      - /url: /
+      - img "The Sandbox" [ref=f1e5]
+      - generic [ref=f1e6]:
+        - generic [ref=f1e7]: The Sandbox
+        - generic [ref=f1e8]: Technology Club
+    - button "Toggle menu" [ref=f1e9] [cursor=pointer]
+  - main [ref=f1e14]:
+    - generic [ref=f1e15]: Join the club
+    - heading [level=1] [ref=f1e16]:
+      - text: What will you
+      - emphasis [ref=f1e17]: build?
+    - paragraph [ref=f1e18]: Fill out the form to secure your spot, or feel free to just show up and join us on the day.
+    - link "Register Now →" [ref=f1e19] [cursor=pointer]:
+      - /url: https://forms.cloud.microsoft/e/20XRHrbVef
+  - contentinfo [ref=f1e20]:
+    - generic [ref=f1e21]:
+      - generic [ref=f1e22]:
+        - link [ref=f1e23] [cursor=pointer]:
+          - /url: /
+          - img "The Sandbox" [ref=f1e24]
+        - generic [ref=f1e25]:
+          - generic [ref=f1e26]: The Sandbox
+          - link "Lycée | International School Michel Lucius · Luxembourg" [ref=f1e28] [cursor=pointer]:
+            - /url: https://lml.lu
+      - generic [ref=f1e29]:
+        - link "Brand" [ref=f1e30] [cursor=pointer]:
+          - /url: /brand
+          - text: 🏷️
+        - link "Contact" [ref=f1e31] [cursor=pointer]:
+          - /url: mailto:ricardo.duarteproenca@education.lu
+          - text: 📬
+  - button "Open Next.js Dev Tools" [ref=f1e37] [cursor=pointer]

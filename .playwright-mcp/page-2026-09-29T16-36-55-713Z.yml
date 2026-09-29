@@ -1,0 +1,157 @@
+- generic [active] [ref=f682e1]:
+  - link "Skip to main content" [ref=f682e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation [ref=f682e3]:
+    - link "The Sandbox The Sandbox Technology Club" [ref=f682e4] [cursor=pointer]:
+      - /url: /
+      - img "The Sandbox" [ref=f682e5]
+      - generic [ref=f682e6]:
+        - generic [ref=f682e7]: The Sandbox
+        - generic [ref=f682e8]: Technology Club
+    - button "Toggle menu" [ref=f682e9] [cursor=pointer]
+  - main [ref=f682e14]:
+    - generic [ref=f682e16]:
+      - generic [ref=f682e17]: · Brand & Media ·
+      - heading [level=1] [ref=f682e18]:
+        - text: Everything you need to
+        - emphasis [ref=f682e19]: represent.
+      - paragraph [ref=f682e20]: Download logos, posters, wallpapers, and infographics.Use them for presentations, projects, or personal work.
+    - generic [ref=f682e22]:
+      - generic [ref=f682e23]: Logos
+      - heading "Choose the right version." [level=2] [ref=f682e24]
+      - paragraph [ref=f682e25]: PNG format. Use the default for light backgrounds, black for white, and minimal for clean layouts.
+      - generic [ref=f682e26]:
+        - generic [ref=f682e27]:
+          - img "Default (Light)" [ref=f682e29]
+          - generic [ref=f682e30]: Default (Light)
+          - link "Download Default (Light) logo" [ref=f682e31] [cursor=pointer]:
+            - /url: /assets/logo/sandbox_logo.png
+            - text: ↓ Download
+        - generic [ref=f682e32]:
+          - img "Black" [ref=f682e34]
+          - generic [ref=f682e35]: Black
+          - link "Download Black logo" [ref=f682e36] [cursor=pointer]:
+            - /url: /assets/logo/sandbox_logo_black.png
+            - text: ↓ Download
+        - generic [ref=f682e37]:
+          - img "Minimal" [ref=f682e39]
+          - generic [ref=f682e40]: Minimal
+          - link "Download Minimal logo" [ref=f682e41] [cursor=pointer]:
+            - /url: /assets/logo/sandbox_logo_minimal.png
+            - text: ↓ Download
+        - generic [ref=f682e42]:
+          - img "Minimal (No BG)" [ref=f682e44]
+          - generic [ref=f682e45]: Minimal (No BG)
+          - link "Download Minimal (No BG) logo" [ref=f682e46] [cursor=pointer]:
+            - /url: /assets/logo/sandbox_logo_minimal_nobg.png
+            - text: ↓ Download
+      - generic [ref=f682e47]:
+        - img "QR Code" [ref=f682e49]
+        - generic [ref=f682e50]: QR Code
+        - link "Download QR Code" [ref=f682e51] [cursor=pointer]:
+          - /url: /assets/others/sandbox_qr_code.png
+          - text: ↓ Download
+    - generic [ref=f682e53]:
+      - generic [ref=f682e54]: Posters
+      - heading "Print-ready posters." [level=2] [ref=f682e55]
+      - paragraph [ref=f682e56]: Click to preview. Download for events, showcases, or presentations.
+      - generic [ref=f682e57]:
+        - generic [ref=f682e58]:
+          - button "Preview Sandbox Poster 1" [ref=f682e59] [cursor=pointer]:
+            - img "Sandbox Poster 1" [ref=f682e60]
+          - generic [ref=f682e61]:
+            - generic [ref=f682e62]: Sandbox Poster 1
+            - link "Download Sandbox Poster 1" [ref=f682e63] [cursor=pointer]:
+              - /url: /assets/posters/sandbox_poster_1.png
+              - text: ↓ Download
+        - generic [ref=f682e64]:
+          - button "Preview Sandbox Poster 2" [ref=f682e65] [cursor=pointer]:
+            - img "Sandbox Poster 2" [ref=f682e66]
+          - generic [ref=f682e67]:
+            - generic [ref=f682e68]: Sandbox Poster 2
+            - link "Download Sandbox Poster 2" [ref=f682e69] [cursor=pointer]:
+              - /url: /assets/posters/sandbox_poster_2.png
+              - text: ↓ Download
+        - generic [ref=f682e70]:
+          - button "Preview Sandbox Poster 3" [ref=f682e71] [cursor=pointer]:
+            - img "Sandbox Poster 3" [ref=f682e72]
+          - generic [ref=f682e73]:
+            - generic [ref=f682e74]: Sandbox Poster 3
+            - link "Download Sandbox Poster 3" [ref=f682e75] [cursor=pointer]:
+              - /url: /assets/posters/sandbox_poster_3.png
+              - text: ↓ Download
+        - generic [ref=f682e76]:
+          - button "Preview Sandbox Poster 4" [ref=f682e77] [cursor=pointer]:
+            - img "Sandbox Poster 4" [ref=f682e78]
+          - generic [ref=f682e79]:
+            - generic [ref=f682e80]: Sandbox Poster 4
+            - link "Download Sandbox Poster 4" [ref=f682e81] [cursor=pointer]:
+              - /url: /assets/posters/sandbox_poster_4.png
+              - text: ↓ Download
+        - generic [ref=f682e82]:
+          - button "Preview Sandbox Poster 5" [ref=f682e83] [cursor=pointer]:
+            - img "Sandbox Poster 5" [ref=f682e84]
+          - generic [ref=f682e85]:
+            - generic [ref=f682e86]: Sandbox Poster 5
+            - link "Download Sandbox Poster 5" [ref=f682e87] [cursor=pointer]:
+              - /url: /assets/posters/sandbox_poster_5.png
+              - text: ↓ Download
+    - generic [ref=f682e89]:
+      - generic [ref=f682e90]: Wallpapers
+      - heading "Desktop backgrounds." [level=2] [ref=f682e91]
+      - paragraph [ref=f682e92]: The Sandbox wallpapers for your screen. Click to preview.
+      - generic [ref=f682e93]:
+        - generic [ref=f682e94]:
+          - button "Preview Wallpaper 1" [ref=f682e95] [cursor=pointer]:
+            - img "Wallpaper 1" [ref=f682e96]
+          - generic [ref=f682e97]:
+            - generic [ref=f682e98]: Wallpaper 1
+            - link "Download Wallpaper 1" [ref=f682e99] [cursor=pointer]:
+              - /url: /assets/wallpapers/wallpaper_1.jpg
+              - text: ↓
+        - generic [ref=f682e100]:
+          - button "Preview Wallpaper 2" [ref=f682e101] [cursor=pointer]:
+            - img "Wallpaper 2" [ref=f682e102]
+          - generic [ref=f682e103]:
+            - generic [ref=f682e104]: Wallpaper 2
+            - link "Download Wallpaper 2" [ref=f682e105] [cursor=pointer]:
+              - /url: /assets/wallpapers/wallpaper_2.jpg
+              - text: ↓
+        - generic [ref=f682e106]:
+          - button "Preview Wallpaper 3" [ref=f682e107] [cursor=pointer]:
+            - img "Wallpaper 3" [ref=f682e108]
+          - generic [ref=f682e109]:
+            - generic [ref=f682e110]: Wallpaper 3
+            - link "Download Wallpaper 3" [ref=f682e111] [cursor=pointer]:
+              - /url: /assets/wallpapers/wallpaper_3.jpg
+              - text: ↓
+    - generic [ref=f682e113]:
+      - generic [ref=f682e114]: Infographic
+      - heading "How it works, at a glance." [level=2] [ref=f682e115]
+      - paragraph [ref=f682e116]: A visual overview of The Sandbox sessions. Click to view full size.
+      - generic [ref=f682e117]:
+        - button "Preview Sandbox Infographic full size" [ref=f682e118] [cursor=pointer]:
+          - img "The Sandbox Infographic" [ref=f682e119]
+        - generic [ref=f682e120]:
+          - generic [ref=f682e121]: Sandbox Infographic
+          - link "Download Sandbox Infographic" [ref=f682e122] [cursor=pointer]:
+            - /url: /assets/others/sandbox_info.png
+            - text: ↓ Download
+  - contentinfo [ref=f682e123]:
+    - generic [ref=f682e124]:
+      - generic [ref=f682e125]:
+        - link [ref=f682e126] [cursor=pointer]:
+          - /url: /
+          - img "The Sandbox" [ref=f682e127]
+        - generic [ref=f682e128]:
+          - generic [ref=f682e129]: The Sandbox
+          - link "Lycée | International School Michel Lucius · Luxembourg" [ref=f682e131] [cursor=pointer]:
+            - /url: https://lml.lu
+      - generic [ref=f682e132]:
+        - link "Brand" [ref=f682e133] [cursor=pointer]:
+          - /url: /brand
+          - text: 🏷️
+        - link "Contact" [ref=f682e134] [cursor=pointer]:
+          - /url: mailto:ricardo.duarteproenca@education.lu
+          - text: 📬
+  - alert [ref=f682e135]

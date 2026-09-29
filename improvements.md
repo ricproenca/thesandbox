@@ -8,7 +8,7 @@
 
 - Fixed the Brand page preview: it now opens full screen and always shows the whole image, with a visible close (✕) button, a Download button, and arrows that sit beside the image (below it on phones).
 - Turned the two new wallpapers into artwork with almost no text ("Cube orbit" and "Building blocks"); only the logo, QR code and a faint "Please don't turn off the PC" remain.
-- Added the QR code to the "Where ideas take shape" wallpaper (original artwork kept in `design/wallpapers/source/`), so all three wallpapers now carry it.
+- Removed the "Where ideas take shape" wallpaper and added two drawn from the logo's open box: "Open box" (dark, the box bursting with cubes and circuits) and "Box grid" (light, a pattern of open boxes with a few in accent colours).
 - Added the new QR code (links to https://thesandboxclub.vercel.app/) to all three posters, both new wallpapers and the infographic, checked that it scans from every rendered image, and gave the re-rendered files `_v2` names so caches can't show old versions.
 - Replaced the AI-art infographic with a simple, white "The Sandbox, at a glance" diagram (how it works, the 90-minute session to scale, the four steps for getting unstuck), with its source in `design/infographic/`.
 - Reworded every "no homework / no grades / no pressure / no curriculum" line positively, so the site doesn't read as criticism of normal lessons.

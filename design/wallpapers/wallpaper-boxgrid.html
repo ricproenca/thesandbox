@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Wallpaper: Box grid</title>
+<link rel="stylesheet" href="../posters/poster.css" />
+<link rel="stylesheet" href="wallpaper.css" />
+<style>
+  /* Light variant: the shared corner elements switch to navy text. */
+  .wall { background: #f4f7f9; color: var(--navy); }
+  .glow { width: 1400px; height: 1000px; background: radial-gradient(closest-side, #ffffff, rgba(255, 255, 255, 0) ); }
+  .art { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  .corner-brand { color: var(--navy); }
+  .corner-brand img, .corner-scan .qr { box-shadow: 0 0 0 1.5px #e2edf2; }
+  .corner-scan span { color: #4a7080; }
+  .pc-note { color: rgba(13, 45, 62, 0.5); }
+</style>
+</head>
+<body>
+<div class="wall">
+  <div class="glow"></div>
+
+  <!-- A grid of the logo's open box as line icons, with a few filled in the accent colours.
+       Box unit coords as in wallpaper-openbox.html. The pattern cell is 160×220 with boxes at
+       (40, 66.4) and (120, 176.4); filled boxes sit on those same points (x = 40+160i, y = 66.4+220j,
+       or x = 120+160i, y = 176.4+220j), so recompute rather than nudge. -->
+  <svg class="art" viewBox="0 0 1920 1080" aria-hidden="true">
+    <defs>
+      <g id="box-line" fill="none" stroke="#1285a4" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M-86.6,-50 L-121.6,-110 L-35,-160 L0,-100 L35,-160 L121.6,-110 L86.6,-50" />
+        <path d="M-86.6,-50 L0,-100 L86.6,-50 L0,0 Z M0,0 V100 M-86.6,-50 V50 L0,100 L86.6,50 V-50" />
+        <path d="M-86.6,-50 L-148.6,-36 L-62,14 L0,0 L62,14 L148.6,-36 L86.6,-50" />
+      </g>
+      <g id="box-fill" stroke-linejoin="round">
+        <polygon points="-86.6,-50 0,-100 -35,-160 -121.6,-110" fill="currentColor" opacity="0.45" />
+        <polygon points="0,-100 86.6,-50 121.6,-110 35,-160" fill="currentColor" opacity="0.6" />
+        <polygon points="-86.6,-50 0,-100 0,0" fill="#0d2d3e" />
+        <polygon points="0,-100 86.6,-50 0,0" fill="#071e2a" />
+        <!-- a white cube popping out -->
+        <g transform="translate(0 -62) scale(0.36)">
+          <polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#ffffff" />
+          <polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#e2edf2" />
+          <polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#c3d5de" />
+        </g>
+        <polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="currentColor" />
+        <polygon points="86.6,-50 0,0 0,100 86.6,50" fill="currentColor" />
+        <polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#000" opacity="0.2" />
+        <polygon points="-86.6,-50 0,0 -62,14 -148.6,-36" fill="currentColor" />
+        <polygon points="-86.6,-50 0,0 -62,14 -148.6,-36" fill="#fff" opacity="0.35" />
+        <polygon points="86.6,-50 0,0 62,14 148.6,-36" fill="currentColor" />
+        <polygon points="86.6,-50 0,0 62,14 148.6,-36" fill="#fff" opacity="0.2" />
+      </g>
+      <pattern id="grid" width="160" height="220" patternUnits="userSpaceOnUse">
+        <use href="#box-line" transform="translate(40 66.4) scale(0.38)" />
+        <use href="#box-line" transform="translate(120 176.4) scale(0.38)" />
+        <use href="#box-line" transform="translate(200 66.4) scale(0.38)" />
+        <use href="#box-line" transform="translate(-40 176.4) scale(0.38)" />
+      </pattern>
+    </defs>
+    <rect width="1920" height="1080" fill="url(#grid)" opacity="0.16" />
+    <use href="#box-fill" style="color:#1cc5ca" transform="translate(840 286.4) scale(0.38)" />
+    <use href="#box-fill" style="color:#f77924" transform="translate(1080 396.4) scale(0.38)" />
+    <use href="#box-fill" style="color:#7c5ce0" transform="translate(1160 506.4) scale(0.38)" />
+    <use href="#box-fill" style="color:#2f9e6a" transform="translate(760 616.4) scale(0.38)" />
+    <use href="#box-fill" style="color:#e0487a" transform="translate(1480 286.4) scale(0.38)" />
+    <use href="#box-fill" style="color:#2f86d6" transform="translate(1400 176.4) scale(0.38)" />
+    <use href="#box-fill" style="color:#2f86d6" transform="translate(520 726.4) scale(0.38)" />
+    <use href="#box-fill" style="color:#1cc5ca" transform="translate(1720 616.4) scale(0.38)" />
+    <use href="#box-fill" style="color:#f77924" transform="translate(1000 726.4) scale(0.38)" />
+  </svg>
+
+  <div class="corner-brand"><img src="../../public/assets/logo/sandbox_logo.png" alt="" />The Sandbox</div>
+  <div class="corner-scan"><img class="qr" src="../../public/assets/posters/qrcode.png" alt="" /><span>Scan to join</span></div>
+  <div class="pc-note">Please don&rsquo;t turn off the PC</div>
+</div>
+</body>
+</html>

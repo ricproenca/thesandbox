@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Wallpaper: Open box</title>
+<link rel="stylesheet" href="../posters/poster.css" />
+<link rel="stylesheet" href="wallpaper.css" />
+<style>
+  .glow { top: 42%; width: 1200px; height: 1000px; background: radial-gradient(closest-side, rgba(28, 197, 202, 0.32), rgba(28, 197, 202, 0.07) 55%, transparent); }
+  .art { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+</style>
+</head>
+<body>
+<div class="wall">
+  <div class="grid-bg"></div>
+  <div class="glow"></div>
+
+  <!-- The logo's open box, redrawn in SVG. The box group uses the cube geometry from the other
+       wallpapers (unit coords: front-top corner at 0,0; opening from y -100 to 0; bottom at y 100). -->
+  <svg class="art" viewBox="0 0 1920 1080" aria-hidden="true">
+    <defs>
+      <symbol id="cube-teal" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#7eeef0"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#1cc5ca"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#1285a4"/></symbol>
+      <symbol id="cube-orange" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#ffc08f"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#f77924"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#b9540f"/></symbol>
+      <symbol id="cube-sky" viewBox="-87 -100 174 200"><polygon points="0,-100 86.6,-50 0,0 -86.6,-50" fill="#9ccaf5"/><polygon points="-86.6,-50 0,0 0,100 -86.6,50" fill="#2f86d6"/><polygon points="86.6,-50 0,0 0,100 86.6,50" fill="#1c5f9e"/></symbol>
+      <symbol id="cube-wire" viewBox="-89 -102 178 204"><g fill="none" stroke="#1cc5ca" stroke-opacity="0.55" stroke-width="6" stroke-linejoin="round"><polygon points="0,-100 86.6,-50 86.6,50 0,100 -86.6,50 -86.6,-50"/><path d="M-86.6,-50 L0,0 L86.6,-50 M0,0 L0,100"/></g></symbol>
+    </defs>
+
+    <!-- Loose cubes drifting around the scene -->
+    <use href="#cube-wire" x="470" y="700" width="70" height="80" />
+    <use href="#cube-wire" x="1320" y="560" width="90" height="104" />
+    <use href="#cube-teal" x="1470" y="780" width="40" height="46" opacity="0.7" />
+    <use href="#cube-orange" x="1270" y="230" width="34" height="39" opacity="0.8" />
+    <g fill="#1cc5ca" fill-opacity="0.5"><circle cx="720" cy="170" r="4"/><circle cx="1210" cy="130" r="5"/><circle cx="1390" cy="420" r="4"/><circle cx="520" cy="470" r="5"/></g>
+
+    <g transform="translate(960 700) scale(2.2)" stroke-linejoin="round">
+      <!-- back flaps, then the dark inside of the box -->
+      <polygon points="-86.6,-50 0,-100 -35,-160 -121.6,-110" fill="#0f4f66" stroke="#7eeef0" stroke-width="1.2" />
+      <polygon points="0,-100 86.6,-50 121.6,-110 35,-160" fill="#0b3f53" stroke="#7eeef0" stroke-width="1.2" />
+      <polygon points="-86.6,-50 0,-100 0,0" fill="#082331" />
+      <polygon points="0,-100 86.6,-50 0,0" fill="#051722" />
+
+      <!-- circuit traces rising out of the box -->
+      <g fill="none" stroke-width="1.8" stroke-linecap="round">
+        <path d="M-6,-30 V-190 L-42,-220 V-262" stroke="#1cc5ca" />
+        <path d="M12,-30 V-150 L50,-185 V-230" stroke="#1cc5ca" />
+        <path d="M-30,-45 L-62,-85 H-118" stroke="#1cc5ca" />
+        <path d="M30,-45 L72,-95 H122" stroke="#f77924" />
+        <path d="M-20,-55 V-110 L-86,-176 V-204" stroke="#f77924" />
+        <path d="M24,-60 V-95 L98,-160 V-212" stroke="#2f86d6" />
+      </g>
+      <g fill="#0d2d3e" stroke-width="1.8">
+        <circle cx="-42" cy="-267" r="4.5" stroke="#1cc5ca" />
+        <circle cx="50" cy="-235" r="4.5" stroke="#1cc5ca" />
+        <circle cx="-123" cy="-85" r="4.5" stroke="#1cc5ca" />
+        <circle cx="127" cy="-95" r="4.5" stroke="#f77924" />
+        <circle cx="-86" cy="-209" r="4.5" stroke="#f77924" />
+        <circle cx="98" cy="-217" r="4.5" stroke="#2f86d6" />
+      </g>
+
+      <!-- cubes coming out; the bottom one sits half inside the box -->
+      <use href="#cube-orange" x="-110" y="-170" width="16" height="18" />
+      <use href="#cube-teal" x="118" y="-170" width="14" height="16" />
+      <use href="#cube-sky" x="-80" y="-155" width="24" height="28" />
+      <use href="#cube-orange" x="20" y="-195" width="30" height="34" />
+      <use href="#cube-teal" x="-44" y="-138" width="38" height="44" />
+      <use href="#cube-sky" x="42" y="-122" width="22" height="25" />
+      <use href="#cube-teal" x="-20" y="-88" width="46" height="53" />
+
+      <g font-family="DM Mono, monospace" font-weight="500" font-size="17">
+        <text x="-168" y="-196" fill="#1cc5ca" fill-opacity="0.75">{ }</text>
+        <text x="112" y="-252" fill="#f77924" fill-opacity="0.9">&lt;/&gt;</text>
+        <text x="150" y="-138" fill="#2f86d6">[ ]</text>
+        <text x="-176" y="-130" fill="#f77924" fill-opacity="0.8">&lt;&gt;</text>
+      </g>
+
+      <!-- front of the box: faceted like the logo -->
+      <polygon points="-86.6,-50 0,0 -43.3,25" fill="#1cc5ca" />
+      <polygon points="0,0 0,100 -43.3,25" fill="#17aebb" />
+      <polygon points="0,100 -86.6,50 -43.3,25" fill="#1596aa" />
+      <polygon points="-86.6,50 -86.6,-50 -43.3,25" fill="#19bcc4" />
+      <polygon points="0,0 86.6,-50 43.3,25" fill="#1285a4" />
+      <polygon points="86.6,-50 86.6,50 43.3,25" fill="#f77924" />
+      <polygon points="86.6,50 0,100 43.3,25" fill="#d9661a" />
+      <polygon points="0,100 0,0 43.3,25" fill="#0f7896" />
+      <path d="M-86.6,-50 L0,0 L86.6,-50 L86.6,50 L0,100 L-86.6,50 Z M0,0 V100" fill="none" stroke="#7eeef0" stroke-width="1.4" />
+      <!-- front flaps, folded open -->
+      <polygon points="-86.6,-50 0,0 -62,14 -148.6,-36" fill="#123f52" stroke="#7eeef0" stroke-width="1.4" />
+      <polygon points="86.6,-50 0,0 62,14 148.6,-36" fill="#0e3445" stroke="#7eeef0" stroke-width="1.4" />
+    </g>
+  </svg>
+
+  <div class="corner-brand"><img src="../../public/assets/logo/sandbox_logo.png" alt="" />The Sandbox</div>
+  <div class="corner-scan"><img class="qr" src="../../public/assets/posters/qrcode.png" alt="" /><span>Scan to join</span></div>
+  <div class="pc-note">Please don&rsquo;t turn off the PC</div>
+</div>
+</body>
+</html>

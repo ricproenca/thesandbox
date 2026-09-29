@@ -12,15 +12,18 @@ icons and the bottom for the taskbar.
 |---|---|
 | `wallpaper-cubes.html` | `wallpaper_cubes.png` ("Cube orbit"), 1920×1080 at 2× |
 | `wallpaper-blocks.html` | `wallpaper_blocks.png` ("Building blocks"), 1920×1080 at 2× |
-| `wallpaper-ideas.html` | `wallpaper_ideas_v2.jpg` ("Where ideas take shape"), 2400×1792 at 1× |
+| `wallpaper-openbox.html` | `wallpaper_openbox.png` ("Open box"), 1920×1080 at 2× |
+| `wallpaper-boxgrid.html` | `wallpaper_boxgrid.png` ("Box grid", the light one), 1920×1080 at 2× |
 
 The block pile in `wallpaper-blocks.html` sits on a true isometric grid (cube width 150, so steps
 of 75 across and 43.1 down per grid cell, 86.2 up per level), drawn back to front. Recompute
 positions rather than nudging them by eye, or the faces won't line up.
 
-"Where ideas take shape" is older AI artwork: `source/wallpaper_ideas_original.jpg` is kept
-untouched, and `wallpaper-ideas.html` only overlays the QR code on it, inside the 16:9 area so it
-survives "Fill" on widescreen monitors. Save it as JPEG (`type: "jpeg", quality: 90`).
+"Open box" and "Box grid" redraw the logo's open box in SVG (the logo files are raster on white,
+so they can't be placed on artwork). Both use the same unit coordinates as the cubes: front-top
+corner at 0,0, opening from y -100 to 0, bottom at y 100, flaps out to about ±150. "Box grid" is
+light, so it overrides the corner elements to navy text; its filled boxes must sit on the pattern's
+grid points (see the comment in the file).
 
 ## Preview and render
 
@@ -29,7 +32,7 @@ Preview the same way as the posters (see `../posters/README.md`), then render:
 ```js
 const ctx = await browser.newContext({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 2 });
 const page = await ctx.newPage();
-for (const name of ["cubes", "blocks"]) {
+for (const name of ["cubes", "blocks", "openbox", "boxgrid"]) {
   await page.goto(`http://127.0.0.1:3002/design/wallpapers/wallpaper-${name}.html`, { waitUntil: "networkidle" });
   await page.evaluate(() => document.fonts.ready);
   await page.screenshot({ path: `public/assets/wallpapers/wallpaper_${name}.png`, clip: { x: 0, y: 0, width: 1920, height: 1080 } });

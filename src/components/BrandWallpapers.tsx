@@ -9,7 +9,8 @@ const WALLPAPERS = [
   // The PNGs come from design/wallpapers/ (HTML); see its README to edit and re-render.
   { src: "/assets/wallpapers/wallpaper_cubes.png", label: "Cube orbit" },
   { src: "/assets/wallpapers/wallpaper_blocks.png", label: "Building blocks" },
-  { src: "/assets/wallpapers/wallpaper_ideas_v2.jpg", label: "Where ideas take shape" },
+  { src: "/assets/wallpapers/wallpaper_openbox.png", label: "Open box" },
+  { src: "/assets/wallpapers/wallpaper_boxgrid.png", label: "Box grid" },
 ];
 
 export default function BrandWallpapers() {
@@ -31,7 +32,7 @@ export default function BrandWallpapers() {
       <p className="text-[15px] text-muted leading-[1.6] max-w-[480px] mb-8">
         Wallpapers for club and classroom computers, each with a QR code to join. Click to preview.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {WALLPAPERS.map((w, i) => (
           <div
             key={w.label}
@@ -46,7 +47,7 @@ export default function BrandWallpapers() {
                 src={w.src}
                 alt={w.label}
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 640px) 100vw, 50vw"
                 className="object-cover"
               />
             </button>
